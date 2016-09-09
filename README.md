@@ -12,7 +12,7 @@ An introductory JavaScript workshop for beginners.
     It contains 2 files:
     - _level1.js_ - basics with explanations(comments, variables, functions, if/else statements).
     - _level2.js_ - more complex javaScript with explanations(arrays, loops).
-    - _level3.js_ - html, css and how manipulate them with javaScript (events, selectors)
+    - _level3.js_ - html, css and how manipulate them with javaScript (selectors)
 
 - _index.html_ - a file that responsible for structure of our project.
 
