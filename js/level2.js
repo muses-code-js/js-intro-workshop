@@ -1,7 +1,7 @@
 //Level2
 
 /* Arrays
-    It is ordered list of values. It can keep any number of values inside. And also
+    It is an ordered list of values. It can keep any number of values inside. And also
     any type of values - numbers, strings, objects.
     Example:
     var animals = ['cat', 'dog', 'horse];
@@ -40,7 +40,7 @@
     var secondItem = randomThings[1]; and so on
  */
 
-//TODO: get 3d element from your array favouriteFood and console.log it
+//TODO: get 3rd element from your array favouriteFood and console.log it
 
 
 
@@ -52,14 +52,15 @@
     We also can replace values inside of the arrays by assigning specific item from
     the array to a new value.
     Example:
-    var animals = ['cat', 'dog', 'horse];
+    var animals = ['cat', 'dog', 'horse'];
     //let's replace 'dog' with 'fish'
     animals[1] = 'fish';
-    //now our animals array will be ['cat', 'fish', 'horse]
+    //now our animals array will be ['cat', 'fish', 'horse']
  */
 
 //TODO: take your array favouriteFood and replace first value with anything else.
 //console.log whole array to check
+// Dont forget, that index position starts with 0
 
 
 
@@ -71,12 +72,13 @@
     If you want to add new value to array you can use property of array named '.push'.
     It will add value to the end of the array
     Example:
-    var animals = ['cat', 'dog', 'horse];
+    var animals = ['cat', 'dog', 'horse'];
     animals.push('rabbit');
+    so now our array will be ['cat', 'dog', 'horse','rabbit']
  */
 
 //TODO: let's extend your list of favouriteFood and add one more value in it.
-//console.log list of your food o check
+//console.log list of your favouriteFood and check
 
 
 
@@ -86,17 +88,19 @@
 
 
 /* Loops
-    People always have been lazy and it was moving progress forward. We don't like repeat
-    same boring actions again and again, so we are looking for the way how to improve it.
+    People always have been lazy and it was moving progress forward. We don't like to repeat
+    same boring actions again and again, so we are looking for ways how to improve it.
     Programming is the same - for example, if I want to print 'JavaScript is awesome!' 10
     times what are my options? Of course, I can print 10 lines of code repeating same
-    phrase over and over again, but I also can tell computer to do it instead of me.
-    To do it we have loops.
+    phrase over and over again, but I also can tell computer to repeat it instead of me.
+    For this we have loops.
     Each loop should have 3 main things:
     - starting point
     - condition (finishing point)
     - counter (a step)
     If you miss one of them you can get into infinite loop!!!
+
+    Let's look into different looping structures
  */
 
 
@@ -129,7 +133,7 @@
     PS: i++ is a short from 'i = i + 1'
  */
 
-//TODO: now, let's print every 3d number from 3 to 22 using 'for loop'
+//TODO: now, let's print every 3rd number from 3 to 22 using 'for loop'
 
 
 
@@ -175,8 +179,8 @@
  */
 
 //TODO: Time has come for a classic exercise - 'FizzBuzz'. Count from 1 to 50 and print
-// numbers out. If number multiple of 3 print 'Fizz', if multiple of 5 - 'Buzz', if
-// it is multiple of 3 and 5 - 'FizzBuzz'.
+// numbers out. If number is a multiple of 3 print 'Fizz', if its a multiple of 5 print 'Buzz', if
+// it is multiple of 3 and 5 print 'FizzBuzz', for everthing else print the number itself.
 //PS: you can use arithmetic operator modulo (%) - it is remainder when dividing.
 //10 % 3 = 1 - so in 10 we have 3*3 + 1
 //16 % 4 = 0 - as in 16 we have 4*4

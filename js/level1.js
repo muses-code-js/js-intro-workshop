@@ -58,7 +58,7 @@
     Example:
     var hello = 'Hello World';
     alert(hello);
-    It will pop-up alert box with string 'Hello World!'
+    It will pop-up an alert box with string 'Hello World!'
  */
 
 //TODO: Create 2 variables, 1 with your name and 2nd with your age and display them with alert pop-up box
@@ -71,7 +71,7 @@
 
 
 /* Arithmetic operators
-    There is a bunch of different operators in programming. We will look through arithmetical operators now.
+    There are a bunch of different operators in programming. We will look through arithmetical operators now.
     They are standard arithmetical operators (+, -, /, *, etc) that you can use to do math with your numbers.
     Example:
     var sumOfNumbers = 1 + 3;
@@ -79,7 +79,7 @@
     It will pop-up alert box with number 4
  */
 
-//TODO: Create 3 variables, 1st variable named ten with value 10 inside, 2nd variable named three with value 3. And finally 3d variable named multipleOfNumbers that will be equal 1st variable multiply by 2nd variable. And in the end console or alert value of multipleOfNumbers
+//TODO: Create 3 variables, 1st variable named ten with value 10 inside, 2nd variable named three with value 3. And finally 3rd variable named multipleOfNumbers that will be equal to 1st variable multiplied by the 2nd variable. And in the end display the value of multipleOfNumbers
 
 
 
@@ -87,12 +87,12 @@
 
 /* Functions
     Function is a separable, reusable piece of code. Some action that you want to do. It takes some input(arguments), do some manipulation
-    on it and return the output with key-word 'return'.
+    on it and returns the output with key-word 'return'.
     To create a function you need do following:
     var functionName = function(argument){
         return argument * 2;
     };
-    So, our function will take 1 argument and return argument multiplied by 2. But for now it will do nothing as we need to call for our function.
+    So, our function will take 1 argument and return argument multiplied by 2. But for now it will do nothing as we need to call our function.
     To call the function we do so:
     functionName(10);
     Now we will call our function with argument that is 10. And our function will return us 20. To see what our function
@@ -101,7 +101,7 @@
 
 //TODO: It's your turn to create a function.
 //Step 1 - Name it 'add' and pass in two argumnets (num1 and num2).
-//Step 2 - This function should return us a summ of num1 and num2.
+//Step 2 - This function should return us a sum of num1 and num2.
 //Step 3 - Call the function with numbers 2 and 3. To see result you can alert it or console.log it - to be sure that it works right.
 
 
@@ -141,7 +141,7 @@
 
 /*Comparison operators
     You remember we were talking about arithmetical operators and that we have different operators in programming, so
-    here comes time to introduce you comparison operators that we can use to compare values(>, <, <=, =>, ==, !=).
+    here comes time to introduce you to comparison operators that are used to compare values(>, <, <=, =>, ==, !=).
     Most of them you know from math classes in school, some of them can be new for you, so '==' is checking equality, if two values are equal.
     '!=' - checks if they are not equal.
     PS: Don't mix up '=' and '==' as they have different meaning.
