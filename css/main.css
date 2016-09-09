@@ -1,0 +1,50 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: cornsilk;
+    min-height: 775px;
+}
+
+header{
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    background-color: brown;
+    color: white;
+}
+
+section{
+    box-sizing: border-box;
+    flex: 2 auto;
+}
+
+footer{
+    flex: .5 100%;
+    background-color: chocolate;
+}
+
+h1, #logo{
+    text-align: center;
+}
+
+h1{
+    margin: 50px;
+    font-size: 35px;
+}
+
+.settings {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.settings > p {
+    font-size: 26px;
+}
+
+footer > ul {
+    list-style: none;
+}

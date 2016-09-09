@@ -1,5 +1,14 @@
 //Level2
 
+/*
+  Now, when we start level2, it is time to interact with html file. HTML files is a structure
+  of our web-page - a skeleton. It combines all files from the project together, that is how
+  it know what to do. If you check on our index.html file on the bottom you will see tag
+  <script src="js/level1js"></script> - that is where we joined our first js file. But now
+  change level1.js file on our current one - level2.js.
+  Now you are ready to start!
+ */
+
 /* Arrays
     It is an ordered list of values. It can keep any number of values inside. And also
     any type of values - numbers, strings, objects.
