@@ -2,7 +2,26 @@
 
 An introductory JavaScript workshop for beginners.
 
+
+**How to use**
+
+
+If you familiar with git you can clone repositore to your machine and simply start working
+through files starting from README.md file, after jump to js/level1.js file.
+
+
+If you don't know what is git, relax, you can download the folder on your machine - go to 
+'releases' tab over the yellow line on the page and download folder 'Source code (zip)'.
+Unzip it and start from README.md file, after jump to js/level1.js file.
+
+
+To open web-page in your browser go to _index.html_ file and double click on it, you will see
+an option 'open in browser' - preferably use Chrome, but Firefox and Safari will work as well.
+
+
+
 **Structure**
+
 
 - Css folder contains css files that are responsible for styles and how our project looks on the web.
 
