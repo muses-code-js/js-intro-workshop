@@ -209,3 +209,8 @@
 
 
 
+////////////////////////////////////////////////////////////////////////
+//Congratulations! You have finished Part 1 of JavaScript Basics!     //
+// Stand up, stretch your legs, celebrate your achievement.           //
+//Next step will be following up the instructions in level3.js file.  //
+////////////////////////////////////////////////////////////////////////
