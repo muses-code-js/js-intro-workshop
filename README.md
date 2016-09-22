@@ -2,8 +2,15 @@
 
 An introductory JavaScript workshop for beginners.
 
+##Slides
 
-**How to use**
+Check on slides, click [here](https://slides.com/tanyabutenko/ngs-intro/live#/1)
+
+
+
+##How to use
+_______________
+
 
 
 If you familiar with git you can clone repositore to your machine and simply start working
@@ -22,7 +29,8 @@ Follow the instructions in _level1.js_ file and type code in your Text Editor(it
 
 
 
-**Structure**
+##Structure
+____________________
 
 
 - Css folder contains css files that are responsible for styles and how our project looks on the web.
