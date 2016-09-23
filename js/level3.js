@@ -17,7 +17,7 @@
     <header></header>, <p></p> etc - it is tags, each element on the page has opening
     and closing tag (NOTE: some tags are self-closing like <img>). Whole html file is wrapped
     in tag <html>, which contains of <head> and <body> tags. In <head> we keep different
-    meta information, title and link to css files. <Body> contains our actual content.
+    meta information, title and link to css files. <body> contains our actual content.
     Tags has a set of names which you can find here http://htmldog.com/references/html/tags/
 
     Any tag also can have different attributes (<div class="settings"></div> - tag div
@@ -86,8 +86,8 @@
 
 
 
-//TODO: do you still remember arrays that we had in previous sections? Using this knowladge
-//itirate through whole meadiaLinks items and print them out.
+//TODO: do you still remember arrays that we had in previous sections? Using this knowledge
+//iterate through whole meadiaLinks items and print them out.
 
 
 
@@ -119,7 +119,7 @@
 
 /*
   Change content
-    Using same property .innerHTML we can change content of the tags.
+    we can change the content of the tags using the same .innerHTML property
     Example:
     ourTwitter.innerHTML = '@ButenkoMe';
     console.log(ourTwitter.innerHTML);
@@ -127,7 +127,7 @@
  */
 
 
-//TODO: change content of the 'h1' on anything you like
+//TODO: change content of the 'h1' with anything you like
 
 
 
@@ -142,7 +142,7 @@
  */
 
 
-//TODO: replace 'src' attribute for our img tag on "img/kittens.jpeg"
+//TODO: replace the value of 'src' attribute for our img tag with "img/kittens.jpeg"
 
 
 
@@ -150,10 +150,10 @@
 
 /*
   Accessing and changing styles
-    So, let's do some css changes. We can do it with help of '.style' property and then
-    giving the css property as we use them in css file, the only change is - if is css
+    So, let's do some css changes. We can do it with help of '.style' property and
+    giving the css property just like we do in css file, the only change here is is - if is css
     property name has '-' in the name (like font-size etc) then dash will be deleted and
-    next word starts with capital (fontSize) - this way of naming calls CamelCase :)
+    next word starts with capital (fontSize) - this way of naming is called the CamelCase :)
     Example:
     var ourTwitter = document.querySelector('.twitter');
     ourTwitter.style.backgroundColor = 'white';
@@ -171,9 +171,9 @@
 /*
   Creating new nodes (elements)
     The document object also provides ways to create nodes from scratch:
-    document.createElement(tagName);
-    document.createTextNode(text);
-    document.appendChild();
+    document.createElement(tagName); --> create the element
+    document.createTextNode(text); --> what text it should contain
+    document.appendChild(); --> append it to the document
     Example:
     var pageNode = document.querySelector('body')[0];
     var newParagraph = document.createElement('p');

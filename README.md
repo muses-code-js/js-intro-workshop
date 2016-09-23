@@ -13,11 +13,11 @@ _______________
 
 
 
-If you familiar with git you can clone repositore to your machine and simply start working
-through files starting from README.md file, after jump to js/level1.js file.
+If you familiar with git you can clone this repository to your machine and simply start working
+through files starting from README.md file, after that jump to js/level1.js file.
 
 
-If you don't know what is git, relax, you can download the folder on your machine - go to 
+If you don't know what is git, relax, you can download the folder on your machine - go to
 'releases' tab over the yellow line on the page and download folder 'Source code (zip)'.
 Unzip it and start from README.md file, after jump to js/level1.js file.
 
@@ -43,7 +43,7 @@ ____________________
     - _level2.js_ - more complex javaScript with explanations(arrays, loops).
     - _level3.js_ - html, css and how manipulate them with javaScript (selectors)
 
-- _index.html_ - a file that responsible for structure of our project.
+- _index.html_ - a file responsible for structure of our project.
 
 - _Readme.md_ - a file with explanations and any information about the project, how to run it, what it is for etc.
 
