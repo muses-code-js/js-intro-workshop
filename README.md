@@ -6,8 +6,6 @@ An introductory JavaScript workshop for beginners.
 
 Check on slides, click [here](https://slides.com/tanyabutenko/ngs-intro/live#/1)
 
-#FEEDBACK FORM [here](https://goo.gl/forms/gIhz1zcQxhPKIuSM2)
-
 
 
 ##How to use
