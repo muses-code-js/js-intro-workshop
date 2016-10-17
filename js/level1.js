@@ -5,6 +5,7 @@
     They will help us up to guide you through the javaScript introduction journey.
     There is a multi-line comments, like this one and also you can leave a single line comment
     right in your code, example below. If you need to write some notes use comments starting with '//'
+    To comment out - means comment your lines of code, so computer skip them.
 */
 
 //I'm your one-line comment
@@ -14,7 +15,7 @@
     There is few ways you can do it and we will look into few of them:
     - console.log('Hello World!'); - this line of code will print 'Hello World!' to the browser's console.
     P.S: To see browser's console you can do right click in the window of you browser(Chrome, Firefox etc)
-    and select 'Inspect' or 'Inspect element' after that a console will appear on the bottom of the page.
+    and select 'Inspect' or 'Inspect element' after that a console will appear on the bottom/right side of the page.
     - alert('Hello girls!'); - this line of code will pop-up a small window in your browser with text 'Hello girls!' in it,
     but you need to refresh opened page first.
  */
@@ -26,7 +27,8 @@
 
 
 
-//TODO: After alert works for you, comment it out and refresh the page - it should not pop-up anymore.
+//TODO: After alert works for you, comment it out(put '//' on the line where your code is and save changes) after refresh the page - 
+// it should not pop-up anymore.
 
 //TODO: What you say about trying console.log your message to browser? Send any message you like.
 
@@ -48,7 +50,7 @@
     Boolean - it represents logical values - True or False
  */
 
-//TODO: Now create two empty variable named numberOne and numberTwo
+//TODO: Now create two empty variables named numberOne and numberTwo
 
 
 
@@ -67,7 +69,7 @@
 
 
 
-//TODO: Don't forget to comment alerts if you don't want them to pop-up every time
+//TODO: Don't forget to comment out alerts if you don't want them to pop-up every time
 
 
 /* Arithmetic operators
@@ -96,13 +98,14 @@
     To call the function we do so:
     functionName(10);
     Now we will call our function with argument that is 10. And our function will return us 20. To see what our function
-    returns us we can console.log it, for example.
+    returns us we can console.log it, for example:
+    console.log(functionName(10));
  */
 
 //TODO: It's your turn to create a function.
-//Step 1 - Name it 'add' and pass in two argumnets (num1 and num2).
+//Step 1 - Name it 'add' and pass in two argumnets (num1 and num2) - to pass multiple arguments into function we seperate them with coma.
 //Step 2 - This function should return us a sum of num1 and num2.
-//Step 3 - Call the function with numbers 2 and 3. To see result you can alert it or console.log it - to be sure that it works right.
+//Step 3 - Call the function passing numbers 2 and 3 as arguments. To see result you can alert it or console.log it - to be sure that it works right.
 
 
 
@@ -122,7 +125,7 @@
 
 /*If-else statements
     What if we want our program to make a decision which function it should run? In this case we can use conditions.
-    If spider is big, action should be - run and save your life, but if it is tiny you can simply walk away.
+    If you have TV you can watch it in the evening, if not - you might do something else.
     Same with code, you can give 'if' condition to machine to make a decision what part of code to run.
     Structure:
     if(condition){
