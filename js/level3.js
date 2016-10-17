@@ -205,7 +205,7 @@
 
 
 ////////////////////////////////////////////////////////////////////////
-//Congratulations! You have finished Part 1 of JavaScript Basics!     //
+//Congratulations! You have finished Part 3 of JavaScript Basics!     //
 // Stand up, stretch your legs, celebrate your achievement.           //
 // I believe you deserve on some sweets today!                        //
 ////////////////////////////////////////////////////////////////////////
