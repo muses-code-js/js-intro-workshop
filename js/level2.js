@@ -9,10 +9,10 @@
     Hyper Text Markup Language (HTML) files are the backbone of the internet.
     Every website you visit is loaded first as an HTML file.
 
-    We won't dwell today on the syntax or history of HTML as a web standard.
-    What you need to know is that HTML files function as a sort of skeleton for
-    your page. It combines all the files from this project together so that you
-    can open them in your web browser.
+    We won't talk too much about HTML today. What you need to know is that HTML
+    files function as a sort of skeleton for your page. Our index.html file
+    combines all the files from this project together so that you can open them
+    in your web browser.
 
     This project has a file called index.html. At the bottom of index.html you
     will see the following tag:
