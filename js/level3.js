@@ -1,62 +1,119 @@
 // Level 3
 
 /*
-   WooHoo, you got so far on your first day! Great! But we still have more things for you.
-   First of all, go to index.html file and replace our script from level2.js to current
-   file - level3.js.
-   PS: if you want few js files to be used simply add more scripts with those files.
+    Introduction
+    ============
+
+    WooHoo, you got so far on your first day! Great!
+
+    But we still have more things for you. First of all, open index.html, and
+    replace our script from level2.js to our current file — level3.js.
+
+    P.S. If you want to use multiple js files simultaneously, simply add more
+    script tags.
  */
 
 /*
-    Here we will talk a bit more about HTML, CSS and how JS can interact with them.
-    So HTML - stands for Hyper Text Markup Language. It is a structure of the elements
-    on the page.
+    Lets talk a little more about HTML, CSS, and how we can interact with them
+    in JavaScript.
 
-    HTML:
-    As you noticed it is divided on elements that looks like that:
-    <header></header>, <p></p> etc - it is tags, each element on the page has opening
-    and closing tag (NOTE: some tags are self-closing like <img>). Whole html file is wrapped
-    in tag <html>, which contains of <head> and <body> tags. In <head> we keep different
-    meta information, title and link to css files. <body> contains our actual content.
-    Tags has a set of names which you can find here http://htmldog.com/references/html/tags/
 
-    Any tag also can have different attributes (<div class="settings"></div> - tag div
-    has a attribute class, that has name = 'settings').
+    Hypertext Markup Language (HTML)
+    --------------------------------
+    As you noticed, HTML is divided on elements that looks like this:
 
-    CSS:
-    Stands for Cascading Style Sheets. CSS describes how HTML elements are to be
-    displayed on screen. As you can see in css file when we need to target any element
-    we can simply refer to the tag itself (footer{color: white;}), or to any attribute (class
-    via '.settings', id via '#logo' etc). The list of css properties is huge, you can check
-    on it here https://www.w3.org/TR/CSS21/propidx.html but don't worry, you don't need to
-    remember it all.
-    PS: difference between id and class is that tag with specific 'id' should be unique on
-    the page, but many tags can have same class within the same page. Use 'id' only if
-    you really need it!!
+    <header></header>
+    <p></p>
+    etc
+
+    We call these "tags". Each element on the page has an opening and closing
+    tag. (NOTE: some tags are self-closing like <img>).
+
+    The outermost tag in every HTML file is <html>.
+
+    Inside the <html> tag you will find a <head> and <body> tag.
+
+    In <head> we keep meta information, the page title and links to css files.
+    <body> contains our actual content.
+
+    For a full list of HTML tags, you can refer to this listing:
+    http://htmldog.com/references/html/tags/
+
+    HTML tags may contain attributes:
+    <div class="settings"></div>
+
+    This div has an attribute named class, that has value: 'settings'.
+
+
+    Cascading Style Sheets (CSS)
+    ----------------------------
+    CSS describes how HTML elements look.
+
+    CSS files are comprised of 'declaration blocks'. Each declaration block is
+    composed of a selector and a set of visual style rules. A declaration looks
+    like this:
+
+    [selector] {
+      style-name: value;
+      style-name: value;
+      style-name: value;
+    }
+
+    Selectors specify which elements the visual styles are applied to.
+
+    The most basic selectors refer to elements by their tag-name. They look
+    like this:
+
+    body {
+      background-color: white;
+    }
+
+    Selectors can also refer to elements by their class attribute like this:
+
+    .settings {
+      margin: 0;
+    }
+
+    or IDs, like this:
+
+    #logo {
+      text-align: center;
+    }
+
+    The list of css properties is huge, you can read more here, if you're
+    interested:
+    https://www.w3.org/TR/CSS21/propidx.html
+
+    Don't worry, you don't need to remember all of this immediately!
  */
 
 /*
-    Phew, lot's of new things. But let's come back to javaScript and see how we can interact
-    with html.
+    Phew, lots of new things. Let's come back to javaScript and see how we can
+    interact with HTML.
  */
 
 
 /*
-    Accessing page objects.
-    DOM - Stands for Document Object Model. It defines the logical structure of documents
-    and the way a document is accessed and manipulated. So let's get things from the page
-    and play around.
-    To find and get nods(page elements) we can use querySelector one of the functions of
-    JavaScript (in old browsers it might not work, in this case getElementById,
-    getElementsByTagsName etc should be used).
-    Let's get our twitter from the page.
+    Accessing Elements
+    ==================
+
+    Document Object Model (DOM)
+    ---------------------------
+    The DOM is the javascript representation of the active HTML file. The DOM
+    is available under a special global variable called 'document'. We can get
+    specific nodes (page elements) with the DOM method: 'querySelector'.
+
+    Let's get our twitter link from the page.
+
     Example:
+
     var ourTwitter = document.querySelector('.twitter');
-    //we can store it in variable so we can use it after
+    // we can store page elements in variables, just like any other value!
  */
 
-//TODO: Now it's your turn - get the h1 tag from the page and store it into variable named
-//ourTitle. console.log it and see what you will get.
+// TODO: Now it's your turn — get the h1 tag from the page and store it into a
+// variable named ourTitle.
+// console.log it and see what you get!
 
 
 
@@ -68,46 +125,32 @@
 
 
 /*
-  Getting a set of elements
-  We also can get all elements with the same tag. So in the footer we have <ul>(unordered list)
-  with 3 <li>(lists) inside. Let's get all of them
-  Example:
-  var mediaLinks = document.querySelectorAll('li'); //will get all <li> from the page
- */
+    Getting Similar Elements
+    ========================
 
+    We also can get all elements with the same tag. In our footer, we have an
+    unordered list (<ul>), with three list items (<li>) inside. Let's get all
+    of them.
 
-//TODO: get all <li> elements from the page in variable named mediaLinks
-
-
-
-
-//TODO: now console.log mediaLinks.length
-
-
-
-
-//TODO: do you still remember arrays that we had in previous sections? Using this knowledge
-//iterate through whole meadiaLinks items and print them out.
-
-
-
-
-
-
-
-
-
-/*
-    Ok, so far so good. But what if we need only content of our 'h1' tag? We have
-    another property for it - .innerHTML
     Example:
-    ourTwitter.innerHTML;
-    //we will get text '@NodeGirlsSydney'
+
+    // will get all <li> from the page
+    var mediaLinks = document.querySelectorAll('li');
  */
 
 
-//TODO: get the content of 'h1' element and console.log it
+// TODO: Get all <li> elements from the page in variable named mediaLinks.
 
+
+
+
+// TODO: Now console.log mediaLinks.length
+
+
+
+
+// TODO: Do you remember loops from level 2? Using this knowledge, iterate
+// through each mediaLinks item and console.log it.
 
 
 
@@ -118,49 +161,87 @@
 
 
 /*
-  Change content
-    we can change the content of the tags using the same .innerHTML property
+    Ok, so far so good. But what if we want only the text from our 'h1' tag?
+    Page elements have another property for this: '.textContent'
+
     Example:
-    ourTwitter.innerHTML = '@ButenkoMe';
-    console.log(ourTwitter.innerHTML);
-    //guess what we will see on the page and in console?
+
+    ourTwitter.textContent;
+    // we will get text 'Twitter: @NodeGirlsSydney @NodeGirlsMelb'
  */
 
 
-//TODO: change content of the 'h1' with anything you like
+// TODO: get the content of 'h1' element and console.log it
+
+
+
+
+
 
 
 
 
 
 /*
-  Changing properties.
-  We also can change and set attributes to our elements.
-  Example:
-  var ourTwitter = document.querySelector('.twitter');
-  ourTwitter.id = "surprise";
- */
+    Editing Page Content
+    ====================
 
+    We can change the content of the tags using the same .textContent property.
 
-//TODO: replace the value of 'src' attribute for our img tag with "img/kittens.jpeg"
-
-
-
-
-
-/*
-  Accessing and changing styles
-    So, let's do some css changes. We can do it with help of '.style' property and
-    giving the css property just like we do in css file, the only change here is is - if is css
-    property name has '-' in the name (like font-size etc) then dash will be deleted and
-    next word starts with capital (fontSize) - this way of naming is called the CamelCase :)
     Example:
+
+    ourTwitter.textContent = '@ButenkoMe';
+    console.log(ourTwitter.textContent);
+    // guess what we will see on the page and in console?
+ */
+
+
+// TODO: Make up a new title! Change the content of our 'h1' to anything you
+// like.
+
+
+
+
+
+/*
+    Editing Attributes
+    ==================
+
+    We can also change and set attributes on our elements.
+
+    Example:
+
+    var ourTwitter = document.querySelector('.twitter');
+    ourTwitter.id = "surprise";
+ */
+
+
+// TODO: Update the value of the 'src' attribute of our img tag to
+// "img/kittens.jpeg"
+
+
+
+
+
+/*
+    Editing Styles
+    ==============
+
+    Let's change some styles. Page elements have a '.style' property. We can
+    assign styles to the style property using the same names as in CSS files.
+
+    (If a CSS property name has '-' in the name — like font-size — then the
+    hyphen will be deleted and the next word starts with a capital instead —
+    fontSize.  This pattern of naming is called CamelCase.)
+
+    Example:
+
     var ourTwitter = document.querySelector('.twitter');
     ourTwitter.style.backgroundColor = 'white';
  */
 
 
-//TODO: get any element on the page and change some styles for it
+// TODO: get any element on the page and change some styles for it
 
 
 
@@ -169,12 +250,17 @@
 
 
 /*
-  Creating new nodes (elements)
+    Creating New Nodes (Elements)
+    =============================
+
     The document object also provides ways to create nodes from scratch:
+
     document.createElement(tagName); --> create the element
     document.createTextNode(text); --> what text it should contain
-    document.appendChild(); --> append it to the document
+    document.appendChild(node); --> append it to the document
+
     Example:
+
     var pageNode = document.querySelector('body')[0];
     var newParagraph = document.createElement('p');
     var paragraphText = document.createTextNode('Squee!');
@@ -183,9 +269,11 @@
  */
 
 
-//TODO: Well, do you still have kittens on your screen? I like both logo and kittens.
-//Let's create a new image with source logo and put it into header.
-//PS: you also can give styles to the new node that you create.
+// TODO: Well, do you still have kittens on your screen? I like both logo and
+// kittens. Let's create a new image that sources our original logo file, and
+// put it into header.
+//
+// P.S. You also can give styles to the new node that you create.
 
 
 
@@ -205,7 +293,7 @@
 
 
 ////////////////////////////////////////////////////////////////////////
-//Congratulations! You have finished Part 3 of JavaScript Basics!     //
+// Congratulations! You have finished Part 3 of JavaScript Basics!    //
 // Stand up, stretch your legs, celebrate your achievement.           //
 // I believe you deserve on some sweets today!                        //
 ////////////////////////////////////////////////////////////////////////
