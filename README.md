@@ -4,8 +4,12 @@ An introductory JavaScript workshop for beginners.
 
 ##Slides
 
-Check on slides, click [here](https://slides.com/tanyabutenko/ngs-intro/live#/1)
+Check on slides, click [here](https://slides.com/tanyabutenko/ngs-intro/live#/)
 
+
+##Feedback
+
+To leave feedback click [here](https://goo.gl/forms/YcRG0hQkUbY3cWCu2)
 
 
 ##How to use
