@@ -6,14 +6,15 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
-    background-color: cornsilk;
-    min-height: 775px;
+    background-color: #ffffff;
+    min-height: 575px;
+    font-family: 'Source Sans Pro', sans-serif;;
 }
 
 header{
     box-sizing: border-box;
     flex: 0 1 auto;
-    background-color: brown;
+    background-color: #AD1457;
     color: white;
 }
 
@@ -23,8 +24,16 @@ section{
 }
 
 footer{
-    flex: .5 100%;
-    background-color: chocolate;
+    background-color: #eeeeee;
+    font-family: Georgia,serif;
+    color: #9E9E9E;
+    text-decoration: none;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 30px;
 }
 
 h1, #logo{
@@ -47,9 +56,32 @@ h1{
 
 footer > ul {
     list-style: none;
+    -webkit-padding-start: 0;
+}
+
+footer li {
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #9E9E9E;
+    font-style: italic;
+}
+
+footer a:hover {
+    color: #000000;
 }
 
 #surprise {
     color: red;
     font-size: 35px;
+}
+
+.float-left {
+    float: left;
+ }
+
+.float-right {
+    float: right;
 }
