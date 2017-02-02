@@ -6,42 +6,57 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    background: #fee13d;
+    height: 100vh;
     min-height: 575px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header{
     box-sizing: border-box;
     flex: 0 1 auto;
-    background-color: #AD1457;
+    background-color: #fee13d;
     color: white;
 }
 
 section{
+    width: 100%;
     box-sizing: border-box;
     flex: 2 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    background: url(../img/woman.jpg) no-repeat bottom right;
 }
 
 footer{
-    background-color: #eeeeee;
+    width: calc( 100% - 60px);
+    background-color: #000000;
     font-family: Georgia,serif;
-    color: #9E9E9E;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+img {
+    width: 100%;
+    max-width: 800px;
+}
 h1, #logo{
     text-align: center;
 }
 
 h1{
-    margin: 50px;
+    margin: 0 50px 50px 50px;
     font-size: 35px;
 }
 
@@ -70,7 +85,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #000000;
+    color: #ffffff;
 }
 
 #surprise {
@@ -78,10 +93,10 @@ footer a:hover {
     font-size: 35px;
 }
 
-.float-left {
+/*.float-left {
     float: left;
  }
 
 .float-right {
     float: right;
-}
+}*/
