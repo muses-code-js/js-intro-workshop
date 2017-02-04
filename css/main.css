@@ -6,48 +6,60 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    background: #fee13d url(../img/woman.jpg) no-repeat bottom right;
+    height: 100vh;
     min-height: 575px;
-    font-family: 'Source Sans Pro', sans-serif;;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
 }
 
 header{
     box-sizing: border-box;
     flex: 0 1 auto;
-    background-color: #AD1457;
-    color: white;
 }
 
 section{
+    width: 100%;
     box-sizing: border-box;
     flex: 2 auto;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
 }
 
-footer{
-    background-color: #eeeeee;
+footer {
+    width: calc( 100% - 60px);
+    background-color: #000000;
     font-family: Georgia,serif;
-    color: #9E9E9E;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+img {
+    width: 100%;
+    max-width: 500px;
+}
 h1, #logo{
     text-align: center;
 }
 
 h1{
-    margin: 50px;
+    margin: 0 50px 50px 50px;
     font-size: 35px;
 }
 
 .settings {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 600px;
 }
 
 .settings > p {
@@ -70,7 +82,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #000000;
+    color: #ffffff;
 }
 
 #surprise {
@@ -78,10 +90,10 @@ footer a:hover {
     font-size: 35px;
 }
 
-.float-left {
+/*.float-left {
     float: left;
  }
 
 .float-right {
     float: right;
-}
+}*/
