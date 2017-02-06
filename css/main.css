@@ -14,6 +14,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
+
 @media only screen and (max-width: 1024px) {
     body{
         background: #fee13d;
@@ -29,10 +30,6 @@ section{
     width: 100%;
     box-sizing: border-box;
     flex: 2 auto;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
 }
 
 footer {
@@ -53,6 +50,7 @@ img {
     width: 100%;
     max-width: 500px;
 }
+
 h1, #logo{
     text-align: center;
 }
@@ -94,11 +92,3 @@ footer a:hover {
     color: red;
     font-size: 35px;
 }
-
-/*.float-left {
-    float: left;
- }
-
-.float-right {
-    float: right;
-}*/
