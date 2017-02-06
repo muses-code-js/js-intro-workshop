@@ -8,32 +8,34 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #fee13d;
+    background: #fee13d url(../img/woman.jpg) no-repeat bottom right;
     height: 100vh;
     min-height: 575px;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+@media only screen and (max-width: 1024px) {
+    body{
+        background: #fee13d;
+    }
 }
 
 header{
     box-sizing: border-box;
     flex: 0 1 auto;
-    background-color: #fee13d;
-    color: white;
 }
 
 section{
     width: 100%;
     box-sizing: border-box;
     flex: 2 auto;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 150px;
-    background: url(../img/woman.jpg) no-repeat bottom right;
+    align-items: center;*/
 }
 
-footer{
+footer {
     width: calc( 100% - 60px);
     background-color: #000000;
     font-family: Georgia,serif;
@@ -49,7 +51,7 @@ footer{
 
 img {
     width: 100%;
-    max-width: 800px;
+    max-width: 500px;
 }
 h1, #logo{
     text-align: center;
@@ -62,7 +64,7 @@ h1{
 
 .settings {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 600px;
 }
 
 .settings > p {
