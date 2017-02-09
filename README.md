@@ -9,7 +9,7 @@ Check on slides, click [here](https://slides.com/tanyabutenko/ngs-intro/live#/)
 
 ##Feedback
 
-To leave feedback click [here](https://goo.gl/forms/yFr3zsIowT4tykL72)
+To leave feedback click [here](https://goo.gl/forms/MxDr9q2A4PQV4CRI3)
 
 
 ##How to use
