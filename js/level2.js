@@ -23,7 +23,7 @@
     to this file — level2.js.
 
     Now you are ready to start!
- */
+*/
 
 /*
     Arrays
@@ -37,7 +37,7 @@
     var animals = ['cat', 'dog', 'horse];
     var randomThings = [2, 'book', 'today is Saturday', 10];
     var numbers = [1, 2, 8, 19];
- */
+*/
 
 // TODO: Create your own array, named favouriteFood, and write in a couple of
 // things you like.
@@ -55,10 +55,10 @@
 
     Example:
     var randomThings = [2, 'book', 'today is Saturday', 10];
-    console.log(randomThings.length); // we will get 4
- */
+    console.log(randomThings.length); // We will get 4.
+*/
 
-// TODO: Check up on how many values you have in your array favouriteFood.
+// TODO: Check how many values you have in your array favouriteFood.
 // console.log the result.
 
 
@@ -74,7 +74,7 @@
     to use only 1 item from the array?
 
     We can get them out using 'bracket notation'. Thanks to a guy named Edsger
-    Dijkstra*, array indices start counting from 0. Usage looks like this.
+    Dijkstra*, array indices start counting from 0. The usage looks like this.
 
     Example:
 
@@ -83,7 +83,7 @@
     var secondItem = randomThings[1]; and so on
 
     * https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html
- */
+*/
 
 // TODO: Get third element from your array favouriteFood and console.log it.
 
@@ -108,12 +108,12 @@
     animals[1] = 'fish';
 
     // now our animals array will be ['cat', 'fish', 'horse']
- */
+*/
 
-// TODO: take your array favouriteFood and replace first value with anything
+// TODO: Take your array favouriteFood and replace the first value with anything
 // else.
-// console.log whole array to check
-// Dont forget, index positions start from 0!
+// console.log the whole array to check.
+// Don't forget, index positions start from 0!
 
 
 
@@ -134,10 +134,10 @@
     animals.push('rabbit');
 
     // animals will be ['cat', 'dog', 'horse','rabbit']
- */
+*/
 
-// TODO: let's extend your list of favouriteFood and add one more value in it.
-// console.log list of your favouriteFood and check
+// TODO: Let's extend your list of favouriteFood and add one more value to it.
+// console.log list your favouriteFood and check it.
 
 
 
@@ -157,19 +157,19 @@
     Programming is the same. For example, if I want to print 'JavaScript is
     awesome!' 10 times, what are my options? Of course, I can type ten lines of
     code repeating the same instruction, but I can also tell the computer to
-    repeat it instead of me!
+    repeat it instead of me writing it 10 times!
 
     For this we have loops.
 
     Each loop should have three main things:
-    - starting point
-    - condition (finishing point)
-    - counter (a step)
+    - a starting point
+    - a condition (finishing point)
+    - a counter (a step)
 
     If you miss one of these, you can get into an infinite loop!
 
     Let's look into different looping structures.
- */
+*/
 
 
 /*
@@ -191,7 +191,7 @@
       number = number + 1;
       // + 1 is a counter/size of the step
     }
- */
+*/
 
 // TODO: Using a 'while loop', tell your computer to log the numbers from
 // ten to one.
@@ -207,7 +207,7 @@
     For Loops
     =========
 
-    'For loop's are very similar to the 'while loop'. In a for loop, you
+    'For loops are very similar to the 'while loop'. In a for loop, you
     declare a counter in the statement.
 
     Example:
@@ -216,7 +216,7 @@
     for (i = 0; i <= 5; i = i + 1) {  // (starting point; condition; step)
       console.log('Purr');
     }
- */
+*/
 
 // TODO: Log every 3rd number from three to 22 using a 'for loop'.
 
@@ -230,7 +230,7 @@
     Iterating Through Arrays
     ========================
 
-    Now we know about loops. I want to use each value from my animal list
+    Now we know about loops, I want to use each value from my animal list
     and express my love for each. How shall I do it?
 
     We can use a 'for loop' to iterate through our array and get each value
@@ -242,7 +242,7 @@
     for(var i = 0; i < animals.length; i++){
         console.log('I love ' + animals[i]);
     }
- */
+*/
 
 // TODO: Try it out with your favouriteFood array.
 
@@ -275,15 +275,15 @@
             console.log(i);
         }
     }
- */
+*/
 
 // TODO: Time has come for a classic exercise — 'FizzBuzz'.
 
-// Count from 1 to 50 and print numbers out:
+// Count from 1 to 50 and print the numbers out:
 //
-// * If a number is a multiple of three, print 'Fizz'
-// * If it's a multiple of 5, print 'Buzz'
-// * If it is multiple of 3 and 5, print 'FizzBuzz'
+// * If a number is a multiple of three, print 'Fizz'.
+// * If it's a multiple of 5, print 'Buzz'.
+// * If it's a multiple of 3 and 5, print 'FizzBuzz'.
 // * For everything else, print the number itself.
 
 // P.S. You may wish to use arithmetic operator remainder (%):
@@ -307,8 +307,8 @@
 
 
 
-////////////////////////////////////////////////////////////////////////
-// Congratulations! You have finished Part 2 of JavaScript Basics!    //
-// Stand up, stretch your legs, celebrate your achievement.           //
-// Next step will be following up the instructions in level3.js file. //
-////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+// Congratulations! You have finished Part 2 of JavaScript Basics!        //
+// Stand up, stretch your legs, and celebrate your achievement.           //
+// The next step will be following up the instructions in level3.js file. //
+////////////////////////////////////////////////////////////////////////////

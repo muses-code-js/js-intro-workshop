@@ -3,12 +3,12 @@
 
 ###JavaScript (or JS)
 
-It is a popular programming language commonly used to create interactive effects within web browsers
+It is a popular programming language commonly used to create interactive effects within web browsers.
 
 
 ###variable
 
-A place to store values, can store any kind of information(data types): numbers, words, collections of data
+A place to store values, can store any kind of information (data types): numbers, words, collections of data
 
 
 ###undefined variable
@@ -26,16 +26,16 @@ Set (give) some value to variable.
 
 ###string
 
-A set of characters, word, phrase. To initialize variable with a string you need to put this string into quotes.
+A set of characters, word(s), phrase. To initialize variable with a string you need to put this string into quotes.
 
 ###boolean
 
-Boolean variable represent a logical values True or False
+Boolean variable represent a logical value True or False
 
 
 ###array
 
-An ordered list of values, can store different type of data inside
+An ordered list of values, can store different types of data inside
 
 
 ###operator
@@ -45,14 +45,14 @@ Mathematical operators, such as: +, -, *, /, >, <, = etc
 
 ###comments
 
-Comments are some notes that you can leave for yourself or another person, the note that computer will not read. You can write a comment on a new line or on the same line after code as so:  //I’m your comment
+Comments are some notes that you can leave for yourself or another person, a note that a computer will not read. You can write a comment on a new line or on the same line after code as so:  //I’m your comment
 Single line comment starts with //
-Multi line comment are placed between /* .. */ 
+Multi line comment are placed between /* .. */
 
 
 ###function
 
-A separable, reusable piece of code. It takes some input do some manipulation on it and return us output
+A separable, reusable piece of code. It takes some input, does some manipulation on it and returns us an output.
 
 
 ###to declare function
@@ -71,17 +71,17 @@ A value input that functions can accept
 
 ###while loop
 
-It repeats code over and over again until some condition is met
+It repeats code over and over again until some condition is met.
 
 
 ###for loop
 
-This loop is similar to ‘while loop’, just with set amount of repetition. You declare counter in the statement as so: for(var i = 0; i < 5; i++){do something 5 times};
+This loop is similar to ‘while loop’, just with a set amount of repetition. You declare counter in the statement as so: for(var i = 0; i < 5; i++){do something 5 times};
 
 
 ###infinite loop
 
-A loop that does not stop and it’s a  loop that you need to avoid. Each loop should have some condition so it can stop.
+A loop that does not stop and it’s a loop that you need to avoid. Each loop should have some condition so it can stop.
 
 
 ###object
@@ -91,7 +91,7 @@ A collection of properties
 
 ###event
 
-A type of object that is created when user interacts with web page. For example, JavaScript creates an event when user clicks on a button.
+A type of object that is created when a user interacts with a web page. For example, JavaScript creates an event when a user clicks on a button.
 
 
 ###CSS
@@ -111,10 +111,9 @@ Stands for Document Object Model. It defines the logical structure of documents 
 
 ###scope
 
-Scope is the set of variables, objects, and functions that you can access 
+Scope is the set of variables, objects, and functions that you can access.
 
 
 ###console
 
  A method of interacting with the system. In order to write to the browser console, you could use console.log(‘Hello World’). This would write Hello World in the browser console.
-

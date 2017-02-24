@@ -7,7 +7,7 @@
     Let's start with comments. Comments are notes that people can read and
     computers will ignore.
 
-    They will help us up to guide you through the JavaScript introduction
+    They will help us to guide you through the JavaScript introduction
     journey.
 */
 
@@ -21,19 +21,19 @@
 /*
     Let's start with getting your code on the screen.
 
-    There are a few ways you can do it and we will look into few of them:
+    There are a few ways you can do it and we will look into a few of them:
 
     * alert('Hello girls!');
-    ** this line of code will pop-up a small window in your browser with text
-    'Hello girls!' in it, but you need to refresh opened page first.
+    ** This line of code will pop-up a small window in your browser with the text
+    'Hello girls!' in it, but you need to refresh the opened page first.
 
     * console.log('Hello World!');
-    ** this line of code will print 'Hello World!' to the browser's console.
+    ** This line of code will print 'Hello World!' to the browser's console.
 
-    P.S: To see browser's console you can do right click in the window of you
-    browser(Chrome, Firefox etc) and select 'Inspect' or 'Inspect element'
-    after that a console will appear on the bottom/right side of the page.
- */
+    P.S: To see the browser's console you can right click on the window of your
+    browser(Chrome, Firefox etc) and select 'Inspect' or 'Inspect element'.
+    After that a console will appear on the bottom right side of the page.
+*/
 
 
 // TODO: Now try to create an alert with any phrase you like.
@@ -42,12 +42,12 @@
 
 
 
-// TODO: After alert works for you, comment it out(put '//' on the line where
-// your code is and save changes) after refresh the page - it should not pop-up
+// TODO: After the alert works for you, comment it out (put '//' on the line where
+// your code is and save the changes). After you refresh the page, it should not pop-up
 // anymore.
 
-// TODO: What you say about trying console.log your message to browser? Send
-// any message you like.
+// TODO: Shall we try to console.log the message to the browser?
+// Send any message you like.
 
 
 
@@ -57,8 +57,8 @@
     Variables
     =========
 
-    Variable is a place to store information. To create (also called declare) a
-    variable use a keyword 'var', as follows:
+    A variable is a place to store information. To create (also called declare) a
+    variable use the keyword 'var', as follows:
 
     var variableName;
 
@@ -68,37 +68,37 @@
 
     variableName = 'Hello world!';
 
-    We also can create and give value to variable in one step, as follows:
+    We also can create and give value to a variable in one step, as follows:
 
     var newVariable = 1;
 
-    As you noticed we can give different types of values to our variables -
+    As you can notice, we can give different types of values to our variables -
     strings, numbers, booleans etc.
 
-    String - is a set of characters, word or phrase that we wrap into quotes,
-      see 'hello world!' in previous task.
-    Numbers - either integers or floats(decimals).
+    A string is a set of characters, word(s) or phrase(s) that we wrap in quotes,
+    see 'hello world!' in the previous task.
+    Numbers - either integers or floats(decimals)
     Boolean - it represents logical values - True or False
- */
+*/
 
-// TODO: Now create two empty variables named numberOne and numberTwo
+// TODO: Now create two empty variables named numberOne and numberTwo.
 
 
 
 
 /*
-    You also can use your variables to represent information that it has inside.
+    You also can use your variables to represent information that they have inside.
 
     Example:
 
     var hello = 'Hello World';
     alert(hello);
 
-    It will pop-up an alert box with string 'Hello World!'
- */
+    This will pop-up an alert box with the string 'Hello World!'
+*/
 
-// TODO: Create 2 variables, 1 with your name and 2nd with your age and display
-// them with alert pop-up box
+// TODO: Create 2 variables, 1 with your name and the 2nd with your age and display
+// them with an alert pop-up box.
 
 
 
@@ -113,8 +113,8 @@
     ====================
 
     There are a bunch of different operators in programming. We will look
-    through arithmetical operators now. JavaScript incudes several standard
-    arithmetical operators (+, -, /, *) that you can use to do math with your
+    through arithmetical operators now. JavaScript includes several standard
+    arithmetical operators (+, -, /, *) that you can use to do maths with your
     numbers.
 
     Example:
@@ -122,14 +122,14 @@
     var sumOfNumbers = 1 + 3;
     alert(sumOfNumbers);
 
-    It will pop-up alert box with number 4
+    This will pop-up an alert box with the number 4.
 
     (You can see a full list of )
- */
+*/
 
 // TODO: Create 3 variables:
 //
-// * 1st variable named ten with value 10 inside,
+// * 1st variable named ten with value 10 inside
 // * 2nd variable named three with value 3
 // * And finally 3rd variable named multipleOfNumbers that will be equal to
 // 1st variable multiplied by the 2nd variable. And in the end display the
@@ -143,10 +143,9 @@
     Functions
     =========
 
-    A function is a reusable piece of code. Some action that you
-    want to do. It takes some input (arguments), do some manipulation
-    on it and returns the output. Use the keyword 'return' to define the return
-    value.
+    A function is a reusable piece of code, an action that you want to do.
+    It takes some input (arguments), does some manipulation on it and returns
+    the output. Use the keyword 'return' to define the return value.
 
     To create a function use the following format:
 
@@ -166,11 +165,11 @@
     it, for example:
 
     console.log(functionName(10));
- */
+*/
 
 // TODO: It's your turn to create a function.
-// Step 1 - Name it 'add' and pass in two argumnets (num1 and num2)
-// - to pass multiple arguments into function we seperate them with comma.
+// Step 1 - Name it 'add' and pass in two arguments (num1 and num2)
+// - To pass multiple arguments into function we separate them with a comma.
 // Step 2 - This function should return us a sum of num1 and num2.
 // Step 3 - Call the function passing numbers 2 and 3 as arguments.
 // - To see the result you can console.log it.
@@ -200,9 +199,9 @@
 
     What if we want our program to make a decision about which function it
     should run? In this case we can use conditions.
-    If you have TV you can watch it in the evening, if not - you might do
-    something else.  Same with code, you can give 'if' condition to machine to
-    make a decision what part of code to run.
+    If you have a TV you can watch it in the evening. If not, you might do
+    something else.  It's the same with code. You can give an 'if' condition to a machine to
+    make a decision about what part of the code to run.
 
     Structure:
 
@@ -230,23 +229,23 @@
     classes in school, some of them can be new for you, so '==' is checking
     equality, if two values are equal.
 
-    '!=' - checks if they are not equal.
+    '!=' - Checks if they are not equal.
 
-    PS: Don't mix up '=' and '==' as they have different meaning.
+    PS: Don't mix up '=' and '==' as they have different meanings.
 */
 
-// TODO: So now we have 2 functions from previous task - add and subtract.
-// Let's tell machine to decide what action to run depending on arithmetical
-// operator(+,-,/, * etc). If operator is '+' we should use add function, else
+// TODO: So now we have 2 functions from the previous task - add and subtract.
+// Let's tell the machine to decide what action to run depending on the arithmetical
+// operator(+,-,/, * etc). If the operator is '+', we should use the add function, else we should use the
 // - subtract function.
 //
-// Step 1 - create a variable called operator and let it be equal to '-'
-// Step 2 - create if/else statement based on what operator we have,
+// Step 1 - Create a variable called operator and let it be equal to '-'.
+// Step 2 - Create an if/else statement based on what operator we have.
 //
-// if we have operator equal to '+' we call add function with any two numbers,
-// else subtract function with any 2 numbers.
+// If we have an operator equal to '+', we call add function with any two numbers,
+// else the subtract function with any 2 numbers.
 //
-// Don't forget to console.log it to see the result
+// Don't forget to console.log it to see the result.
 
 
 
@@ -272,8 +271,8 @@
     if - else if - else
     ===================
 
-    Hm, but what if we have 4 arithmetical operations in our calculator? Well,
-    we can use if - else if - else structure.
+    Hmm, but what if we have 4 arithmetical operations in our calculator? Well,
+    we can use an if - else if - else structure.
 
     Example:
 
@@ -303,8 +302,8 @@
 
 
 
-////////////////////////////////////////////////////////////////////////
-//Congratulations! You have finished Part 1 of JavaScript Basics!     //
-// Stand up, stretch your legs, celebrate your achievement.           //
-//Next step will be following up the instructions in level2.js file.  //
-////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+//Congratulations! You have finished Part 1 of JavaScript Basics!        //
+// Stand up, stretch your legs, and celebrate your achievement.          //
+//The next step will be following the instructions in the level2.js file.//
+///////////////////////////////////////////////////////////////////////////

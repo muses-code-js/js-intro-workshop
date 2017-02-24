@@ -11,7 +11,7 @@
 
     P.S. If you want to use multiple js files simultaneously, simply add more
     script tags.
- */
+*/
 
 /*
     Lets talk a little more about HTML, CSS, and how we can interact with them
@@ -20,14 +20,14 @@
 
     Hypertext Markup Language (HTML)
     --------------------------------
-    As you noticed, HTML is divided on elements that looks like this:
+    As you noticed, HTML is divided into elements that look like this:
 
     <header></header>
     <p></p>
     etc
 
     We call these "tags". Each element on the page has an opening and closing
-    tag. (NOTE: some tags are self-closing like <img>).
+    tag. (NOTE: Some tags are self-closing like <img>.)
 
     The outermost tag in every HTML file is <html>.
 
@@ -42,7 +42,7 @@
     HTML tags may contain attributes:
     <div class="settings"></div>
 
-    This div has an attribute named class, that has value: 'settings'.
+    This div has an attribute named class that has a value: 'settings'.
 
 
     Cascading Style Sheets (CSS)
@@ -85,12 +85,12 @@
     https://www.w3.org/TR/CSS21/propidx.html
 
     Don't worry, you don't need to remember all of this immediately!
- */
+*/
 
 /*
     Phew, lots of new things. Let's come back to javaScript and see how we can
     interact with HTML.
- */
+*/
 
 
 /*
@@ -108,8 +108,8 @@
     Example:
 
     var ourTwitter = document.querySelector('.twitter');
-    // we can store page elements in variables, just like any other value!
- */
+    // We can store page elements in variables, just like any other value!
+*/
 
 // TODO: Now it's your turn — get the h1 tag from the page and store it into a
 // variable named ourTitle.
@@ -134,12 +134,12 @@
 
     Example:
 
-    // will get all <li> from the page
+    // Will get all <li> from the page
     var mediaLinks = document.querySelectorAll('li');
- */
+*/
 
 
-// TODO: Get all <li> elements from the page in variable named mediaLinks.
+// TODO: Get all <li> elements from the page in a variable named mediaLinks.
 
 
 
@@ -167,11 +167,11 @@
     Example:
 
     ourTwitter.textContent;
-    // we will get text 'Twitter: @NodeGirlsSydney @NodeGirlsMelb'
- */
+    // We will get text 'Twitter: @NodeGirlsSydney @NodeGirlsMelb'
+*/
 
 
-// TODO: get the content of 'h1' element and console.log it
+// TODO: Get the content of 'h1' element and console.log it.
 
 
 
@@ -192,8 +192,8 @@
 
     ourTwitter.textContent = '@ButenkoMe';
     console.log(ourTwitter.textContent);
-    // guess what we will see on the page and in console?
- */
+    // guess what we will see on the page and in the console?
+*/
 
 
 // TODO: Make up a new title! Change the content of our 'h1' to anything you
@@ -213,7 +213,7 @@
 
     var ourTwitter = document.querySelector('.twitter');
     ourTwitter.id = "surprise";
- */
+*/
 
 
 // TODO: Update the value of the 'src' attribute of our img tag to
@@ -238,10 +238,10 @@
 
     var ourTwitter = document.querySelector('.twitter');
     ourTwitter.style.backgroundColor = 'white';
- */
+*/
 
 
-// TODO: get any element on the page and change some styles for it
+// TODO: Get any element on the page and change some styles for it.
 
 
 
@@ -266,12 +266,12 @@
     var paragraphText = document.createTextNode('Squee!');
     newParagraph.appendChild(paragraphText);
     pageNode.appendChild(newParagraph);
- */
+*/
 
 
 // TODO: Well, do you still have kittens on your screen? I like both logo and
 // kittens. Let's create a new image that sources our original logo file, and
-// put it into header.
+// put it into a header.
 //
 // P.S. You also can give styles to the new node that you create.
 
@@ -294,8 +294,6 @@
 
 ////////////////////////////////////////////////////////////////////////
 // Congratulations! You have finished Part 3 of JavaScript Basics!    //
-// Stand up, stretch your legs, celebrate your achievement.           //
-// I believe you deserve on some sweets today!                        //
+// Stand up, stretch your legs, and celebrate your achievement.       //
+// I believe you deserve some sweets today!                           //
 ////////////////////////////////////////////////////////////////////////
-
-
