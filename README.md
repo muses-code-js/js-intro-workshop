@@ -2,17 +2,17 @@
 
 An introductory JavaScript workshop for beginners.
 
-##Slides
+## Slides
 
 Check on slides, click [here](https://slides.com/tanyabutenko/ngs-intro/)
 
 
-##Feedback
+## Feedback
 
 To leave feedback click [here](https://goo.gl/forms/MxDr9q2A4PQV4CRI3)
 
 
-##How to use
+## How to use
 _______________
 
 
@@ -33,7 +33,7 @@ Follow the instructions in _level1.js_ file and type code in your Text Editor (i
 
 
 
-##Structure
+## Structure
 ____________________
 
 
