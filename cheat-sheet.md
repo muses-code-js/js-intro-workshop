@@ -89,13 +89,14 @@ else {
 }
 ```
 
+## Iterating/Loops
 
-## while loop
+### while loop
 
 It repeats code over and over again until some condition is met.
 
 
-## for loop
+### for loop
 
 This loop is similar to ‘while loop’, just with a set amount of repetition. You declare counter in the statement as so: 
 
@@ -106,7 +107,7 @@ for (var i = 0; i < 5; i++) {
 ```
 
 
-## infinite loop
+### infinite loop
 
 A loop that does not stop and it’s a loop that you need to avoid. Each loop should have some condition so it can stop.
 
