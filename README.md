@@ -9,7 +9,7 @@ Check on slides, click [here](https://slides.com/tanyabutenko/ngs-intro/)
 
 ## Feedback
 
-To leave feedback click [here](https://goo.gl/forms/4XsCkGRtaPJxgdvg2)
+To leave feedback click [here](https://goo.gl/forms/l33P6ulnjpQEXNmK2)
 
 
 ## How to use
@@ -47,3 +47,9 @@ Follow the instructions in _level1.js_ file and type code in your Text Editor (i
 - _Readme.md_ - a file with explanations and any information about the project, how to run it, what it is for etc
 
 - _cheat-sheet.md_ - a file with a quick overlook for key namings and their explanations
+
+
+## Author
+Tanya Butenko
+github: [https://github.com/ButenkoT](https://github.com/ButenkoT)
+twitter: [@ButenkoMe](https://twitter.com/ButenkoMe)
