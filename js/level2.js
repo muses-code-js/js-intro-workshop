@@ -34,7 +34,7 @@
 
     Example:
 
-    var animals = ['cat', 'dog', 'horse];
+    var animals = ['cat', 'dog', 'horse'];
     var randomThings = [2, 'book', 'today is Saturday', 10];
     var numbers = [1, 2, 8, 19];
 */
@@ -238,7 +238,7 @@
 
     Example:
 
-    var animals = ['cats', 'dogs', 'horses];
+    var animals = ['cats', 'dogs', 'horses'];
     for(var i = 0; i < animals.length; i++){
         console.log('I love ' + animals[i]);
     }
