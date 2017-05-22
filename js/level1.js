@@ -213,9 +213,9 @@
     Example:
     var number = 7;
     if (number > 7) {
-        console.log('Our number is bigger then 7');
+        console.log('Our number is bigger than 7');
     } else {
-        console.log('Our number is smaller then 7');
+        console.log('Our number is smaller than 7');
     }
 */
 
