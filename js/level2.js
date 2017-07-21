@@ -236,6 +236,8 @@
     We can use a 'for loop' to iterate through our array and get each value
     from it.
 
+    Note: i++ is another way of writing i = i+1.
+
     Example:
 
     var animals = ['cats', 'dogs', 'horses'];
