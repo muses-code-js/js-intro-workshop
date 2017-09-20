@@ -9,7 +9,7 @@ Check on slides, click [here](https://slides.com/tanyabutenko/ngs-intro/)
 
 ## Feedback
 
-To leave feedback click [here](https://goo.gl/forms/RgTMTVWAzzv5cBaT2)
+To leave feedback click [here](https://docs.google.com/forms/d/e/1FAIpQLSdoOaviRIqsDPi1ZPTvTDVEzeQrSiEoDhsS0tmAIQZmkLkvxw/viewform?c=0&w=1)
 
 
 ## How to use
