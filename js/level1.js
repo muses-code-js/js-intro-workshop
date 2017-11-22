@@ -4,34 +4,35 @@
     Comments
     ========
 
-    Let's start with comments. Comments are notes that people can read and
-    computers will ignore.
+    Let's start with comments. This is a comment. Comments are notes that people
+    can read and computers will ignore.
 
     They will help us to guide you through the JavaScript introduction
     journey.
 */
 
-/*
-    Multi-line comments look like this.
-*/
-
 // Single line comments look like this.
 
+/*
+    Multi-line comments look like this.
+    When you are writing actual code, put it outside these comment blocks,
+    so the computer doesn't ignore them.
+*/
 
 /*
     Let's start with getting your code on the screen.
 
     There are a few ways you can do it and we will look into a few of them:
 
-    * alert('Hello girls!');
+    alert('Hello girls!');
     ** This line of code will pop-up a small window in your browser with the text
     'Hello girls!' in it, but you need to refresh the opened page first.
 
-    * console.log('Hello World!');
+    console.log('Hello World!');
     ** This line of code will print 'Hello World!' to the browser's console.
 
     P.S: To see the browser's console you can right click on the window of your
-    browser(Chrome, Firefox etc) and select 'Inspect' or 'Inspect element'.
+    browser (Chrome, Firefox etc) and select 'Inspect' or 'Inspect element'.
     After that a console will appear on the bottom right side of the page.
 */
 
@@ -75,9 +76,10 @@
     As you can notice, we can give different types of values to our variables -
     strings, numbers, booleans etc.
 
-    A string is a set of characters, word(s) or phrase(s) that we wrap in quotes,
-    see 'hello world!' in the previous task.
-    Numbers - either integers or floats(decimals)
+
+    Strings - set of characters, word(s), or phrases that we wrap in quotes, like
+              'hello world!'
+    Numbers - either integers or floats(decimals). Not wrapped in quotes
     Boolean - it represents logical values - True or False
 */
 
@@ -123,8 +125,7 @@
     alert(sumOfNumbers);
 
     This will pop-up an alert box with the number 4.
-
-    (You can see a full list of )
+    TIP: Note how we didn't put 1 and 3 in quotes, because they are numbers.
 */
 
 // TODO: Create 3 variables:
@@ -143,9 +144,9 @@
     Functions
     =========
 
-    A function is a reusable piece of code, an action that you want to do.
-    It takes some input (arguments), does some manipulation on it and returns
-    the output. Use the keyword 'return' to define the return value.
+    A function is lkike a blueprint, an action that you want to do.
+    It takes some input variables called arguments, does some manipulation on
+    it and returns the output. Use the keyword 'return' to define the return value.
 
     To create a function use the following format:
 
@@ -303,7 +304,7 @@
 
 
 ///////////////////////////////////////////////////////////////////////////
-//Congratulations! You have finished Part 1 of JavaScript Basics!        //
+// Congratulations! You have finished Part 1 of JavaScript Basics!       //
 // Stand up, stretch your legs, and celebrate your achievement.          //
-//The next step will be following the instructions in the level2.js file.//
+// The next step will be following the instructions in the level2.js file//
 ///////////////////////////////////////////////////////////////////////////
