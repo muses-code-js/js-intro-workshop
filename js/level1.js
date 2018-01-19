@@ -144,7 +144,7 @@
     Functions
     =========
 
-    A function is lkike a blueprint, an action that you want to do.
+    A function is like a blueprint, an action that you want to do.
     It takes some input variables called arguments, does some manipulation on
     it and returns the output. Use the keyword 'return' to define the return value.
 
