@@ -261,7 +261,7 @@
 
     Example:
 
-    var pageNode = document.querySelector('body')[0];
+    var pageNode = document.querySelector('body');
     var newParagraph = document.createElement('p');
     var paragraphText = document.createTextNode('Squee!');
     newParagraph.appendChild(paragraphText);
