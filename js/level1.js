@@ -64,8 +64,11 @@
     var variableName;
 
     So, we created a variable named variableName, but it has no information or
-    value inside. It is empty. To give our variable a value (initialize it)
-    use the '=' sign:
+    value inside. It is undefined. 
+
+    console.log("variableName is", variableName);
+    
+    To give our variable a value (initialize it) use the '=' sign:
 
     variableName = 'Hello world!';
 
@@ -83,7 +86,7 @@
     Boolean - it represents logical values - True or False
 */
 
-// TODO: Now create two empty variables named numberOne and numberTwo.
+// TODO: Now create two undefined variables named numberOne and numberTwo.
 
 
 
