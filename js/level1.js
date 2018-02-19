@@ -83,7 +83,7 @@
     Strings - set of characters, word(s), or phrases that we wrap in quotes, like
               'hello world!'
     Numbers - either integers or floats(decimals). Not wrapped in quotes
-    Boolean - it represents logical values - True or False
+    Boolean - it represents logical values - true or false.
 */
 
 // TODO: Now create two undefined variables named numberOne and numberTwo.
@@ -305,6 +305,20 @@
 
 
 
+/* 
+    Boolean Operators
+    =================
+    Putting an exclamation (!) before a Boolean variable gives 
+    the opposite value. The ! is called a "not" operator when 
+    used this way.
+
+    // the result of a comparison is a Boolean value, so we can
+    // save it to a variable
+    var bool = (1 < 2); 
+    console.log(bool); 
+    console.log(!bool); // "not true", therefore false
+    console.log(bool); // the original value isn't affected
+*/
 
 ///////////////////////////////////////////////////////////////////////////
 // Congratulations! You have finished Part 1 of JavaScript Basics!       //
