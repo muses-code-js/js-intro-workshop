@@ -1,0 +1,61 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$nodegreen: #4CAF50;
+
+@import "minima";
+@import "step-nav";
+@import "reference-table";
+@import "solution";
+
+div.nav {
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+  float: right;
+}
+
+div.post-content {
+  display: inline-block;
+  max-width: $content-width - 350;
+  vertical-align: top;
+}
+
+
+div.home {
+  display: block;
+
+}
+
+div.page-nav {
+  padding: 30px 0px 50px 0px;
+
+}
+
+a.go-link {
+  background: $nodegreen;
+  padding: 9px 14px 8px 14px;
+  border-radius: 6px;
+  border: 2px solid $nodegreen;
+  color: white !important;
+  text-decoration: none;
+  &:hover {
+    border: 2px solid darken($nodegreen, 10%) !important;
+  }
+}
+
+code {
+  font-size: inherit;
+}
+
+pre {
+  code {
+    font-size: 14px;
+  }
+}
+
+.imgbox {
+  box-shadow: black 0px 0px 10px;
+  border-radius: 5px;
+}

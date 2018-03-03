@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Intro to Javascript: Conditional Statements</title>
+  <meta name="description" content="CONDITIONAL STATEMENTS">
+  <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
+  <link rel="stylesheet" href="/intro-to-js/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/intro-to-js/step6/">
+  <link rel="alternate" type="application/rss+xml" title="Node Girls" href="/intro-to-js/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/intro-to-js/">Node Girls <small>Intro to Javascript</small></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/intro-to-js/">Home</a>
+           <a class="page-link go-link" href="/intro-to-js/step0/"><i class="fa fa-rocket" aria-hidden="true"></i> Start</a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/intro-to-js/">Home</a></li>
+  </ul>
+
+  <h3>Part 0 - Getting Started</h3>
+  <ul>
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step0/">
+          0 - Tools of the Trade
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step1/">
+          1 - Making a webpage
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step2/">
+          2 - Adding some JavaScript
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step3/">
+          3 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  
+  <h3>Part 1 - Basics</h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step4/">
+          4 - Variables
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step5/">
+          5 - Operators
+        </a>
+      </li>
+      
+  
+    
+      <li class='active'>
+        <a href="/intro-to-js/step6/">
+          6 - Conditional Statements
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step7/">
+          7 - Loops
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step8/">
+          8 - Exercise: FizzBuzz
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step9/">
+          9 - Functions
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step10/">
+          10 - Arrays
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step11/">
+          11 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3>Part 2 - The Browser</h3>
+  <ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <li class=''>
+        <a href="/intro-to-js/step12/">
+          12 - html
+        </a>
+      </li>
+      
+  
+  
+      <li class=''>
+        <a href="/intro-to-js/step13/">
+          13 - Congratulations
+        </a>
+      </li>
+      
+  
+  </ul>
+
+  <!-- <h3>Challenges</h3>
+  <ul>
+  
+  </ul> -->
+
+  <ul class="main">
+    <!-- <li class=""><a href="/intro-to-js/troubleshooting/">Troubleshooting</a></li> -->
+    <li class=""><a href="/intro-to-js/journey-continues/">The Journey Continues</a></li>
+  </ul>
+
+  
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+  
+</ul>
+
+
+</div>
+
+        <article class="post">
+
+  <header class="post-header">
+    <h2 class="post-title"> Step 6 - Conditional Statements</h1>
+  </header>
+
+  <div class="post-content">
+    <h4 id="conditional-statements">CONDITIONAL STATEMENTS</h4>
+
+<p>As we mentioned in the last step, there are lots of different kinds of operator. In this step, we show you how to use operators to help your program make decisions. This lets your program respond in different ways, depending on what the user does.</p>
+
+<p>For example, let’s say you have a program that lets your user input numbers. How can you make the program print a different message depending on the number? For example, we want to say “High!” if the number is above 7, and “Low!” if the number is below 7.</p>
+
+<p>Let’s think about what the program needs to do to make that happen.</p>
+
+<ol>
+  <li>It needs to compare the user’s number with the number 7, to see if it’s higher or lower.</li>
+  <li>It needs to print “High!” when the number is bigger than 7.</li>
+  <li>It needs to print “Low!” when the number is smaller than 7.</li>
+</ol>
+
+<p>We can do the first part of this job with a new type of operator called a comparison operator.</p>
+
+<h4 id="comparison-operators">COMPARISON OPERATORS</h4>
+
+<p>Comparison operators are used to compare values. Javascript’s comparison operators are:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">&gt;</code> greater than</li>
+  <li><code class="highlighter-rouge">&lt;</code> less than</li>
+  <li><code class="highlighter-rouge">=&gt;</code> greater than or equal to</li>
+  <li><code class="highlighter-rouge">&lt;=</code> less than or equal to</li>
+  <li><code class="highlighter-rouge">==</code> equal to</li>
+  <li><code class="highlighter-rouge">!=</code> not equal to</li>
+</ul>
+
+<p>TIP: Remember that the assignment operator <code class="highlighter-rouge">=</code> is different from the equal to operator <code class="highlighter-rouge">==</code>. They look similar, but they do different things.</p>
+
+<p>You’ll have used some of these in maths, though they might be written differently on a computer to how you’re used to writing them by hand.</p>
+
+<p>Comparison operators work a little bit differently from arithmetical operators. When you use a comparison operator, the program tests whether the statement made by the first value, the operator, and the second value, is <em>true</em> or <em>false</em>.</p>
+
+<p>For example, if you wrote <code class="highlighter-rouge">5 &lt; 6</code> in a program, the result of the test would be <em>true</em>, because five <em>is</em> less than six. If you wrote <code class="highlighter-rouge">5 == 6</code>, the result would be <em>false</em>, because five and six are not equal.</p>
+
+<p>For our High/Low program, we need to use a variable to check whether our user has input a number that is higher or lower than seven.</p>
+
+<p>What variable would you use?</p>
+
+<p>What would your statements look like?</p>
+
+<h4 id="if-statements">IF STATEMENTS</h4>
+
+<p>Once you have your tests, you need to tell your program what to do after it evaluates your statements. To do this, we use <em>conditions</em> - in this case, an <code class="highlighter-rouge">if</code> statement.</p>
+
+<p>An <code class="highlighter-rouge">if</code> statement lets a computer reason out what to do when you can’t tell it exactly what is going to happen. The same way you might check the weather to determine whether you’ll go to the beach or a movie, your program can check whether something is true or false in order to work out what to do next.</p>
+
+<p>The basic structure of an <code class="highlighter-rouge">if</code> statement is:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">do</span> <span class="k">this</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">do</span> <span class="nx">something</span> <span class="k">else</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<p>An example that might work for our High/Low program is:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'High!'</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Low!'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Hmm, but we’ve left out one possibility - what if our user enters exactly 7? To make this work, we need to check something else.</p>
+
+<p>If you want to check a bunch of different things, you can put <code class="highlighter-rouge">if</code> statements together by including a whole new <code class="highlighter-rouge">if</code> statement after <code class="highlighter-rouge">else</code>, like this:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code>    <span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'High!'</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Low!'</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'You guessed our number.'</span><span class="p">);</span>
+    <span class="p">}</span>    
+</code></pre>
+</div>
+
+<hr />
+
+<h4 id="tasks-to-do">TASKS TO DO</h4>
+
+<ol>
+  <li>We have 2 functions from the previous task - add and subtract.
+Let’s tell the machine to decide what action to run depending on the arithmetical
+operator(+,-,/, * etc). If the operator is ‘+’, we should use the add function, else we should use the subtract function.
+    <ul>
+      <li>STEP 1 : Create a variable called operator and let it be equal to ‘-‘.</li>
+      <li>STEP 2 : Create an if/else statement based on what operator we have. If we have an operator equal to ‘+’, we call add function with any two numbers,
+else the subtract function with any 2 numbers.</li>
+      <li>STEP 3 : Log your result. (Console.log())</li>
+    </ul>
+  </li>
+  <li>Create 2 more functions and name them divide and multiply. After
+that let’s extend our ‘if else’ check that we already created by checking if
+it is equal to ‘/’ - call ‘divide’ function, if it is ‘*’ call multiply
+function, else console.log - “Sorry, we don’t know this operator”.</li>
+</ol>
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step7'>Go to Step 7</a>
+</div>
+
+
+    
+
+
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="http://nodegirls.com.au/" target="_blank">nodegirls.com.au</a></li>
+        <li><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:info@nodegirls.com.au">info@nodegirls.com.au</a></li>
+      </ul>
+      <ul>
+        <li><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/NodeGirlsAustralia/" target="_blank">facebook.com/NodeGirlsAustralia</a></li>
+        <li><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://github.com/node-girls-australia" target="_blank">github.com/node-girls-australia</a></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://twitter.com/NodeGirlsBri" target="_blank">twitter.com/NodeGirlsBri</a></li>
+      </ul>
+    </div>
+
+</footer>
+
+
+  </body>
+
+</html>

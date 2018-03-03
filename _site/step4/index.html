@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Intro to Javascript: Variables</title>
+  <meta name="description" content="All most all of the code you write will be manipulating or examining data of some sort. That data might come from a file, or from a 3rd party service, or fro...">
+  <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
+  <link rel="stylesheet" href="/intro-to-js/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/intro-to-js/step4/">
+  <link rel="alternate" type="application/rss+xml" title="Node Girls" href="/intro-to-js/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/intro-to-js/">Node Girls <small>Intro to Javascript</small></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/intro-to-js/">Home</a>
+           <a class="page-link go-link" href="/intro-to-js/step0/"><i class="fa fa-rocket" aria-hidden="true"></i> Start</a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/intro-to-js/">Home</a></li>
+  </ul>
+
+  <h3>Part 0 - Getting Started</h3>
+  <ul>
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step0/">
+          0 - Tools of the Trade
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step1/">
+          1 - Making a webpage
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step2/">
+          2 - Adding some JavaScript
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step3/">
+          3 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  
+  <h3>Part 1 - Basics</h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class='active'>
+        <a href="/intro-to-js/step4/">
+          4 - Variables
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step5/">
+          5 - Operators
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step6/">
+          6 - Conditional Statements
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step7/">
+          7 - Loops
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step8/">
+          8 - Exercise: FizzBuzz
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step9/">
+          9 - Functions
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step10/">
+          10 - Arrays
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/intro-to-js/step11/">
+          11 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3>Part 2 - The Browser</h3>
+  <ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <li class=''>
+        <a href="/intro-to-js/step12/">
+          12 - html
+        </a>
+      </li>
+      
+  
+  
+      <li class=''>
+        <a href="/intro-to-js/step13/">
+          13 - Congratulations
+        </a>
+      </li>
+      
+  
+  </ul>
+
+  <!-- <h3>Challenges</h3>
+  <ul>
+  
+  </ul> -->
+
+  <ul class="main">
+    <!-- <li class=""><a href="/intro-to-js/troubleshooting/">Troubleshooting</a></li> -->
+    <li class=""><a href="/intro-to-js/journey-continues/">The Journey Continues</a></li>
+  </ul>
+
+  
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+  
+</ul>
+
+
+</div>
+
+        <article class="post">
+
+  <header class="post-header">
+    <h2 class="post-title"> Step 4 - Variables</h1>
+  </header>
+
+  <div class="post-content">
+    <p>All most all of the code you write will be manipulating or examining data of some sort.  That data might come from a file, or from a 3rd party service, or from the user selecting something on a page or typing into a text box.  Regardless of where it comes from we need a place to put it so we can refer to it.</p>
+
+<p><strong>Variables</strong> are the place where we keep information in our program.</p>
+
+<p>Think of variables are being little boxes.  Each variable has a unique name that you specify and it holds one distinct piece of information (AKA the variable’s <strong>value</strong>).</p>
+
+<h2 id="creating-variables">Creating Variables</h2>
+
+<p>To create a variable you use the keyword <code class="highlighter-rouge">var</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">greeting</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>So, we created a variable named <code class="highlighter-rouge">greeting</code>, but it has no value inside.  It is empty. To give our variable a value 
+using <code class="highlighter-rouge">=</code> sign:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">greeting</span> <span class="o">=</span> <span class="s1">'Hello everyone!'</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>This is called <strong>assigning a value</strong> to the variable.  The <code class="highlighter-rouge">=</code> is called the <strong>assignment</strong> operator.  We’ll learn more about operators in the next part.</p>
+
+<!-- Note that `=` is not an equals sign like you might be used to from algebra.   -->
+
+<p>The first time variable is assigned a value the variable is said to be <strong>initialized</strong>.</p>
+
+<p>We also can create and give value to a variable in one step, as follows:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">whatTheFoxSays</span> <span class="o">=</span> <span class="s1">'yow-wow-wow-wow'</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h2 id="using-variables">Using Variables</h2>
+
+<p>So now we can create variables and can assign values to them.  So what can we do with them?</p>
+
+<p>We can use a variable in anyplace where we could use a value, like in <code class="highlighter-rouge">alert()</code> &amp; <code class="highlighter-rouge">console.log()</code> for example.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="s1">'Hello everyone!'</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">greeting</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>And since you can use a variable anyplace you can use a value, you can of course use variables to assign values too:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">whatTheFoxSays</span> <span class="o">=</span> <span class="s1">'yow-wow-wow-wow'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">mysterySound</span> <span class="o">=</span> <span class="nx">whatTheFoxSays</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>What do you think the value of <code class="highlighter-rouge">mysterySound</code> is here?  Try it out and display it with <code class="highlighter-rouge">console.log()</code> or <code class="highlighter-rouge">alert()</code>.</p>
+
+<h3 id="tasks">Tasks</h3>
+<ol>
+  <li>Create two empty variables named <code class="highlighter-rouge">animalName</code> and <code class="highlighter-rouge">animalNoise</code></li>
+  <li>Assign them appropriate values.</li>
+  <li>Display them each using <code class="highlighter-rouge">alert()</code></li>
+</ol>
+
+<h2 id="data-types-and-strings">Data Types and Strings</h2>
+
+<p>You might notice that all the values we are used so far have quote characters (<code class="highlighter-rouge">'</code>) around them.  Why is that?</p>
+
+<p>Values have a quality what we refer to as <strong>type</strong>. Type indicates what kind of value it is.  Different types have slightly different behaviour and can be used in different ways.</p>
+
+<p>Putting single or double quotes around a value indicates that has the type of <strong>string</strong>, or “a string of characters”.  We use strings for literal representations of words.</p>
+
+<p>So what will happen if you don’t put the quotes in?  Like this example?</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="nx">Hello</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>You’ll get a error something like <code class="highlighter-rouge">ReferenceError: Hello is not defined</code> because JavaScript assumes that <code class="highlighter-rouge">Hello</code> is a variable and tries to assigns it’s value to <code class="highlighter-rouge">message</code>.  And <code class="highlighter-rouge">Hello</code> doesn’t exist, so <code class="highlighter-rouge">not defined</code>.</p>
+
+<p>It gets even more confused if you try to do something like:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="nx">Hello</span> <span class="nx">There</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>Short version:</strong> if your value is a bunch of literal characters that belong together, then wrap them in quotes.</p>
+
+<p><strong>Should I use single or double quotes?</strong>  It mostly doesn’t matter so long as you use the same ones at the beginning and the end.  It’s mostly personal preference but it does matter when the string itself contains quote characters.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="s1">'Say "Hello" to my little friend.'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">warning</span> <span class="o">=</span> <span class="s2">"Don't swim here.  There are sharks!"</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>What do you think happens if the first string was wrapped in double-quotes, or if the second was in single quotes?</p>
+
+<p>Try it out and see.</p>
+
+<p>In the next step when we talk about operators we will also talk about another data type: Numbers.</p>
+
+<!-- #### DATA STRUCTURES AND TYPES
+
+As you can notice, we can give different types of values to our variables.
+
+| DATA TYPE        | DESCRIPTION        |
+| -----------------|--------------------|
+| **String**       |A sequence of characters that represent a text value. For example:  "Hello World!"|
+| **Number**       |An integer or floating point number. For example: 42 or 3.14159. Not wrapped in quotes |
+| **Boolean**      |true or false|
+| **null**         | A special keyword denoting a null value.  |
+| **undefined**    |A top-level property whose value is not defined. |
+| **Symbol**       |A data type whose instances are unique and immutable. |
+| **Object**       |some description |
+ -->
+
+<!-- You also can use your variables to represent information that they have inside.
+
+```javascript
+var hello = 'Hello World';
+alert(hello);
+```
+
+This will pop-up an alert box with the string 'Hello World!' -->
+
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step5'>Go to Step 5</a>
+</div>
+
+
+    
+
+
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="http://nodegirls.com.au/" target="_blank">nodegirls.com.au</a></li>
+        <li><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:info@nodegirls.com.au">info@nodegirls.com.au</a></li>
+      </ul>
+      <ul>
+        <li><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/NodeGirlsAustralia/" target="_blank">facebook.com/NodeGirlsAustralia</a></li>
+        <li><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://github.com/node-girls-australia" target="_blank">github.com/node-girls-australia</a></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://twitter.com/NodeGirlsBri" target="_blank">twitter.com/NodeGirlsBri</a></li>
+      </ul>
+    </div>
+
+</footer>
+
+
+  </body>
+
+</html>

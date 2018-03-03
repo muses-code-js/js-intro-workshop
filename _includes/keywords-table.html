@@ -1,0 +1,21 @@
+{% if page.keywords %}
+{% assign sorted_keywords = page.keywords | sort: 'term' %}
+<table class="reference">
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for keyword in sorted_keywords %}
+    <tr>
+      <td>{{keyword.term}}</td>
+      <td>{{ keyword.define | markdownify }}</td>
+    </tr>
+
+{% endfor %}
+
+  </tbody>
+</table>
+{% endif %}

@@ -1,0 +1,121 @@
+div.step-nav {
+  // border: 1px solid #e7e7e7;
+  // background-color: #efefef;
+  border-right: 3px solid $nodegreen;
+  // float: right;
+  max-width: 250px;
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 0px;
+  padding-top: 30px;
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0px 5px 10px;
+  }
+
+ul.main {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    padding-left: 0px;
+    li {
+      padding-left: 9px;
+    }
+}
+
+  ul {
+    list-style: none;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    li {
+      margin-bottom: 0px;
+      padding: 6px 15px 5px 15px;
+      a.main {
+        font-size: 20px;
+      }
+    }
+    li.active {
+      background-color: $nodegreen;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+@include media-query($on-laptop) {
+  
+  article.post {
+    vertical-align: top;
+    display: block;
+    padding: 30px 30px 5px 30px;
+    
+    div.post-content {
+      display: inline-block;
+      max-width: 100%;
+      vertical-align: top;
+    }
+  }
+  
+  div.step-nav {
+    position: absolute;
+    left: -230px;
+    border-right: 3px solid $nodegreen; //#e7e7e7;
+    border-top: 3px solid $nodegreen;
+    border-bottom: 3px solid $nodegreen;
+    background-color: #efefef;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 2px 2px 2px 1px grey;
+    // font-size: 16px;
+    display: block;
+    // margin-right: 0px;
+    padding-top: 7px;
+    -webkit-transition: all 0.5s, -webkit-transform 0.5s;
+    transition: all 0.5s, transform 0.5s;
+    // h3 {
+    //   font-size: 18px;
+    //   font-weight: bold;
+    //   margin: 8px 0px 5px 10px;
+    // }
+    &:hover {
+      -webkit-transition: all 0.5s, -webkit-transform 0.5s;
+      transition: all 0.5s, transform 0.5s;
+      left: 0px;
+      }
+    
+    // 
+    // ul.main {
+    //   font-size: 18px;
+    //   font-weight: bold;
+    //   margin: 0px;
+    //   padding-left: 0px;
+    //   li {
+    //     padding-left: 9px;
+    //   }
+    // }
+    
+    ul {
+      list-style: none;
+      margin: 0px 0px 15px 0px;
+      padding: 0px;
+    
+      li {
+        margin-bottom: 0px;
+        padding: 6px 25px 5px 25px;
+        a.main {
+          font-size: 20px;
+        }
+      }
+      li.active {
+        display: block;
+        background-color: $nodegreen;
+        a {
+          color: white;
+        }
+    
+      }
+    
+    }
+  }
+}
