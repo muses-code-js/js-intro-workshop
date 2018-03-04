@@ -32,11 +32,11 @@ Any program that can edit plain text files will work. Most operating systems hav
 
 While NotePad or TextEdit will do the job, you can download free and open-source editors which provide some additional features to make writing program source code a little more pleasant.  
 
-If you are just getting started we recommend [Github's Atom](https://atom.io/).
+If you are just getting started we recommend [Brackets](http://brackets.io/).
 
-Atom is free, open-source, and available for Windows, macOS, and Linux.
+Brackets is free, open-source, and available for Windows, macOS, and Linux.
 
-For convenience, we will assume that you are using Atom for the rest of this workshop.  The same principles apply to most editors although the specifics of menus will probably vary a little.
+For convenience, we will assume that you are using Brackets for the rest of this workshop.  The same principles apply to most editors although the specifics of menus will probably vary a little.
 
 ## WebBrowser Developer Tools
 

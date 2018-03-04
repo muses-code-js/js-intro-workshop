@@ -1,9 +1,9 @@
 ---
 layout: step
-number: 6
+number: 7
 part: 1
 title: Conditional Statements
-permalink: step6/
+permalink: step7/
 
 #keywords:
 #  - term:
@@ -11,11 +11,11 @@ permalink: step6/
 
 ---
 
-#### CONDITIONAL STATEMENTS
+## Conditional Statements
 
-As we mentioned in the last step, there are lots of different kinds of operator. In this step, we show you how to use operators to help your program make decisions. This lets your program respond in different ways, depending on what the user does.
+As we mentioned in the last step, there are lots of different kinds of operator. In this step, we show you how to use operators to help your program make decisions.
 
-For example, let's say you have a program that lets your user input numbers. How can you make the program print a different message depending on the number? For example, we want to say "High!" if the number is above 7, and "Low!" if the number is below 7.
+For example, let's say you have a program that lets your user input numbers. How can you make the program print a different message depending on the number that user enter? For example, we want to say "High!" if the number is above 7, and "Low!" if the number is below 7.
 
 Let's think about what the program needs to do to make that happen.
 
@@ -25,7 +25,7 @@ Let's think about what the program needs to do to make that happen.
 
 We can do the first part of this job with a new type of operator called a comparison operator.
 
-#### COMPARISON OPERATORS
+### Comparison Operators
 
 Comparison operators are used to compare values. Javascript's comparison operators are:
 
@@ -36,9 +36,7 @@ Comparison operators are used to compare values. Javascript's comparison operato
 * `==` equal to
 * `!=` not equal to
 
-TIP: Remember that the assignment operator `=` is different from the equal to operator `==`. They look similar, but they do different things.
-
-You'll have used some of these in maths, though they might be written differently on a computer to how you're used to writing them by hand.
+NOTE: Remember that the assignment operator `=` is different from the equal to operator `==`. They look similar, but they do different things.
 
 Comparison operators work a little bit differently from arithmetical operators. When you use a comparison operator, the program tests whether the statement made by the first value, the operator, and the second value, is *true* or *false*.
 
@@ -50,7 +48,7 @@ What variable would you use?
 
 What would your statements look like?
 
-#### IF STATEMENTS
+### If - Else Statements
 
 Once you have your tests, you need to tell your program what to do after it evaluates your statements. To do this, we use *conditions* - in this case, an `if` statement.
 
@@ -93,17 +91,17 @@ If you want to check a bunch of different things, you can put `if` statements to
 
 ----
 
-#### TASKS TO DO
+### Tasks
 
-1. We have 2 functions from the previous task - add and subtract.
+1. We have 2 functions from the previous task - `add` and `subtract`.
 Let's tell the machine to decide what action to run depending on the arithmetical
 operator(+,-,/, * etc). If the operator is '+', we should use the add function, else we should use the subtract function.
- * STEP 1 : Create a variable called operator and let it be equal to '-'.
- * STEP 2 : Create an if/else statement based on what operator we have. If we have an operator equal to '+', we call add function with any two numbers,
+ * Create a variable called operator and let it be equal to '-'.
+ * Create an if/else statement based on what operator we have. If we have an operator equal to '+', we call add function with any two numbers,
 else the subtract function with any 2 numbers.
- * STEP 3 : Log your result. (Console.log())
+ * Log your result. (Console.log())
 
  2. Create 2 more functions and name them divide and multiply. After
 that let's extend our 'if else' check that we already created by checking if
-it is equal to '/' - call 'divide' function, if it is '*' call multiply
-function, else console.log - "Sorry, we don't know this operator".
+it is equal to '/', call 'divide' function. If it is '*', call multiply
+function, else log this message: "Sorry, we don't know this operator" on the console.

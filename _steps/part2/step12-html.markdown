@@ -5,13 +5,7 @@ part: 2
 title: html
 permalink: step12/
 
-#keywords:
-#  - term:
-#    define: 
-
 ---
-
-
 
 #### Hypertext Markup Language (HTML)
 

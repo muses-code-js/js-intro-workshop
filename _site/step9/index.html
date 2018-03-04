@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Intro to Javascript: Functions</title>
-  <meta name="description" content="A function is like a blueprint, an action that you want to do. It takes some input variables called arguments, does some manipulation on it and returns the o...">
+  <title>Intro to Javascript: Loops</title>
+  <meta name="description" content="People have always been lazy, but sometimes it moves progress forward! We don’t like to repeat the same boring actions again and again, so we look for ways t...">
   <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
   <link rel="stylesheet" href="/intro-to-js/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -164,7 +164,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step6/">
-          6 - Conditional Statements
+          6 - Functions
         </a>
       </li>
       
@@ -172,7 +172,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step7/">
-          7 - Loops
+          7 - Conditional Statements
         </a>
       </li>
       
@@ -180,7 +180,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step8/">
-          8 - Exercise: FizzBuzz
+          8 - Arrays
         </a>
       </li>
       
@@ -188,7 +188,7 @@
     
       <li class='active'>
         <a href="/intro-to-js/step9/">
-          9 - Functions
+          9 - Loops
         </a>
       </li>
       
@@ -196,7 +196,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step10/">
-          10 - Arrays
+          10 - Exercise: FizzBuzz
         </a>
       </li>
       
@@ -283,58 +283,95 @@
         <article class="post">
 
   <header class="post-header">
-    <h2 class="post-title"> Step 9 - Functions</h1>
+    <h2 class="post-title"> Step 9 - Loops</h1>
   </header>
 
   <div class="post-content">
-    <p>A function is like a blueprint, an action that you want to do.
-It takes some input variables called arguments, does some manipulation on
-it and returns the output. Use the keyword ‘return’ to define the return value.
-To create a function use the following format:</p>
+    <p>People have always been lazy, but sometimes it moves progress forward! We
+don’t like to repeat the same boring actions again and again, so we look
+for ways to avoid it. Programming is the same.</p>
 
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">functionName</span><span class="p">(</span><span class="nx">argument</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">argument</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
-<span class="p">};</span>
+<p>For example, if I want to print ‘JavaScript is
+awesome!’ 10 times, what are my options? Of course, I can type ten lines of
+console.log(‘JavaScript is awesome!’), but I can also tell the computer to
+repeat it instead of me writing it 10 times!
+For this we have loops.
+Each loop should have three main things:</p>
+<ul>
+  <li>a starting point</li>
+  <li>a condition (finishing point)</li>
+  <li>a counter (a step)
+If you miss one of these, you can get into an infinite loop!
+Let’s look into different looping structures.</li>
+</ul>
+
+<h2 id="while-loops">While Loops</h2>
+
+<p>‘While’ loop will do an action forever until some condition is met.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="c1">// starting point</span>
+<span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">number</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 'less than 10'' is a condition (finishing point)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'JavaScript is awesome!'</span><span class="p">);</span>
+    <span class="nx">number</span> <span class="o">=</span> <span class="nx">number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="c1">// + 1 is a counter/size of the step</span>
+<span class="p">}</span>
 </code></pre>
 </div>
 
-<p>This function will take one argument and return the argument multiplied by 2.
-Our function won’t actually run unless we ‘call’ it.
-To ‘call’ the function we write:</p>
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">functionName</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<h2 id="for-loops">For Loops</h2>
+
+<p>‘For loops are very similar to the ‘while loop’. In a for loop, you
+declare a counter in the statement.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">i</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// (starting point; condition; step)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Purr'</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 </div>
 
-<p>Now we will call our function with argument that is 10. And our function
-will return us 20. To see what our function returns us we can console.log
-it, for example:</p>
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">functionName</span><span class="p">(</span><span class="mi">10</span><span class="p">));</span>
+<h2 id="iterating-through-arrays">Iterating Through Arrays</h2>
+
+<p>Now we know about loops, I want to use each value from my animal list
+and express my love for each. How shall I do it?
+We can use a ‘for loop’ to iterate through our array and get each value
+from it.
+Note: i++ is another way of writing i = i+1.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'cats'</span><span class="p">,</span> <span class="s1">'dogs'</span><span class="p">,</span> <span class="s1">'horses'</span><span class="p">];</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">animals</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'I love '</span> <span class="o">+</span> <span class="nx">animals</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+<span class="p">}</span>
 </code></pre>
 </div>
 
-<hr />
+<h2 id="loops-and-logic">Loops and Logic</h2>
 
-<h4 id="tasks-to-do">TASKS TO DO</h4>
+<p>Let’s bring loops together with the if/else statements we learned in
+learlier, and make something interesting.
+Let’s count from 10 to 0 and log all the numbers. But, when we get to the
+middle (5) print ‘Woohoo, we are in the middle!’.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'WooHoo, we are in the middle!'</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h3 id="tasks">Tasks</h3>
+
 <ol>
-  <li>Create a function to add multiple numbers.
-    <ul>
-      <li>STEP 1 : Name it ‘add’ and pass in two arguments (num1 and num2). To pass multiple arguments into function we separate them with a comma.</li>
-      <li>STEP 2 : This function should return us a sum of num1 and num2.</li>
-      <li>STEP 3 : Call the function passing numbers 2 and 3 as arguments.</li>
-      <li>STEP 4 : Log the result to see it. (Console.log())</li>
-    </ul>
-  </li>
-  <li>Create a function to subtrack numbers from each other.
-    <ul>
-      <li>STEP 1 : Name it ‘subtrack’ and pass in two arguments (num1 and num2)</li>
-      <li>STEP 2 : This function should return us a subtraction of num1 and num2.</li>
-      <li>STEP 3 : Call the function passing numbers 5 and 1 as arguments.</li>
-      <li>STEP 4 : Log the result to see it. (Console.log())</li>
-    </ul>
-  </li>
-  <li>Instead of numbers to pass as arguments, create variables that store
-those numbers and pass them as an arguments to your function. Call your function and Log your result.</li>
+  <li>Using a ‘while loop’, tell your computer to log the numbers from ten to one.</li>
+  <li>Log every 3rd number from 3 to 22 using a ‘for loop’.</li>
+  <li>Try to log your favourite food on the console. (use your <code class="highlighter-rouge">favouriteFood</code> array in the previous step.)</li>
 </ol>
+
 
     
 

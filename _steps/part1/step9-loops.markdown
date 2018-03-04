@@ -1,24 +1,18 @@
 ---
 layout: step
-number: 7
+number: 9
 part: 1
 title: Loops
-permalink: step7/
-
-#keywords:
-#  - term:
-#    define: 
+permalink: step9/
 
 ---
-
-#### LOOPS
-
 People have always been lazy, but sometimes it moves progress forward! We
 don't like to repeat the same boring actions again and again, so we look
-for ways to avoid it.
-Programming is the same. For example, if I want to print 'JavaScript is
+for ways to avoid it. Programming is the same.
+
+For example, if I want to print 'JavaScript is
 awesome!' 10 times, what are my options? Of course, I can type ten lines of
-code repeating the same instruction, but I can also tell the computer to
+console.log('JavaScript is awesome!'), but I can also tell the computer to
 repeat it instead of me writing it 10 times!
 For this we have loops.
 Each loop should have three main things:
@@ -29,7 +23,7 @@ If you miss one of these, you can get into an infinite loop!
 Let's look into different looping structures.
 
 
-##### WHILE LOOPS
+## While Loops
 
 'While' loop will do an action forever until some condition is met.
 
@@ -44,7 +38,7 @@ while (number < 10) {
 }
 ```
 
-##### FOR LOOPS
+## For Loops
 
 'For loops are very similar to the 'while loop'. In a for loop, you
 declare a counter in the statement.
@@ -57,7 +51,7 @@ for (i = 0; i <= 5; i = i + 1) {  // (starting point; condition; step)
 ```
 
 
-##### ITERATING THROUGH ARRAYS
+## Iterating Through Arrays
 
 Now we know about loops, I want to use each value from my animal list
 and express my love for each. How shall I do it?
@@ -73,10 +67,10 @@ for(var i = 0; i < animals.length; i++){
 }
 ```
 
-##### LOOPS AND LOGIC
+## Loops and Logic
 
 Let's bring loops together with the if/else statements we learned in
-level 1, and make something interesting.
+learlier, and make something interesting.
 Let's count from 10 to 0 and log all the numbers. But, when we get to the
 middle (5) print 'Woohoo, we are in the middle!'.
 
@@ -90,8 +84,9 @@ for (var i = 10; i >= 0; i = i - 1) {
 }
 ```
 
-#### TASKS TO DO
+### Tasks
 
 1. Using a 'while loop', tell your computer to log the numbers from ten to one.
-2. Log every 3rd number from three to 22 using a 'for loop'.
+2. Log every 3rd number from 3 to 22 using a 'for loop'.
+3. Try to log your favourite food on the console. (use your `favouriteFood` array in the previous step.)
 

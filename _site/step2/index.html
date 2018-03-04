@@ -164,7 +164,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step6/">
-          6 - Conditional Statements
+          6 - Functions
         </a>
       </li>
       
@@ -172,7 +172,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step7/">
-          7 - Loops
+          7 - Conditional Statements
         </a>
       </li>
       
@@ -180,7 +180,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step8/">
-          8 - Exercise: FizzBuzz
+          8 - Arrays
         </a>
       </li>
       
@@ -188,7 +188,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step9/">
-          9 - Functions
+          9 - Loops
         </a>
       </li>
       
@@ -196,7 +196,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step10/">
-          10 - Arrays
+          10 - Exercise: FizzBuzz
         </a>
       </li>
       
@@ -306,7 +306,7 @@
 
 <p>But if you open your Dev Tools and look at the Console, you will see the message <code class="highlighter-rouge">OMG this is JavaScript</code>.</p>
 
-<p>[SCREENSHOT]</p>
+<p><img src="../assets/intro-js.png" alt="You will see this page" class="img-responsive" /></p>
 
 <p>When your browser loads a page, it starts at the first tag and works through the whole document displaying it as it goes.  When your browser encounters a <code class="highlighter-rouge">&lt;script&gt;</code> tag, it stops and runs that code before continuing to displaying the rest of the page.</p>
 
@@ -317,10 +317,6 @@
 <p><code class="highlighter-rouge">console.log()</code> tells the browser to display messages and other information in the Dev Tools console.  We call these ‘console’ or ‘log’ messages, and they only appear in the Dev Tools Console. Anyone interacting with your webpage isn’t going to see them unless they open the Dev Tools Console.</p>
 
 <p><code class="highlighter-rouge">console.log()</code> is for you (the developer) to use when <strong>debugging</strong>.  That is when you trying to figure out why something isn’t working as you expected it to.  It’s also common to use it when you are learning a new thing.  You can use <code class="highlighter-rouge">console.log()</code> to display error &amp; status messages or anything else which you think might help you.</p>
-
-<p>We’ll use it many times in this workshop to make sure you can see what is happening in the code. You can remove them if you like - just remember that <code class="highlighter-rouge">console.log()</code> is useful when you’re trying to debug a problem.</p>
-
-<p>Also sometimes developers leave messages like this for other developers who might be looking at their pages in the Dev Tools.</p>
 
 <h4 id="alert">alert()</h4>
 
@@ -333,29 +329,7 @@
 </div>
 <p>Save and refresh the page, and a small window will popup in your browser with the text ‘Hello there!’ in it.</p>
 
-<p>[SCREENSHOT]</p>
-
-<p>Did you notice that the content of the page didn’t appear until you clicked OK?  That’s because our <code class="highlighter-rouge">alert()</code> is in the <code class="highlighter-rouge">&lt;head&gt;</code> block.</p>
-
-<p><code class="highlighter-rouge">alert()</code> pauses everything else until the user clicks ‘OK’. When we put Javascript inside <code class="highlighter-rouge">&lt;head&gt;</code>, it loads before anything in the page <code class="highlighter-rouge">&lt;body&gt;</code> is displayed.</p>
-
-<p>If you want the page to display before the alert appears, you can put it in after the <code class="highlighter-rouge">&lt;body&gt;</code> block like this.</p>
-
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;/body&gt;</span>
-  <span class="nt">&lt;script&gt;</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="s1">'Hello there!'</span><span class="p">);</span>
-  <span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
-
-<p>Try it out. See how the content is visible first, and then the box appears?</p>
-
-<p>Where your <code class="highlighter-rouge">&lt;script&gt;</code> tags are doesn’t always matter - it depends on what your Javascript is doing.</p>
-
-<p>By the way, you can put as many <code class="highlighter-rouge">&lt;script&gt;</code> tags into a document as you want.</p>
-
-<p>What do you think would happen if you had <code class="highlighter-rouge">&lt;script&gt;</code> tags with alerts both in <code class="highlighter-rouge">&lt;head&gt;</code> and after <code class="highlighter-rouge">&lt;body&gt;</code>?  Or how about inside the <code class="highlighter-rouge">&lt;body&gt;</code> tag, part way through? Try it out and see.</p>
+<p><img src="../assets/intro-alert.png" alt="You will see this page" class="img-responsive" /></p>
 
 <h4 id="external-javascript-files">External Javascript files.</h4>
 
@@ -420,25 +394,6 @@
   line with a comment.  
 
   You only need to mark the beginning and the end.
-*/</span>
-</code></pre>
-</div>
-
-<p>We frequently also use comments in debugging.  Sometimes you want to remove a chunk of code to see how it affects your program.  Rather than deleting it, you can just turn it into a comment.  We call this <em>“commenting it out”</em>.  Using comments this way makes it easy to effectively remove code to help with debugging, without the risk of accidentally losing your work.  It’s also handy to still be able to see it alongside the other code.</p>
-
-<p>Take a few minutes to add some comments to the <code class="highlighter-rouge">myscripts.js</code> you created above.</p>
-
-<p>Maybe add an info block to the top like:</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="cm">/*
-  Author: Dana Mison dmison@example.com
-
-  Example file for Intro to JavaScript workshop
-
-  10th March 2018
-    - Created for step #2 of the Intro to JS workshop on 10th March 2018
-    - added this informative comment block
-
 */</span>
 </code></pre>
 </div>

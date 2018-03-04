@@ -164,7 +164,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step6/">
-          6 - Conditional Statements
+          6 - Functions
         </a>
       </li>
       
@@ -172,7 +172,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step7/">
-          7 - Loops
+          7 - Conditional Statements
         </a>
       </li>
       
@@ -180,7 +180,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step8/">
-          8 - Exercise: FizzBuzz
+          8 - Arrays
         </a>
       </li>
       
@@ -188,7 +188,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step9/">
-          9 - Functions
+          9 - Loops
         </a>
       </li>
       
@@ -196,7 +196,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step10/">
-          10 - Arrays
+          10 - Exercise: FizzBuzz
         </a>
       </li>
       
@@ -311,14 +311,14 @@
     <p>Make a folder somewhere on your computer and name it <code class="highlighter-rouge">intro-to-js</code> or whatever makes sense for you.  This folder can be on your desktop, or in My Documents, or where ever you want.  Just so long as you know where it is and it is somewhere that makes sense for you.  This folder is going to hold all the files that we create today.</p>
   </li>
   <li>
-    <p><strong>Open that folder in Atom.</strong></p>
+    <p><strong>Open that folder in Brackets.</strong></p>
 
-    <p>Open Atom.  Go to  <code class="highlighter-rouge">File</code> <code class="highlighter-rouge">-&gt;</code> <code class="highlighter-rouge">Add Project Folder</code>, browse to the folder that you created and click open.  You’ll see the tree-view open on the left with <code class="highlighter-rouge">Project</code>, and then your empty folder.</p>
+    <p>Open Atom.  Go to  <code class="highlighter-rouge">File</code> <code class="highlighter-rouge">-&gt;</code> <code class="highlighter-rouge">Open Folder</code>, browse to the folder that you created and click open.  You’ll see the name of your folder on the left.</p>
   </li>
   <li>
     <p><strong>Create a new file called <code class="highlighter-rouge">index.html</code></strong></p>
 
-    <p>Right click on your folder and select <code class="highlighter-rouge">New File</code>.  When prompted for the path, type <code class="highlighter-rouge">index.html</code> and press enter.  You’ll see this new file <code class="highlighter-rouge">index.html</code> appear both in the tree-view and also opened in a new editor tab.</p>
+    <p>Right click on the dark grey area just under the name of your folder and select <code class="highlighter-rouge">New File</code>. When prompted for the path, type <code class="highlighter-rouge">index.html</code> and press enter.  You’ll see this new file <code class="highlighter-rouge">index.html</code> appear both in the tree-view and also opened in a new editor tab.</p>
   </li>
   <li>
     <p><strong>Add some HTML</strong></p>
@@ -336,20 +336,19 @@
  <span class="nt">&lt;/html&gt;</span>
 </code></pre>
     </div>
-
-    <p>Notice how both here in your editor the different parts of that content are coloured differently?  That’s called <strong>syntax highlighting</strong>.  Many editors do this to make it easier for you to differentiate different elements in your code.</p>
   </li>
 </ol>
 
-<p>Ok so now we have a very simple webpage.  How do we see that in our web browser?  Just open a new browser tab and either open the file <code class="highlighter-rouge">index.html</code> or drag and drop it from your file manager.</p>
+<p>Ok so now we have a very simple webpage.  How do we see that in our web browser?  Just simply click the <code class="highlighter-rouge">Live Preview</code> icon (Like Harry Potter scar) on the right side and a browser window will open immediately.</p>
 
-<p>[ADD SCREENSHOT]</p>
+<p><img src="../assets/intro-html.png" alt="You will see this page" class="img-responsive" /></p>
 
+<hr />
 <h2 id="so-whats-html">So what’s HTML?</h2>
 
 <p><strong>HTML</strong> stands for HyperText Markup Language, and it is the language that webpages are written in.  It’s the stuff in a webpage that you don’t see displayed which the browser uses to know how it is supposed to show everything else.</p>
 
-<p>Unlike a programming language, a markup language isn’t a series of instructions but instead it is a way of describing something.  In the case of HTML it describes how content should be displayed in a web browser.</p>
+<p>Unlike a programming language, a markup language isn’t a series of instructions but instead it is a way of describing something. In the case of HTML it describes how content should be displayed in a web browser.</p>
 
 <p>HTML is made up of what we call <strong>tags</strong>.  Tags are how we tell the browser what type of content something is in a page.</p>
 
@@ -359,11 +358,7 @@
 </code></pre>
 </div>
 
-<p>The content here is the text <code class="highlighter-rouge">Node Girls</code> and it is <em>“marked-up”</em> with the <code class="highlighter-rouge">h1</code> tag.  By <em>marked-up</em> we mean that this piece of text is preceeded by an opening tag <code class="highlighter-rouge">&lt;h1&gt;</code> and following by the corresponding closing tag <code class="highlighter-rouge">&lt;/h1&gt;</code></p>
-
-<p>is a Header tag.  Specially it is the level 1 header.</p>
-
-<p>You can see these in the content above as the bits with <code class="highlighter-rouge">&lt;</code> <code class="highlighter-rouge">&gt;</code> around them.  Notice that there are actually two parts to each tag, an <strong>opening tag</strong> with <code class="highlighter-rouge">&lt;</code> &amp; <code class="highlighter-rouge">&gt;</code>, and a <strong>closing tag</strong> with <code class="highlighter-rouge">&lt;</code> and <code class="highlighter-rouge">/</code></p>
+<p>The content here is the text <code class="highlighter-rouge">Node Girls</code> and it is <em>“marked-up”</em> with the <code class="highlighter-rouge">h1</code> tag.  By <em>marked-up</em> we mean that this piece of text is preceeded by an opening tag <code class="highlighter-rouge">&lt;h1&gt;</code> and following by the corresponding closing tag <code class="highlighter-rouge">&lt;/h1&gt;</code>is a <code class="highlighter-rouge">Header</code> tag.</p>
 
 <p>There are around 120 tags defined in the current version of HTML (version 5) but many of those are for very specific cases.</p>
 

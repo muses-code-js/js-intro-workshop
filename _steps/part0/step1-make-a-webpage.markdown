@@ -30,13 +30,13 @@ It's easier to demonstrate than explain, so lets create one.
 
     Make a folder somewhere on your computer and name it `intro-to-js` or whatever makes sense for you.  This folder can be on your desktop, or in My Documents, or where ever you want.  Just so long as you know where it is and it is somewhere that makes sense for you.  This folder is going to hold all the files that we create today.  
 
-2. **Open that folder in Atom.**
+2. **Open that folder in Brackets.**
 
-    Open Atom.  Go to  `File` `->` `Add Project Folder`, browse to the folder that you created and click open.  You'll see the tree-view open on the left with `Project`, and then your empty folder.
+    Open Atom.  Go to  `File` `->` `Open Folder`, browse to the folder that you created and click open.  You'll see the name of your folder on the left.
 
 3. **Create a new file called `index.html`**
 
-    Right click on your folder and select `New File`.  When prompted for the path, type `index.html` and press enter.  You'll see this new file `index.html` appear both in the tree-view and also opened in a new editor tab.
+    Right click on the dark grey area just under the name of your folder and select `New File`. When prompted for the path, type `index.html` and press enter.  You'll see this new file `index.html` appear both in the tree-view and also opened in a new editor tab.
 
 4. **Add some HTML**
 
@@ -53,19 +53,18 @@ It's easier to demonstrate than explain, so lets create one.
       </body>
     </html>
     ``` 
-    
-    Notice how both here in your editor the different parts of that content are coloured differently?  That's called **syntax highlighting**.  Many editors do this to make it easier for you to differentiate different elements in your code.
 
-Ok so now we have a very simple webpage.  How do we see that in our web browser?  Just open a new browser tab and either open the file `index.html` or drag and drop it from your file manager. 
+Ok so now we have a very simple webpage.  How do we see that in our web browser?  Just simply click the `Live Preview` icon (Like Harry Potter scar) on the right side and a browser window will open immediately. 
 
 
-[ADD SCREENSHOT]
+![You will see this page](../assets/intro-html.png){:class="img-responsive"}
 
+---
 ## So what's HTML?
 
 **HTML** stands for HyperText Markup Language, and it is the language that webpages are written in.  It's the stuff in a webpage that you don't see displayed which the browser uses to know how it is supposed to show everything else.  
 
-Unlike a programming language, a markup language isn't a series of instructions but instead it is a way of describing something.  In the case of HTML it describes how content should be displayed in a web browser.
+Unlike a programming language, a markup language isn't a series of instructions but instead it is a way of describing something. In the case of HTML it describes how content should be displayed in a web browser.
 
 HTML is made up of what we call **tags**.  Tags are how we tell the browser what type of content something is in a page.
 
@@ -75,11 +74,7 @@ Lets look at the example above, specically the line:
 <h1>Node Girls</h1>
 ```
 
-The content here is the text `Node Girls` and it is *"marked-up"* with the `h1` tag.  By *marked-up* we mean that this piece of text is preceeded by an opening tag `<h1>` and following by the corresponding closing tag `</h1>`
-
- is a Header tag.  Specially it is the level 1 header.
-
-You can see these in the content above as the bits with `<` `>` around them.  Notice that there are actually two parts to each tag, an **opening tag** with `<` & `>`, and a **closing tag** with `<` and `/`
+The content here is the text `Node Girls` and it is *"marked-up"* with the `h1` tag.  By *marked-up* we mean that this piece of text is preceeded by an opening tag `<h1>` and following by the corresponding closing tag `</h1>`is a `Header` tag.  
 
 There are around 120 tags defined in the current version of HTML (version 5) but many of those are for very specific cases.
 

@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Intro to Javascript: Conditional Statements</title>
-  <meta name="description" content="CONDITIONAL STATEMENTS">
+  <title>Intro to Javascript: Functions</title>
+  <meta name="description" content="A function is a type of procedure or routine. While some of the functions only perform some operations, some of them return a value after the operations as w...">
   <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
   <link rel="stylesheet" href="/intro-to-js/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -164,7 +164,7 @@
     
       <li class='active'>
         <a href="/intro-to-js/step6/">
-          6 - Conditional Statements
+          6 - Functions
         </a>
       </li>
       
@@ -172,7 +172,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step7/">
-          7 - Loops
+          7 - Conditional Statements
         </a>
       </li>
       
@@ -180,7 +180,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step8/">
-          8 - Exercise: FizzBuzz
+          8 - Arrays
         </a>
       </li>
       
@@ -188,7 +188,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step9/">
-          9 - Functions
+          9 - Loops
         </a>
       </li>
       
@@ -196,7 +196,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step10/">
-          10 - Arrays
+          10 - Exercise: FizzBuzz
         </a>
       </li>
       
@@ -283,113 +283,59 @@
         <article class="post">
 
   <header class="post-header">
-    <h2 class="post-title"> Step 6 - Conditional Statements</h1>
+    <h2 class="post-title"> Step 6 - Functions</h1>
   </header>
 
   <div class="post-content">
-    <h4 id="conditional-statements">CONDITIONAL STATEMENTS</h4>
+    <p>A function is a type of procedure or routine. While some of the functions only perform some operations, some of them return a value after the operations as well. 
+Functions can take input variables called <code class="highlighter-rouge">arguments</code> to perform the action that is defined inside of the function.
+To create a function use the following format:</p>
 
-<p>As we mentioned in the last step, there are lots of different kinds of operator. In this step, we show you how to use operators to help your program make decisions. This lets your program respond in different ways, depending on what the user does.</p>
-
-<p>For example, let’s say you have a program that lets your user input numbers. How can you make the program print a different message depending on the number? For example, we want to say “High!” if the number is above 7, and “Low!” if the number is below 7.</p>
-
-<p>Let’s think about what the program needs to do to make that happen.</p>
-
-<ol>
-  <li>It needs to compare the user’s number with the number 7, to see if it’s higher or lower.</li>
-  <li>It needs to print “High!” when the number is bigger than 7.</li>
-  <li>It needs to print “Low!” when the number is smaller than 7.</li>
-</ol>
-
-<p>We can do the first part of this job with a new type of operator called a comparison operator.</p>
-
-<h4 id="comparison-operators">COMPARISON OPERATORS</h4>
-
-<p>Comparison operators are used to compare values. Javascript’s comparison operators are:</p>
-
-<ul>
-  <li><code class="highlighter-rouge">&gt;</code> greater than</li>
-  <li><code class="highlighter-rouge">&lt;</code> less than</li>
-  <li><code class="highlighter-rouge">=&gt;</code> greater than or equal to</li>
-  <li><code class="highlighter-rouge">&lt;=</code> less than or equal to</li>
-  <li><code class="highlighter-rouge">==</code> equal to</li>
-  <li><code class="highlighter-rouge">!=</code> not equal to</li>
-</ul>
-
-<p>TIP: Remember that the assignment operator <code class="highlighter-rouge">=</code> is different from the equal to operator <code class="highlighter-rouge">==</code>. They look similar, but they do different things.</p>
-
-<p>You’ll have used some of these in maths, though they might be written differently on a computer to how you’re used to writing them by hand.</p>
-
-<p>Comparison operators work a little bit differently from arithmetical operators. When you use a comparison operator, the program tests whether the statement made by the first value, the operator, and the second value, is <em>true</em> or <em>false</em>.</p>
-
-<p>For example, if you wrote <code class="highlighter-rouge">5 &lt; 6</code> in a program, the result of the test would be <em>true</em>, because five <em>is</em> less than six. If you wrote <code class="highlighter-rouge">5 == 6</code>, the result would be <em>false</em>, because five and six are not equal.</p>
-
-<p>For our High/Low program, we need to use a variable to check whether our user has input a number that is higher or lower than seven.</p>
-
-<p>What variable would you use?</p>
-
-<p>What would your statements look like?</p>
-
-<h4 id="if-statements">IF STATEMENTS</h4>
-
-<p>Once you have your tests, you need to tell your program what to do after it evaluates your statements. To do this, we use <em>conditions</em> - in this case, an <code class="highlighter-rouge">if</code> statement.</p>
-
-<p>An <code class="highlighter-rouge">if</code> statement lets a computer reason out what to do when you can’t tell it exactly what is going to happen. The same way you might check the weather to determine whether you’ll go to the beach or a movie, your program can check whether something is true or false in order to work out what to do next.</p>
-
-<p>The basic structure of an <code class="highlighter-rouge">if</code> statement is:</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">do</span> <span class="k">this</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="k">do</span> <span class="nx">something</span> <span class="k">else</span>
-<span class="p">}</span>
-</code></pre>
-</div>
-<p>An example that might work for our High/Low program is:</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'High!'</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Low!'</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">functionName</span><span class="p">(</span><span class="nx">argument</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Performing an operation</span>
+    <span class="kd">var</span> <span class="kr">double</span> <span class="o">=</span> <span class="nx">argument</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="c1">// Returning a value</span>
+    <span class="k">return</span> <span class="kr">double</span><span class="p">;</span>
+<span class="p">};</span>
 </code></pre>
 </div>
 
-<p>Hmm, but we’ve left out one possibility - what if our user enters exactly 7? To make this work, we need to check something else.</p>
+<p>This function will take one argument and return the argument multiplied by 2.
+Our function won’t actually run unless we ‘call’ it.
+To ‘call’ the function we write:</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">functionName</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+</code></pre>
+</div>
 
-<p>If you want to check a bunch of different things, you can put <code class="highlighter-rouge">if</code> statements together by including a whole new <code class="highlighter-rouge">if</code> statement after <code class="highlighter-rouge">else</code>, like this:</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code>    <span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'High!'</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Low!'</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'You guessed our number.'</span><span class="p">);</span>
-    <span class="p">}</span>    
+<p>Now we will call our function with argument that is 10. And our function
+will return us 20. To see what our function returns us we can console.log
+it, for example:</p>
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">functionName</span><span class="p">(</span><span class="mi">10</span><span class="p">));</span>
 </code></pre>
 </div>
 
 <hr />
 
-<h4 id="tasks-to-do">TASKS TO DO</h4>
-
+<h3 id="tasks">Tasks</h3>
 <ol>
-  <li>We have 2 functions from the previous task - add and subtract.
-Let’s tell the machine to decide what action to run depending on the arithmetical
-operator(+,-,/, * etc). If the operator is ‘+’, we should use the add function, else we should use the subtract function.
+  <li>Create a function to add multiple numbers.
     <ul>
-      <li>STEP 1 : Create a variable called operator and let it be equal to ‘-‘.</li>
-      <li>STEP 2 : Create an if/else statement based on what operator we have. If we have an operator equal to ‘+’, we call add function with any two numbers,
-else the subtract function with any 2 numbers.</li>
-      <li>STEP 3 : Log your result. (Console.log())</li>
+      <li>Name it <code class="highlighter-rouge">add</code> and pass in two arguments (num1 and num2). To pass multiple arguments into function we separate them with a comma.</li>
+      <li>This function should return us a sum of num1 and num2.</li>
+      <li>Call the function passing 2 numbers that you prefer as arguments.</li>
+      <li>Log the result to see it. (Console.log())</li>
     </ul>
   </li>
-  <li>Create 2 more functions and name them divide and multiply. After
-that let’s extend our ‘if else’ check that we already created by checking if
-it is equal to ‘/’ - call ‘divide’ function, if it is ‘*’ call multiply
-function, else console.log - “Sorry, we don’t know this operator”.</li>
+  <li>Create a function to subtrack numbers from each other.
+    <ul>
+      <li>Name it <code class="highlighter-rouge">subtrack</code> and pass in two arguments (num1 and num2)</li>
+      <li>This function should return us a subtraction of num1 and num2.</li>
+      <li>Call the function passing 2 numbers that you prefer as arguments.</li>
+      <li>Log the result to see it. (Console.log())</li>
+    </ul>
+  </li>
+  <li>Instead of numbers to pass as arguments, create variables that store
+those numbers and pass them as an arguments to your function. Call your function and log your result.</li>
 </ol>
 
     

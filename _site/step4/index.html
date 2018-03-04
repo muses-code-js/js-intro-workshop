@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Intro to Javascript: Variables</title>
-  <meta name="description" content="All most all of the code you write will be manipulating or examining data of some sort. That data might come from a file, or from a 3rd party service, or fro...">
+  <meta name="description" content="Most of the code you write will be manipulating or examining data of some sort. That data might come from a file, or from a 3rd party service, or from the us...">
   <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
   <link rel="stylesheet" href="/intro-to-js/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -164,7 +164,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step6/">
-          6 - Conditional Statements
+          6 - Functions
         </a>
       </li>
       
@@ -172,7 +172,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step7/">
-          7 - Loops
+          7 - Conditional Statements
         </a>
       </li>
       
@@ -180,7 +180,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step8/">
-          8 - Exercise: FizzBuzz
+          8 - Arrays
         </a>
       </li>
       
@@ -188,7 +188,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step9/">
-          9 - Functions
+          9 - Loops
         </a>
       </li>
       
@@ -196,7 +196,7 @@
     
       <li class=''>
         <a href="/intro-to-js/step10/">
-          10 - Arrays
+          10 - Exercise: FizzBuzz
         </a>
       </li>
       
@@ -287,7 +287,7 @@
   </header>
 
   <div class="post-content">
-    <p>All most all of the code you write will be manipulating or examining data of some sort.  That data might come from a file, or from a 3rd party service, or from the user selecting something on a page or typing into a text box.  Regardless of where it comes from we need a place to put it so we can refer to it.</p>
+    <p>Most of the code you write will be manipulating or examining data of some sort. That data might come from a file, or from a 3rd party service, or from the user selecting something on a page or typing into a text box.  Regardless of where it comes from we need a place to put it so we can refer to it.</p>
 
 <p><strong>Variables</strong> are the place where we keep information in our program.</p>
 
@@ -309,10 +309,6 @@ using <code class="highlighter-rouge">=</code> sign:</p>
 </div>
 
 <p>This is called <strong>assigning a value</strong> to the variable.  The <code class="highlighter-rouge">=</code> is called the <strong>assignment</strong> operator.  We’ll learn more about operators in the next part.</p>
-
-<!-- Note that `=` is not an equals sign like you might be used to from algebra.   -->
-
-<p>The first time variable is assigned a value the variable is said to be <strong>initialized</strong>.</p>
 
 <p>We also can create and give value to a variable in one step, as follows:</p>
 
@@ -364,15 +360,6 @@ using <code class="highlighter-rouge">=</code> sign:</p>
 
 <p>You’ll get a error something like <code class="highlighter-rouge">ReferenceError: Hello is not defined</code> because JavaScript assumes that <code class="highlighter-rouge">Hello</code> is a variable and tries to assigns it’s value to <code class="highlighter-rouge">message</code>.  And <code class="highlighter-rouge">Hello</code> doesn’t exist, so <code class="highlighter-rouge">not defined</code>.</p>
 
-<p>It gets even more confused if you try to do something like:</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="nx">Hello</span> <span class="nx">There</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
-</code></pre>
-</div>
-
-<p><strong>Short version:</strong> if your value is a bunch of literal characters that belong together, then wrap them in quotes.</p>
-
 <p><strong>Should I use single or double quotes?</strong>  It mostly doesn’t matter so long as you use the same ones at the beginning and the end.  It’s mostly personal preference but it does matter when the string itself contains quote characters.</p>
 
 <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="s1">'Say "Hello" to my little friend.'</span><span class="p">;</span>
@@ -385,30 +372,6 @@ using <code class="highlighter-rouge">=</code> sign:</p>
 <p>Try it out and see.</p>
 
 <p>In the next step when we talk about operators we will also talk about another data type: Numbers.</p>
-
-<!-- #### DATA STRUCTURES AND TYPES
-
-As you can notice, we can give different types of values to our variables.
-
-| DATA TYPE        | DESCRIPTION        |
-| -----------------|--------------------|
-| **String**       |A sequence of characters that represent a text value. For example:  "Hello World!"|
-| **Number**       |An integer or floating point number. For example: 42 or 3.14159. Not wrapped in quotes |
-| **Boolean**      |true or false|
-| **null**         | A special keyword denoting a null value.  |
-| **undefined**    |A top-level property whose value is not defined. |
-| **Symbol**       |A data type whose instances are unique and immutable. |
-| **Object**       |some description |
- -->
-
-<!-- You also can use your variables to represent information that they have inside.
-
-```javascript
-var hello = 'Hello World';
-alert(hello);
-```
-
-This will pop-up an alert box with the string 'Hello World!' -->
 
 
     

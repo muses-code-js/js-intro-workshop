@@ -11,13 +11,13 @@ permalink: step5/
 
 ---
 
-All programming languages have constructs called *operators*. An operator is a character that represents an action, or sometimes a relationship. An operator affects whatever is in front of it in a particular way, according to the kind of operator it is, and according to whatever comes after it.
+All programming languages have constructs called *operators*. An operator is a character that represents an action, or sometimes a relationship.
 
-You're already familiar with operators from when you learned maths: `+` is an operator that represents the action of *addition*. When we use `+` in maths, we take whatever is in front of the `+` and add whatever comes after the `+` to it. Operators in programming work the same way.
+You're already familiar with operators from when you learned maths: `+` is an operator that represents the action of *addition*. Operators in programming work the same way.
 
 There are lots of different kinds of operator. For example, you've already used the assignment operator, `=`, to assign a value to your variable in the last step. For this step, we're going to start with *arithmetical* operators, since you already understand how most of them work in the real world.
 
-#### ARITHMETICAL OPERATORS
+## Arithmetical Operators
 
 JavaScript includes several standard arithmetical operators (`+`, `-`, `/`, `*`) that you can use to do maths with your numbers.
 
@@ -32,7 +32,7 @@ TIP: Because we're working with numbers here, we don't need quotes around our va
 
 ----
 
-#### TASKS TO DO
+### Tasks
 1. Create 3 variables:
  * 1st variable named ten with value 10 inside
  * 2nd variable named three with value 3
