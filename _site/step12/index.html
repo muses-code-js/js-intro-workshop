@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Intro to Javascript: html</title>
+  <meta name="description" content="Hypertext Markup Language (HTML)">
+  <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
+  <link rel="stylesheet" href="/js-intro-workshop/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/js-intro-workshop/step12/">
+  <link rel="alternate" type="application/rss+xml" title="Node Girls" href="/js-intro-workshop/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/js-intro-workshop/">Node Girls <small>Intro to Javascript</small></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/js-intro-workshop/">Home</a>
+           <a class="page-link go-link" href="/js-intro-workshop/step0/"><i class="fa fa-rocket" aria-hidden="true"></i> Start</a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/js-intro-workshop/">Home</a></li>
+  </ul>
+
+  <h3>Part 0 - Getting Started</h3>
+  <ul>
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step0/">
+          0 - Tools of the Trade
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step1/">
+          1 - Making a webpage
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step2/">
+          2 - Adding some JavaScript
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step3/">
+          3 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  
+  <h3>Part 1 - Basics</h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step4/">
+          4 - Variables
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step5/">
+          5 - Operators
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step6/">
+          6 - Functions
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step7/">
+          7 - Conditional Statements
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step8/">
+          8 - Arrays
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step9/">
+          9 - Loops
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step10/">
+          10 - Exercise: FizzBuzz
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step11/">
+          11 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3>Part 2 - The Browser</h3>
+  <ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <li class='active'>
+        <a href="/js-intro-workshop/step12/">
+          12 - html
+        </a>
+      </li>
+      
+  
+  
+      <li class=''>
+        <a href="/js-intro-workshop/step13/">
+          13 - Congratulations
+        </a>
+      </li>
+      
+  
+  </ul>
+
+  <!-- <h3>Challenges</h3>
+  <ul>
+  
+  </ul> -->
+
+  <ul class="main">
+    <!-- <li class=""><a href="/js-intro-workshop/troubleshooting/">Troubleshooting</a></li> -->
+    <li class=""><a href="/js-intro-workshop/journey-continues/">The Journey Continues</a></li>
+  </ul>
+
+  
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+  
+</ul>
+
+
+</div>
+
+        <article class="post">
+
+  <header class="post-header">
+    <h2 class="post-title"> Step 12 - html</h1>
+  </header>
+
+  <div class="post-content">
+    <h4 id="hypertext-markup-language-html">Hypertext Markup Language (HTML)</h4>
+
+<p>As you noticed, HTML is divided into elements that look like this:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;header&gt;&lt;/header&gt;</span>
+<span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+</code></pre>
+</div>
+<p>etc</p>
+
+<p>We call these “tags”. Each element on the page has an opening and closing
+tag. (NOTE: Some tags are self-closing like <code class="highlighter-rouge">&lt;img&gt;</code>.)</p>
+
+<p>The outermost tag in every HTML file is <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code>.</p>
+
+<p>Inside the <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> tag you will find a <code class="highlighter-rouge">&lt;head&gt;</code> and <code class="highlighter-rouge">&lt;body&gt;</code> tag.</p>
+
+<p><code class="highlighter-rouge">&lt;head&gt;</code> we keep meta information, the page title and links to css files.
+<code class="highlighter-rouge">&lt;body&gt;</code> contains our actual content.</p>
+
+<p>For a full list of HTML tags, you can refer to this listing:
+http://htmldog.com/references/html/tags/</p>
+
+<p>HTML tags may contain attributes:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"settings"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p>This div has an attribute named class that has a value: ‘settings’.</p>
+
+<h4 id="accessing-elements">Accessing Elements</h4>
+
+<h5 id="document-object-model-dom">Document Object Model (DOM)</h5>
+
+<p>The DOM is the javascript representation of the active HTML file. The DOM
+is available under a special global variable called ‘document’. We can get
+specific nodes (page elements) with the DOM method: ‘querySelector’.</p>
+
+<p>Let’s get our twitter link from the page.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code>
+<span class="kd">var</span> <span class="nx">ourTwitter</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.twitter'</span><span class="p">);</span>
+<span class="c1">// We can store page elements in variables, just like any other value!</span>
+</code></pre>
+</div>
+
+<h5 id="getting-similar-elements">Getting Similar Elements</h5>
+
+<p>We also can get all elements with the same tag. In our footer, we have an
+unordered list (<code class="highlighter-rouge">&lt;ul&gt;</code>), with three list items (<code class="highlighter-rouge">&lt;li&gt;</code>) inside. Let’s get all
+of them.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code>
+<span class="c1">// Will get all &lt;li&gt; from the page</span>
+<span class="kd">var</span> <span class="nx">mediaLinks</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'li'</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>Ok, so far so good. But what if we want only the text from our ‘h1’ tag?
+Page elements have another property for this: ‘.textContent’</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">ourTwitter</span><span class="p">.</span><span class="nx">textContent</span><span class="p">;</span>
+<span class="c1">// We will get text 'Twitter: @NodeGirlsSydney @NodeGirlsMelb'</span>
+</code></pre>
+</div>
+
+<h4 id="editing-page-content">Editing Page Content</h4>
+
+<p>We can change the content of the tags using the same .textContent property.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">ourTwitter</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">'@ButenkoMe'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ourTwitter</span><span class="p">.</span><span class="nx">textContent</span><span class="p">);</span>
+<span class="c1">// guess what we will see on the page and in the console?</span>
+</code></pre>
+</div>
+
+<h4 id="editing-attributes">Editing Attributes</h4>
+
+<p>We can also change and set attributes on our elements.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">ourTwitter</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.twitter'</span><span class="p">);</span>
+<span class="nx">ourTwitter</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="s2">"surprise"</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h4 id="creating-new-nodes-elements">Creating New Nodes (Elements)</h4>
+
+<p>The document object also provides ways to create nodes from scratch:</p>
+
+<p>document.createElement(tagName); –&gt; create the element
+document.createTextNode(text); –&gt; what text it should contain
+document.appendChild(node); –&gt; append it to the document</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">pageNode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'body'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">newParagraph</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'p'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">paragraphText</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s1">'Squee!'</span><span class="p">);</span>
+<span class="nx">newParagraph</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">paragraphText</span><span class="p">);</span>
+<span class="nx">pageNode</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newParagraph</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<hr />
+<h4 id="tasks-to-do">TASKS TO DO</h4>
+
+<ol>
+  <li>Now it’s your turn — get the h1 tag from the page and store it into amvariable named ourTitle. console.log it and see what you get!</li>
+  <li>
+    <ul>
+      <li>Get all <code class="highlighter-rouge">&lt;li&gt;</code> elements from the page in a variable named mediaLinks.</li>
+      <li>Now console.log mediaLinks.length</li>
+      <li>iterate through each mediaLinks item and console.log it. (Remember loops)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Get the content of ‘h1’ element and console.log it.</li>
+      <li>Make up a new title! Change the content of our ‘h1’ to anything you like.</li>
+    </ul>
+  </li>
+  <li>Update the value of the ‘src’ attribute of our img tag to “img/kittens.jpeg”</li>
+  <li>Well, do you still have kittens on your screen? I like both logo and
+kittens. Let’s create a new image that sources our original logo file, and
+put it into a header.</li>
+</ol>
+
+<p>P.S. You also can give styles to the new node that you create.</p>
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step13'>Go to Step 13</a>
+</div>
+
+
+    
+
+
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="http://nodegirls.com.au/" target="_blank">nodegirls.com.au</a></li>
+        <li><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:info@nodegirls.com.au">info@nodegirls.com.au</a></li>
+      </ul>
+      <ul>
+        <li><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/NodeGirlsAustralia/" target="_blank">facebook.com/NodeGirlsAustralia</a></li>
+        <li><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://github.com/node-girls-australia" target="_blank">github.com/node-girls-australia</a></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://twitter.com/NodeGirlsBri" target="_blank">twitter.com/NodeGirlsBri</a></li>
+      </ul>
+    </div>
+
+</footer>
+
+
+  </body>
+
+</html>

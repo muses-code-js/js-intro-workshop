@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Intro to Javascript: JavaScript Cheatsheet</title>
+  <meta name="description" content="This is an introductory workshop for Javascript.">
+  <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
+  <link rel="stylesheet" href="/js-intro-workshop/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/js-intro-workshop/cheat-sheet.html">
+  <link rel="alternate" type="application/rss+xml" title="Node Girls" href="/js-intro-workshop/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/js-intro-workshop/">Node Girls <small>Intro to Javascript</small></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/js-intro-workshop/">Home</a>
+           <a class="page-link go-link" href="/js-intro-workshop/step0/"><i class="fa fa-rocket" aria-hidden="true"></i> Start</a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/js-intro-workshop/">Home</a></li>
+  </ul>
+
+  <h3>Part 0 - Getting Started</h3>
+  <ul>
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step0/">
+          0 - Tools of the Trade
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step1/">
+          1 - Making a webpage
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step2/">
+          2 - Adding some JavaScript
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step3/">
+          3 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  
+  <h3>Part 1 - Basics</h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step4/">
+          4 - Variables
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step5/">
+          5 - Operators
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step6/">
+          6 - Functions
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step7/">
+          7 - Conditional Statements
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step8/">
+          8 - Arrays
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step9/">
+          9 - Loops
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step10/">
+          10 - Exercise: FizzBuzz
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step11/">
+          11 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3>Part 2 - The Browser</h3>
+  <ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <li class=''>
+        <a href="/js-intro-workshop/step12/">
+          12 - html
+        </a>
+      </li>
+      
+  
+  
+      <li class=''>
+        <a href="/js-intro-workshop/step13/">
+          13 - Congratulations
+        </a>
+      </li>
+      
+  
+  </ul>
+
+  <!-- <h3>Challenges</h3>
+  <ul>
+  
+  </ul> -->
+
+  <ul class="main">
+    <!-- <li class=""><a href="/js-intro-workshop/troubleshooting/">Troubleshooting</a></li> -->
+    <li class=""><a href="/js-intro-workshop/journey-continues/">The Journey Continues</a></li>
+  </ul>
+
+  
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+  
+</ul>
+
+
+</div>
+
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">JavaScript Cheatsheet</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="javascript-cheatsheet">JavaScript Cheatsheet</h1>
+
+<h2 id="javascript-or-js">JavaScript (or JS)</h2>
+
+<p>It is a popular programming language commonly used to create interactive effects within web browsers.</p>
+
+<h2 id="variable">variable</h2>
+
+<p>A place to store values, can store any kind of information (data types): numbers, words, collections of data</p>
+
+<h3 id="undefined-variable">undefined variable</h3>
+
+<p>A variable that has no value</p>
+
+<h3 id="to-declare-variable">to declare variable</h3>
+
+<p>To create a variable  - done by using:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>var variableName = value;
+</code></pre>
+</div>
+
+<h3 id="to-initialize-variable">to initialize variable</h3>
+
+<p>Set (give) some value to variable.</p>
+
+<h2 id="value-types">value types</h2>
+
+<h3 id="string">string</h3>
+
+<p>A set of characters, word(s), phrase. To initialize variable with a string you need to put this string into quotes.</p>
+
+<h3 id="boolean">boolean</h3>
+
+<p>Boolean variable represent a logical value True or False</p>
+
+<h3 id="array">array</h3>
+
+<p>An ordered list of values, can store different types of data inside</p>
+
+<h3 id="operator">operator</h3>
+
+<p>Mathematical operators, such as: +, -, *, /, &gt;, &lt;, = etc</p>
+
+<h2 id="comments">comments</h2>
+
+<p>Comments are some notes that you can leave for yourself or another person, a note that a computer will not read. You can write a comment on a new line or on the same line after code as so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// I’m your comment
+</code></pre>
+</div>
+<p>Single line comment starts with <code class="highlighter-rouge">//</code>
+Multi line comment are placed between <code class="highlighter-rouge">/* .. */</code></p>
+
+<h2 id="function">function</h2>
+
+<p>A separable, reusable piece of code. It takes some input, does some manipulation on it and returns us an output.</p>
+
+<h3 id="to-declare-function">to declare function</h3>
+
+<p>To create a function</p>
+
+<h3 id="argument">argument</h3>
+
+<p>A value input that functions can accept</p>
+
+<h2 id="ifelse-statement">if/else statement</h2>
+
+<p><code class="highlighter-rouge">if</code> used to decide which lines of code to execute, <code class="highlighter-rouge">else</code> - to give alternative set of instructions.</p>
+
+<p>Example:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>if (x &gt; 5) {
+  console.log("X bigger than 5");
+}
+else {
+  console.log("X smaller than 5");
+}
+</code></pre>
+</div>
+
+<h2 id="iteratingloops">Iterating/Loops</h2>
+
+<h3 id="while-loop">while loop</h3>
+
+<p>It repeats code over and over again until some condition is met.</p>
+
+<h3 id="for-loop">for loop</h3>
+
+<p>This loop is similar to ‘while loop’, just with a set amount of repetition. You declare counter in the statement as so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>for (var i = 0; i &lt; 5; i++) {
+  do something 5 times
+}
+</code></pre>
+</div>
+
+<h3 id="infinite-loop">infinite loop</h3>
+
+<p>A loop that does not stop and it’s a loop that you need to avoid. Each loop should have some condition so it can stop.</p>
+
+<h2 id="object">object</h2>
+
+<p>A collection of properties</p>
+
+<h2 id="event">event</h2>
+
+<p>A type of object that is created when a user interacts with a web page. For example, JavaScript creates an event when a user clicks on a button.</p>
+
+<h2 id="css">CSS</h2>
+
+<p>Stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen. It is presentation.</p>
+
+<h2 id="html">HTML</h2>
+
+<p>Stands for Hyper Text Markup Language. It is a structure of the elements on the page.</p>
+
+<h2 id="dom">DOM</h2>
+
+<p>Stands for Document Object Model. It defines the logical structure of documents and the way a document is accessed and manipulated.</p>
+
+<h2 id="scope">scope</h2>
+
+<p>Scope is the set of variables, objects, and functions that you can access.</p>
+
+<h2 id="console">console</h2>
+
+<p>A method of interacting with the system. In order to write to the browser console, you could use console.log(‘Hello World’). This would write Hello World in the browser console.</p>
+
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+      <ul>
+        <li><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="http://nodegirls.com.au/" target="_blank">nodegirls.com.au</a></li>
+        <li><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:info@nodegirls.com.au">info@nodegirls.com.au</a></li>
+      </ul>
+      <ul>
+        <li><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/NodeGirlsAustralia/" target="_blank">facebook.com/NodeGirlsAustralia</a></li>
+        <li><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://github.com/node-girls-australia" target="_blank">github.com/node-girls-australia</a></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://twitter.com/NodeGirlsBri" target="_blank">twitter.com/NodeGirlsBri</a></li>
+      </ul>
+    </div>
+
+</footer>
+
+
+  </body>
+
+</html>

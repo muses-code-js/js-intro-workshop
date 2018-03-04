@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% assign contentArray = page.content | markdownify | split: site.challenge_separator %}
+
+<article class="post">
+
+  <header class="post-header">
+    <h2 class="post-title"> Challenge {{page.cnumber}} - {{ page.title | escape }}</h1>
+  </header>
+  
+  <div class="post-content">
+    <div><b>Difficulty: </b>
+      {% for i in (1..page.difficulty) %}<span class="fa fa-star"></span>{% endfor %}{% for i in (page.difficulty..4) %}<span class="fa fa-star-o"></span>{% endfor %}
+      {{site.challenge_difficulties[page.difficulty]}}
+      </div>
+
+      {{ contentArray.first }}
+    <div class="challenge">
+      <p>Here's how a challenge works:</p>
+      <ol>
+        <li>We tell you how to change the front-end for the new feature.</li>
+        <li>We describe the expectations for the backend changes.</li>
+        <li>We'll discuss the steps & things you need to understand to do this and give some hints.</li>
+        <li>Then you have to implement the backend changes yourself.  </li>
+      </ol>
+    <p>
+    There will be a solution at the end.  But remember there is always more than one way of doing things. :smile:
+    </p>
+    </div>
+    {{ contentArray.last }}
+    {% include keywords-table.html %}
+
+  </div>
+
+</article>
