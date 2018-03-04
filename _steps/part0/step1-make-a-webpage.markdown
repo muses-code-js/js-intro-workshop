@@ -28,7 +28,7 @@ It's easier to demonstrate than explain, so lets create one.
 
 1. **Create a folder for this workshop.**
 
-    Make a folder somewhere on your computer and name it `intro-to-js` or whatever makes sense for you.  This folder can be on your desktop, or in My Documents, or where ever you want.  Just so long as you know where it is and it is somewhere that makes sense for you.  This folder is going to hold all the files that we create today.  
+    Make a folder somewhere on your computer and name it `js-intro-workshop` or whatever makes sense for you.  This folder can be on your desktop, or in My Documents, or where ever you want.  Just so long as you know where it is and it is somewhere that makes sense for you.  This folder is going to hold all the files that we create today.  
 
 2. **Open that folder in Brackets.**
 

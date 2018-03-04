@@ -18,7 +18,7 @@ workshopname: "Intro to Javascript"
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   This is an introductory workshop for Javascript.
-baseurl: "/intro-to-js" # the subpath of your site, e.g. /blog
+baseurl: "/js-intro-workshop" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
