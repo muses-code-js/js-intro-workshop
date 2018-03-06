@@ -1,9 +1,9 @@
 ---
 layout: step
-number: 13
+number: 14
 part: 2
 title: Congratulations
-permalink: step13/
+permalink: step14/
 ---
 
 ![Congratulations](../assets/leo-congrats.gif){:class="img-responsive"}
