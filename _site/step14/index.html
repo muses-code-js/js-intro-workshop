@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Intro to Javascript: Arrays</title>
-  <meta name="description" content="What is an Array?">
+  <title>Intro to Javascript: Congratulations</title>
+  <meta name="description" content="">
   <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
   <link rel="stylesheet" href="/js-intro-workshop/assets/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="http://localhost:4000/js-intro-workshop/step8/">
+  <link rel="canonical" href="http://localhost:4000/js-intro-workshop/step14/">
   <link rel="alternate" type="application/rss+xml" title="Node Girls" href="/js-intro-workshop/feed.xml">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -180,7 +180,7 @@
       
   
     
-      <li class='active'>
+      <li class=''>
         <a href="/js-intro-workshop/step8/">
           8 - Arrays
         </a>
@@ -263,7 +263,7 @@
       
   
   
-      <li class=''>
+      <li class='active'>
         <a href="/js-intro-workshop/step14/">
           14 - Congratulations
         </a>
@@ -295,83 +295,18 @@
         <article class="post">
 
   <header class="post-header">
-    <h2 class="post-title"> Step 8 - Arrays</h1>
+    <h2 class="post-title"> Step 14 - Congratulations</h1>
   </header>
 
   <div class="post-content">
-    <h2 id="what-is-an-array">What is an Array?</h2>
+    <p><img src="../assets/leo-congrats.gif" alt="Congratulations" class="img-responsive" /></p>
 
-<p>Arrays are another way to store data, like variables. Unlike variables, they store a list of values. It can keep any type of data
-inside such as numbers, strings, objects.</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code>
-<span class="kd">var</span> <span class="nx">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'cat'</span><span class="p">,</span> <span class="s1">'dog'</span><span class="p">,</span> <span class="s1">'horse'</span><span class="p">];</span>
-<span class="kd">var</span> <span class="nx">randomThings</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'book'</span><span class="p">,</span> <span class="s1">'today is Saturday'</span><span class="p">,</span> <span class="mi">10</span><span class="p">];</span>
-<span class="kd">var</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">19</span><span class="p">];</span>
-
-</code></pre>
-</div>
-<h3 id="length-of-an-array">Length Of An Array</h3>
-<p>We can easily check how many items we have in our array with the <code class="highlighter-rouge">length</code> property:</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">randomThings</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'book'</span><span class="p">,</span> <span class="s1">'today is Saturday'</span><span class="p">,</span> <span class="mi">10</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">randomThings</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span> <span class="c1">// We will get 4.</span>
-</code></pre>
-</div>
-
-<h3 id="accessing-and-modifying-array-items">Accessing and Modifying Array Items</h3>
-
-<p>It’s useful to keep all of these values in one place. But what if we want
-to use only 1 item from the array?</p>
-
-<p>We can get them out using <code class="highlighter-rouge">bracket notation</code>. Array indices start counting from 0. The usage looks like this.</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code>
-<span class="kd">var</span> <span class="nx">randomThings</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'book'</span><span class="p">,</span> <span class="s1">'today is Saturday'</span><span class="p">,</span> <span class="mi">10</span><span class="p">];</span>
-<span class="kd">var</span> <span class="nx">firstItem</span> <span class="o">=</span> <span class="nx">randomThings</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstItem</span><span class="p">)</span>
-<span class="kd">var</span> <span class="nx">secondItem</span> <span class="o">=</span> <span class="nx">randomThings</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">secondItem</span><span class="p">)</span> 
-</code></pre>
-</div>
-
-<p>We also can replace values inside of the arrays by assigning a new value to
-a specific index.</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'cat'</span><span class="p">,</span> <span class="s1">'dog'</span><span class="p">,</span> <span class="s1">'horse'</span><span class="p">];</span>
-<span class="c1">// let's replace 'dog' with 'fish'</span>
-<span class="nx">animals</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'fish'</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">animals</span><span class="p">);</span> <span class="c1">// Now our animals array will be ['cat', 'fish', 'horse']</span>
-</code></pre>
-</div>
-
-<h3 id="adding-items-to-an-array">Adding Items To An Array</h3>
-
-<p>If you want to add new values to an existing array you can use the method
-‘.push()’. Push will add a new value to the end of the array.</p>
-
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code>
-<span class="kd">var</span> <span class="nx">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'cat'</span><span class="p">,</span> <span class="s1">'dog'</span><span class="p">,</span> <span class="s1">'horse'</span><span class="p">];</span>
-<span class="nx">animals</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'rabbit'</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">animals</span><span class="p">);</span> <span class="c1">// animals will be ['cat', 'dog', 'horse', 'rabbit']</span>
-</code></pre>
-</div>
-
-<h3 id="tasks">Tasks</h3>
-
-<ol>
-  <li>Create your own array, named <code class="highlighter-rouge">favouriteFood</code>, and write in a couple of things you like.</li>
-  <li>Check how many values you have in your array <code class="highlighter-rouge">favouriteFood</code>. Log the result (console.log())</li>
-  <li>Get third element from your array favouriteFood and print on the console.</li>
-  <li>Take your array favouriteFood and replace the first value with anything else. Log the whole array to check.(Don’t forget, index positions start from 0!)</li>
-  <li>Let’s extend your list of favouriteFood and add one more value to it. console.log list your favouriteFood and check it.</li>
-</ol>
 
     
 
 
 <div class="page-nav">
-  <a class='go-link' href='../step9'>Go to Step 9</a>
+  <a class='go-link' href='../step15'>Go to Step 15</a>
 </div>
 
 
