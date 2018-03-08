@@ -80,9 +80,9 @@ There are around 120 tags defined in the current version of HTML (version 5) but
 
 Lets look at the tags we used in the example above:
 
-* `<html>` - 
-* `<head>` - 
-* `<title>` - 
+* `<html>` - The root element that contains any other tags
+* `<head>` - Tells the browser additional information about the webpage
+* `<title>` - Sets the description on the tabs in the browser window to help you navigate between different pages
 * `<body>` - All of your content has to be contained within this tag.
 * `<h1>` - Level 1 heading.  There are six levels of headings, `<h1>` through to `<h6>`.
 * `<p>` - a paragraph
