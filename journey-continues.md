@@ -20,6 +20,10 @@ But this is just the tip of the iceberg for JavaScript and web development.  The
 * [JavaScript:Understanding the weird Parts](https://www.udemy.com/understand-javascript/)
 * [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
 
+### Advanced
+
+ * [Wes Bos 30 Day Challenge](https://javascript30.com/)
+
 
 ## Javascript & Technology Podcasts
 
