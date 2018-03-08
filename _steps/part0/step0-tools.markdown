@@ -44,7 +44,7 @@ Since you're viewing this webpage, we are going to assume you already have a web
 
 All of the modern mainstream web browsers (Chrome, Firefox, Safari, Internet Explorer, Edge) include their own set of Developer Tools AKA Dev Tools.  
 
-Dev Tools provide you an way to see what is going on behind the scenes in whatever web page you currently have open in the browser.
+Dev Tools provide you a way to see what is going on behind the scenes in whatever web page you currently have open in the browser.
 
 Browser Dev Tools are useful for:
 
