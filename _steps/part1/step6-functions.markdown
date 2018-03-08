@@ -46,8 +46,8 @@ console.log(functionName(10));
  * This function should return us a sum of num1 and num2.
  * Call the function passing 2 numbers that you prefer as arguments.
  * Log the result to see it. (Console.log())
-2. Create a function to subtrack numbers from each other. 
- * Name it `subtrack` and pass in two arguments (num1 and num2)
+2. Create a function to subtract numbers from each other. 
+ * Name it `subtract` and pass in two arguments (num1 and num2)
  * This function should return us a subtraction of num1 and num2.
  * Call the function passing 2 numbers that you prefer as arguments.
  * Log the result to see it. (Console.log())

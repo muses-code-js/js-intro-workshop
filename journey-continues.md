@@ -4,14 +4,21 @@ title: The Journey Continues ...
 permalink: journey-continues/
 ---
 
-So hopefully you have completed the workshop and tried a couple of the challenges.  
+So hopefully you have completed the workshop and tried the tasks.  
 
-But this is just the tip of the iceberg for JavaScript.  There is a whole internet of technologies and tutorials at your fingertips.  Here are some starting points about where you could go next.  
+But this is just the tip of the iceberg for JavaScript and web development.  There is a whole bunch of technologies and tutorials at your fingertips.  Here are some starting points about where you could go next.  
 
 ## JavaScript Sources
 
 ### Beginner
-* [FreeCodeAcademy Youtube Channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) 
+* [W3 School JavaScript](https://www.w3schools.com/js/)
+* [scotch.io](https://scotch.io/search?q=javascript)
+* [javascript.info](https://javascript.info/)
+
+### Intermediate
+* [The Good Parts of JavaScript](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742)
+* [JavaScript:Understanding the weird Parts](https://www.udemy.com/understand-javascript/)
+* [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
 
 
 ## Javascript & Technology Podcasts
@@ -19,6 +26,10 @@ But this is just the tip of the iceberg for JavaScript.  There is a whole intern
 [The Women in Tech Show](https://thewomenintechshow.com/) weekly technical interviews with prominent women in tech.
 
 [Javascript Jabber](https://devchat.tv/js-jabber) is a weekly discussion about JavaScript, front-end development, community, careers, and frameworks.
+
+[FreeCodeAcademy Youtube Channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) 
+
+[Code Newby](https://www.codenewbie.org/podcast/) weekly podcasts that poeple tell their stories about their coding journeys.
 
 [WesBos](https://www.youtube.com/channel/UCoebwHSTvwalADTJhps0emA) is a YouTube channel with a variety of short videos mostly on web development and Javascript.
 
