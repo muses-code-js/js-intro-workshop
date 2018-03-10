@@ -32,7 +32,7 @@ It's easier to demonstrate than explain, so lets create one.
 
 2. **Open that folder in Brackets.**
 
-    Open Atom.  Go to  `File` `->` `Open Folder`, browse to the folder that you created and click open.  You'll see the name of your folder on the left.
+    Open Brackets.  Go to  `File` `->` `Open Folder`, browse to the folder that you created and click open.  You'll see the name of your folder on the left.
 
 3. **Create a new file called `index.html`**
 
