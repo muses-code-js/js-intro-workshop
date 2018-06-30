@@ -37,7 +37,7 @@ Follow the instructions in _level1.js_ file and type code in your Text Editor (i
 - img folder - a place where we can store images that we will use on our web-page.
 
 - Js folder contains javaScript files that makes our project work, it defines content and makes a static page functional.
-    It contains 2 files:
+    It contains 3 files:
     - _level1.js_ - basics with explanations(comments, variables, functions, if/else statements)
     - _level2.js_ - more complex javaScript with explanations(arrays, loops)
     - _level3.js_ - html, css and how manipulate them with javaScript (selectors)
