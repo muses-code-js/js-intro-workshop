@@ -59,9 +59,9 @@
     =========
 
     A variable is a place to store information. To create (also called declare) a
-    variable use the keyword 'var', as follows:
+    variable use the keyword 'let', as follows:
 
-    var variableName;
+    let variableName;
 
     So, we created a variable named variableName, but it has no information or
     value inside. It is empty. To give our variable a value (initialize it)
@@ -71,7 +71,7 @@
 
     We also can create and give value to a variable in one step, as follows:
 
-    var newVariable = 1;
+    let newVariable = 1;
 
     As you can notice, we can give different types of values to our variables -
     strings, numbers, booleans etc.
@@ -81,6 +81,13 @@
               'hello world!'
     Numbers - either integers or floats(decimals). Not wrapped in quotes
     Boolean - it represents logical values - True or False
+
+
+    Note that you may see code that uses the keyword 'var' instead of 'let'.
+    This is an older keyword that also creates variables, but with different
+    rules about where that variable is available ("scope").  For now, consider
+    'let' and 'var' as essentially equivalent, but use 'let' because it is less
+    prone to programming mistakes.
 */
 
 // TODO: Now create two empty variables named numberOne and numberTwo.
@@ -93,7 +100,7 @@
 
     Example:
 
-    var hello = 'Hello World';
+    let hello = 'Hello World';
     alert(hello);
 
     This will pop-up an alert box with the string 'Hello World!'
@@ -103,6 +110,29 @@
 // them with an alert pop-up box.
 
 
+/*
+    Constants
+    =========
+
+    A constant is just like a variable, but it must be given a value when it is
+    declared (created), and that value can never change.  In other words, a
+    constant always contains the same information.  To declare a constant, use
+    the keyword 'const'.
+
+    Example:
+
+    const earthRadiusKm = 6371;
+
+    // This will cause an error:
+    earthRadiusKm = 6400;
+
+    Constants can also be used to represent the information they contain, in
+    the same way as variables.
+*/
+
+// TODO: Create a constant, and display it an alert pop-up box.
+
+// TODO: Try to assign a new value to your constant to see what happens.
 
 
 
@@ -121,7 +151,7 @@
 
     Example:
 
-    var sumOfNumbers = 1 + 3;
+    const sumOfNumbers = 1 + 3;
     alert(sumOfNumbers);
 
     This will pop-up an alert box with the number 4.
@@ -212,7 +242,7 @@
         do something else
     }
     Example:
-    var number = 7;
+    let number = 7;
     if (number > 7) {
         console.log('Our number is bigger than 7');
     } else {
@@ -277,7 +307,7 @@
 
     Example:
 
-    var number = 7;
+    const number = 7;
     if (number > 7) {
         console.log('Our number is bigger then 7');
     } else if (number < 7) {

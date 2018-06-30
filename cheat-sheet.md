@@ -20,7 +20,7 @@ A variable that has no value
 To create a variable  - done by using: 
 
 ```
-var variableName = value;
+let variableName = value;
 ```
 
 
@@ -37,7 +37,6 @@ A set of characters, word(s), phrase. To initialize variable with a string you n
 ### boolean
 
 Boolean variable represent a logical value True or False
-
 
 ### array
 
