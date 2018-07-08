@@ -7,11 +7,11 @@ permalink: step6/
 
 #keywords:
 #  - term:
-#    define: 
+#    define:
 
 ---
 
-A function is a type of procedure or routine. While some of the functions only perform some operations, some of them return a value after the operations as well. 
+A function is a type of procedure or routine. While some of the functions only perform some operations, some of them return a value after the operations as well.
 Functions can take input variables called `arguments` to perform the action that is defined inside of the function.
 To create a function use the following format:
 
@@ -41,15 +41,15 @@ console.log(functionName(10));
 ----
 
 ### Tasks
-1. Create a function to add multiple numbers. 
+1. Create a function to add multiple numbers.
  * Name it `add` and pass in two arguments (num1 and num2). To pass multiple arguments into function we separate them with a comma.
  * This function should return us a sum of num1 and num2.
  * Call the function passing 2 numbers that you prefer as arguments.
- * Log the result to see it. (Console.log())
-2. Create a function to subtract numbers from each other. 
+ * Log the result to see it. (`console.log()`)
+2. Create a function to subtract numbers from each other.
  * Name it `subtract` and pass in two arguments (num1 and num2)
  * This function should return us a subtraction of num1 and num2.
  * Call the function passing 2 numbers that you prefer as arguments.
- * Log the result to see it. (Console.log())
+ * Log the result to see it. (`console.log()`)
 3. Instead of numbers to pass as arguments, create variables that store
 those numbers and pass them as an arguments to your function. Call your function and log your result.

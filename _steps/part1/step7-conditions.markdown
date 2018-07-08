@@ -86,7 +86,7 @@ If you want to check a bunch of different things, you can put `if` statements to
         console.log('Low!');
     } else {
         console.log('You guessed our number.');
-    }    
+    }
 ```
 
 ----
@@ -99,7 +99,7 @@ operator(+,-,/, * etc). If the operator is '+', we should use the add function, 
  * Create a variable called operator and let it be equal to '-'.
  * Create an if/else statement based on what operator we have. If we have an operator equal to '+', we call add function with any two numbers,
 else the subtract function with any 2 numbers.
- * Log your result. (Console.log())
+ * Log your result. (`console.log()`)
 
  2. Create 2 more functions and name them divide and multiply. After
 that let's extend our 'if else' check that we already created by checking if
