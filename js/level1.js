@@ -211,7 +211,9 @@
     } else {
         do something else
     }
+
     Example:
+
     var number = 7;
     if (number > 7) {
         console.log('Our number is bigger than 7');
@@ -226,19 +228,29 @@
 
     Earlier we introduced JavaScript's arithmetic operators.  Now comes time to
     introduce you to the next set. JavaScript's Comparison operators' are used
-    to compare values(>, <, <=, =>, ==, !=). Most of them you know from math
-    classes in school, some of them can be new for you, so '==' is checking
-    equality, if two values are equal.
+    to compare values(>, <, <=, =>, ===, !==). Most of them you know from math
+    classes in school, some of them can be new for you:
 
-    '!=' - Checks if they are not equal.
+    * === checks equality, results in true if two values are equal.
+    * !== checks inequality, results in true if two values are not equal.
 
-    PS: Don't mix up '=' and '==' as they have different meanings.
+    PS: Don't mix up '=' and '===' as they have different meanings.
+
+    Note: There are also '==' and '!=' operators, which are very similar to '==='
+    and '!==', but with a slightly different meaning that is more prone to
+    programming errors, so you should always use '===' and '!=='.
+
+    The result of a comparison operator is a boolean value (true or false).
+    For example:
+
+    * 3 < 4 is true.
+    * 1 + 1 === 3 is false.
 */
 
 // TODO: So now we have 2 functions from the previous task - add and subtract.
 // Let's tell the machine to decide what action to run depending on the arithmetical
-// operator(+,-,/, * etc). If the operator is '+', we should use the add function, else we should use the
-// - subtract function.
+// operator (+,-,/, * etc). If the operator is '+', we should use the add function,
+// else we should use the subtract (-) operator.
 //
 // Step 1 - Create a variable called operator and let it be equal to '-'.
 // Step 2 - Create an if/else statement based on what operator we have.
