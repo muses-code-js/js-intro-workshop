@@ -64,8 +64,11 @@
     let variableName;
 
     So, we created a variable named variableName, but it has no information or
-    value inside. It is empty. To give our variable a value (initialize it)
-    use the '=' sign:
+    value inside. It is undefined. 
+
+    console.log("variableName is", variableName);
+    
+    To give our variable a value (initialize it) use the '=' sign:
 
     variableName = 'Hello world!';
 
@@ -80,7 +83,8 @@
     Strings - set of characters, word(s), or phrases that we wrap in quotes, like
               'hello world!'
     Numbers - either integers or floats(decimals). Not wrapped in quotes
-    Boolean - it represents logical values - True or False
+
+    Boolean - it represents logical values - true or false.
 
 
     Note that you may see code that uses the keyword 'var' instead of 'let'.
@@ -90,7 +94,7 @@
     prone to programming mistakes.
 */
 
-// TODO: Now create two empty variables named numberOne and numberTwo.
+// TODO: Now create two undefined variables named numberOne and numberTwo.
 
 
 
@@ -241,7 +245,9 @@
     } else {
         do something else
     }
+
     Example:
+
     let number = 7;
     if (number > 7) {
         console.log('Our number is bigger than 7');
@@ -256,19 +262,29 @@
 
     Earlier we introduced JavaScript's arithmetic operators.  Now comes time to
     introduce you to the next set. JavaScript's Comparison operators' are used
-    to compare values(>, <, <=, =>, ==, !=). Most of them you know from math
-    classes in school, some of them can be new for you, so '==' is checking
-    equality, if two values are equal.
+    to compare values(>, <, <=, =>, ===, !==). Most of them you know from math
+    classes in school, some of them can be new for you:
 
-    '!=' - Checks if they are not equal.
+    * === checks equality, results in true if two values are equal.
+    * !== checks inequality, results in true if two values are not equal.
 
-    PS: Don't mix up '=' and '==' as they have different meanings.
+    PS: Don't mix up '=' and '===' as they have different meanings.
+
+    Note: There are also '==' and '!=' operators, which are very similar to '==='
+    and '!==', but with a slightly different meaning that is more prone to
+    programming errors, so you should always use '===' and '!=='.
+
+    The result of a comparison operator is a boolean value (true or false).
+    For example:
+
+    * 3 < 4 is true.
+    * 1 + 1 === 3 is false.
 */
 
 // TODO: So now we have 2 functions from the previous task - add and subtract.
 // Let's tell the machine to decide what action to run depending on the arithmetical
-// operator(+,-,/, * etc). If the operator is '+', we should use the add function, else we should use the
-// - subtract function.
+// operator (+,-,/, * etc). If the operator is '+', we should use the add function,
+// else we should use the subtract (-) operator.
 //
 // Step 1 - Create a variable called operator and let it be equal to '-'.
 // Step 2 - Create an if/else statement based on what operator we have.
@@ -332,6 +348,20 @@
 
 
 
+/* 
+    Boolean Operators
+    =================
+    Putting an exclamation (!) before a Boolean variable gives 
+    the opposite value. The ! is called a "not" operator when 
+    used this way.
+
+    // the result of a comparison is a Boolean value, so we can
+    // save it to a variable
+    var bool = (1 < 2); 
+    console.log(bool); 
+    console.log(!bool); // "not true", therefore false
+    console.log(bool); // the original value isn't affected
+*/
 
 ///////////////////////////////////////////////////////////////////////////
 // Congratulations! You have finished Part 1 of JavaScript Basics!       //
