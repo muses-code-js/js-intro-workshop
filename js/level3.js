@@ -107,8 +107,12 @@
 
     Example:
 
-    var ourTwitter = document.querySelector('.twitter');
+    const ourTwitter = document.querySelector('.twitter');
     // We can store page elements in variables, just like any other value!
+    // However, note that a page element is an object, which is a "reference
+    // type" just like arrays (see level 2).  That means you can change
+    // attributes and properties of the element, but not the variable itself.
+    // You will see this in action in this section.
 */
 
 // TODO: Now it's your turn — get the h1 tag from the page and store it into a
@@ -130,12 +134,12 @@
 
     We also can get all elements with the same tag. In our footer, we have an
     unordered list (<ul>), with three list items (<li>) inside. Let's get all
-    of them.
+    of them as an array of page elements.
 
     Example:
 
     // Will get all <li> from the page
-    var mediaLinks = document.querySelectorAll('li');
+    const mediaLinks = document.querySelectorAll('li');
 */
 
 
@@ -211,7 +215,7 @@
 
     Example:
 
-    var ourTwitter = document.querySelector('.twitter');
+    const ourTwitter = document.querySelector('.twitter');
     ourTwitter.id = "surprise";
 */
 
@@ -236,7 +240,7 @@
 
     Example:
 
-    var ourTwitter = document.querySelector('.twitter');
+    const ourTwitter = document.querySelector('.twitter');
     ourTwitter.style.backgroundColor = 'white';
 */
 
@@ -261,9 +265,9 @@
 
     Example:
 
-    var pageNode = document.querySelector('body');
-    var newParagraph = document.createElement('p');
-    var paragraphText = document.createTextNode('Squee!');
+    const pageNode = document.querySelector('body');
+    const newParagraph = document.createElement('p');
+    const paragraphText = document.createTextNode('Squee!');
     newParagraph.appendChild(paragraphText);
     pageNode.appendChild(newParagraph);
 */

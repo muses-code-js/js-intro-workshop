@@ -34,9 +34,9 @@
 
     Example:
 
-    var animals = ['cat', 'dog', 'horse'];
-    var randomThings = [2, 'book', 'today is Saturday', 10];
-    var numbers = [1, 2, 8, 19];
+    let animals = ['cat', 'dog', 'horse'];
+    let randomThings = [2, 'book', 'today is Saturday', 10];
+    let numbers = [1, 2, 8, 19];
 */
 
 // TODO: Create your own array, named favouriteFood, and write in a couple of
@@ -54,7 +54,7 @@
     '.length'
 
     Example:
-    var randomThings = [2, 'book', 'today is Saturday', 10];
+    let randomThings = [2, 'book', 'today is Saturday', 10];
     console.log(randomThings.length); // We will get 4.
 */
 
@@ -78,9 +78,9 @@
 
     Example:
 
-    var randomThings = [2, 'book', 'today is Saturday', 10];
-    var firstItem = randomThings[0];
-    var secondItem = randomThings[1]; and so on
+    let randomThings = [2, 'book', 'today is Saturday', 10];
+    let firstItem = randomThings[0];
+    let secondItem = randomThings[1]; and so on
 
     * https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html
 */
@@ -102,7 +102,7 @@
 
     Example:
 
-    var animals = ['cat', 'dog', 'horse'];
+    let animals = ['cat', 'dog', 'horse'];
 
     // let's replace 'dog' with 'fish'
     animals[1] = 'fish';
@@ -130,7 +130,7 @@
 
     Example:
 
-    var animals = ['cat', 'dog', 'horse'];
+    let animals = ['cat', 'dog', 'horse'];
     animals.push('rabbit');
 
     // animals will be ['cat', 'dog', 'horse','rabbit']
@@ -141,6 +141,29 @@
 
 
 
+
+/*
+    Note about constant Arrays
+    ==========================
+
+    An array is what is known as a "reference type".  What this means is that
+    even if an array is declared using 'const', the values *inside* that array
+    can still be changed; only the array itself cannot be overwritten.
+
+    Example:
+
+    const animals = ['cat', 'dog', 'horse'];
+
+    // These are both legal, and works the same way as when animals is a variable:
+    animals[1] = 'fish';
+    animals.push('rabbit');
+
+    // This is illegal, and will return an error the same as changing any constant:
+    animals = [ 'mouse', 'elephant' ];
+ */
+
+// TODO: Repeat the previous exercises with your arrays defined as constants,
+// to see what happens.
 
 
 
@@ -181,7 +204,7 @@
     Example:
 
     // starting point
-    var number = 0;
+    let number = 0;
 
     while (number < 10) {
       // 'less than 10'' is a condition (finishing point)
@@ -212,7 +235,7 @@
 
     Example:
 
-    var i;
+    let i;
     for (i = 0; i <= 5; i = i + 1) {  // (starting point; condition; step)
       console.log('Purr');
     }
@@ -240,8 +263,8 @@
 
     Example:
 
-    var animals = ['cats', 'dogs', 'horses'];
-    for(var i = 0; i < animals.length; i++){
+    const animals = ['cats', 'dogs', 'horses'];
+    for(let i = 0; i < animals.length; i++){
         console.log('I love ' + animals[i]);
     }
 */
@@ -270,7 +293,7 @@
 
     Example:
 
-    for (var i = 10; i >= 0; i = i - 1) {
+    for (let i = 10; i >= 0; i = i - 1) {
         if (i === 5) {
             console.log('WooHoo, we are in the middle!');
         } else {
