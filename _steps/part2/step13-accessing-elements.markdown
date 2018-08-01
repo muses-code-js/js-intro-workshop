@@ -92,7 +92,7 @@ You've done such an amazing job so far! Let's do one more practise and then you'
 ```javascript
 // Title
 var postTitle = document.querySelector('h2');
-postTitle.textContent = 'I became a developer in a day!'
+postTitle.textContent = 'I became a developer in a day!';
 // Icon
 var homeNav = document.querySelector('.page-link');
 var newIcon = document.createElement('i');

@@ -78,7 +78,7 @@ So what will happen if you don't put the quotes in?  Like this example?
 
 ```javascript
 var message = Hello;
-console.log(message)
+console.log(message);
 ```
 
 You'll get a error something like `ReferenceError: Hello is not defined` because JavaScript assumes that `Hello` is a variable and tries to assigns it's value to `message`.  And `Hello` doesn't exist, so `not defined`.
