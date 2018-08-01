@@ -17,7 +17,7 @@ Count from 1 to 50 and print the numbers out:
 
 Note: You may wish to use arithmetic [operator remainder (%)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()):
 
-```
+```javascript
 for( var i= 0; i < 50; i++){
     if(i % 15 == 0){
         console.log("FizzBuzz");

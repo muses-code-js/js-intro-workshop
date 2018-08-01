@@ -37,7 +37,6 @@ console.log(siteTitle);
 We also can get all elements with the same tag. For example, if you want to see all the icons that we have in our website, you can see the list of them by `querySelectorAll` method:
 
 ```javascript
-
 // Will get all <i> from the page
 var mediaLinks = document.querySelectorAll('i');
 console.log(mediaLinks);
