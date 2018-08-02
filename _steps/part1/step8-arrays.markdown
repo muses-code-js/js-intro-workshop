@@ -36,7 +36,7 @@ var randomThings = [2, 'book', 'today is Saturday', 10];
 var firstItem = randomThings[0];
 console.log(firstItem);
 var secondItem = randomThings[1];
-console.log(secondItem) ;
+console.log(secondItem);
 ```
 
 We also can replace values inside of the arrays by assigning a new value to
