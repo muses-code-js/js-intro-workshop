@@ -31,7 +31,7 @@ Comparison operators are used to compare values. Javascript's comparison operato
 
 * `>` greater than
 * `<` less than
-* `=>` greater than or equal to
+* `>=` greater than or equal to
 * `<=` less than or equal to
 * `==` equal to
 * `!=` not equal to
