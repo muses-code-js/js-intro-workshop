@@ -12,11 +12,9 @@ Arrays are another way to store data, like variables. Unlike variables, they sto
 inside such as numbers, strings, objects.
 
 ```javascript
-
 var animals = ['cat', 'dog', 'horse'];
 var randomThings = [2, 'book', 'today is Saturday', 10];
 var numbers = [1, 2, 8, 19];
-
 ```
 ### Length Of An Array
 We can easily check how many items we have in our array with the `length` property:
@@ -34,12 +32,11 @@ to use only 1 item from the array?
 We can get them out using `bracket notation`. Array indices start counting from 0. The usage looks like this.
 
 ```javascript
-
 var randomThings = [2, 'book', 'today is Saturday', 10];
 var firstItem = randomThings[0];
-console.log(firstItem)
+console.log(firstItem);
 var secondItem = randomThings[1];
-console.log(secondItem) 
+console.log(secondItem);
 ```
 
 We also can replace values inside of the arrays by assigning a new value to
@@ -58,7 +55,6 @@ If you want to add new values to an existing array you can use the method
 '.push()'. Push will add a new value to the end of the array.
 
 ```javascript
-
 var animals = ['cat', 'dog', 'horse'];
 animals.push('rabbit');
 console.log(animals); // animals will be ['cat', 'dog', 'horse', 'rabbit']

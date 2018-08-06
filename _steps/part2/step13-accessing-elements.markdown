@@ -37,7 +37,6 @@ console.log(siteTitle);
 We also can get all elements with the same tag. For example, if you want to see all the icons that we have in our website, you can see the list of them by `querySelectorAll` method:
 
 ```javascript
-
 // Will get all <i> from the page
 var mediaLinks = document.querySelectorAll('i');
 console.log(mediaLinks);
@@ -93,7 +92,7 @@ You've done such an amazing job so far! Let's do one more practise and then you'
 ```javascript
 // Title
 var postTitle = document.querySelector('h2');
-postTitle.textContent = 'I became a developer in a day!'
+postTitle.textContent = 'I became a developer in a day!';
 // Icon
 var homeNav = document.querySelector('.page-link');
 var newIcon = document.createElement('i');
