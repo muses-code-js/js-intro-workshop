@@ -262,7 +262,7 @@
 
     Earlier we introduced JavaScript's arithmetic operators.  Now comes time to
     introduce you to the next set. JavaScript's Comparison operators' are used
-    to compare values(>, <, <=, =>, ===, !==). Most of them you know from math
+    to compare values(>, <, <=, >=, ===, !==). Most of them you know from math
     classes in school, some of them can be new for you:
 
     * === checks equality, results in true if two values are equal.
