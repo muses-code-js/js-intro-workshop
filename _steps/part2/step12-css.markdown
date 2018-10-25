@@ -6,17 +6,17 @@ title: CSS
 permalink: step12/
 
 ---
-Now it's time to work on HTML and do really fun stuff! 
+Now it's time to work on HTML and do really fun stuff!
 
-We've covered some basic concepts about HTML earlier. If you still feel confused about it, 
-feel free to grab a mentor and ask your questions. 
+We've covered some basic concepts about HTML earlier. If you still feel confused about it,
+feel free to grab a mentor and ask your questions.
 
 For building a website, we basically use 3 main technologies: HTML, CSS and JAVASCRIPT.
 
-Briefly, HTML is what content and what HTML tags your website includes, CSS is how your website looks like, JavaScript is how the interactions work in your website.  
+Briefly, HTML is what content and what HTML tags your website includes, CSS is how your website looks like, JavaScript is how the interactions work in your website.
 
-HTML should reinforce the semantics of the information in webpages while CSS should be used to define its presentation or look. 
- 
+HTML should reinforce the semantics of the information in webpages while CSS should be used to define its presentation or look.
+
 Here is an example of how a piece of a webpage looks like with CSS and without CSS.
 
 #### HTML with CSS
@@ -55,7 +55,7 @@ Let's have a look at our HTML file (index.html) that we created in Part 0.
         <title class="website-title">My first webpage</title>
       </head>
       <body>
-        <h1 id="node-girls-title">Node Girls</h1>
+        <h1 id="muses-codejs-title">Muses Code JS</h1>
         <p>Hi there!</p>
       </body>
 </html>
@@ -73,7 +73,7 @@ body{
 
 This CSS code block sets the background color of the body to white.
 
-As you might have realised, we have some different keywords in our HTML: `class` and `id`. 
+As you might have realised, we have some different keywords in our HTML: `class` and `id`.
 
 Selectors can also refer to elements by their class attribute like this:
 
@@ -86,7 +86,7 @@ Selectors can also refer to elements by their class attribute like this:
 or IDs, like this:
 
 ```css
-#node-girls-title {
+#muses-codejs-title {
 	text-align: center;
 }
 ```

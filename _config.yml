@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Node Girls"
+title: "Muses Code JS"
 workshopname: "Intro to Javascript"
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -23,7 +23,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-# theme: node-girls
+# theme: muses-code-js
 
 collections:
   steps:
@@ -39,7 +39,7 @@ challenge_difficulties:
   - Expands on existing concepts
   - Introduces multiple new concepts
   - Multiple new concepts.  Might need to some research.
-    
+
 plugins:
   - jekyll-feed
   - jemoji
