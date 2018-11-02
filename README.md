@@ -4,7 +4,7 @@ An introductory JavaScript workshop for beginners.
 
 ## Slides
 
-Check on slides, click [here](https://slides.com/tanyabutenko/ngs-intro/)
+Check on slides, click [here](https://docs.google.com/presentation/d/137Q_qJ60GE5cTpKzBodfbzSVhp--jPi4x3N9hxQKAyA/edit?usp=sharing)
 
 
 ## Feedback
