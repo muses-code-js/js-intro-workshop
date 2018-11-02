@@ -76,13 +76,13 @@ main a {
 }
 
 footer {
-    background-color: #464646;
+    background-color: #7986e5;
     padding: 1rem 1rem 2rem;
     width: 100%;
 }
 
 footer > div {
-    background-color: #464646;
+    background-color: #7986e5;
     color: white;
     display: flex;
     flex-direction: row;
@@ -109,13 +109,13 @@ footer span {
 }
 
 footer a {
-    color: #DA3296;
+    color: white;
     font-style: italic;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #DA3296;
+    color:white;
 }
 
 #surprise {
