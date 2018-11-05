@@ -12,11 +12,8 @@ body {
     background: #EFEFEF;
     display: flex;
     flex-direction: column;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 100%;
+    font-family: Avenir, 'Source Sans Pro', sans-serif;
     justify-content: center;
-    min-height: 100vh;
-    color: #464646;
 }
 
 body * {
@@ -30,13 +27,13 @@ header {
 }
 
 h1 {
-    font-family: 'GFS Didot', serif;
+    font-family: Didot, 'GFS Didot', serif;
     font-size: 5rem;
     margin: 0 3.5rem;
 }
 
 h2 {
-    font-family: 'GFS Didot', serif;
+    font-family: Didot, 'GFS Didot', serif;
     font-size: 4rem;
     margin: 0 3rem;
 }
@@ -82,11 +79,10 @@ footer {
 }
 
 footer > div {
-    background-color: #7986e5;
     color: white;
     display: flex;
     flex-direction: row;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: Avenir, 'Source Sans Pro', sans-serif;
     font-size: 1.4rem;
     justify-content: space-between;
     margin: 0 auto;

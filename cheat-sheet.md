@@ -100,7 +100,7 @@ It repeats code over and over again until some condition is met.
 This loop is similar to ‘while loop’, just with a set amount of repetition. You declare counter in the statement as so: 
 
 ```
-for (var i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   do something 5 times
 }
 ```

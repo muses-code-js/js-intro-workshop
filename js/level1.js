@@ -248,7 +248,7 @@
 
     Example:
 
-    let number = 7;
+    const number = 7;
     if (number > 7) {
         console.log('Our number is bigger than 7');
     } else {
@@ -357,7 +357,7 @@
 
     // the result of a comparison is a Boolean value, so we can
     // save it to a variable
-    var bool = (1 < 2); 
+    const bool = (1 < 2);
     console.log(bool); 
     console.log(!bool); // "not true", therefore false
     console.log(bool); // the original value isn't affected
