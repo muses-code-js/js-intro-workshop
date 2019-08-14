@@ -25,6 +25,8 @@
 
 
 
+
+
 /*
     Displaying text
     ===============
@@ -51,12 +53,16 @@
 
 
 
+
+
 // TODO: Once the alert works for you, comment it out (put '//' on the line
 //       where your code is and save the changes). After you refresh the page,
 //       it should not pop-up anymore.
 
 // TODO: Shall we try to console.log a message to the browser?
 //       Send any message you want.
+
+
 
 
 
@@ -108,6 +114,8 @@
 
 
 
+
+
 /*
     You can use the name of your variables to represent what information
     that they have inside.
@@ -125,8 +133,12 @@
 
 
 
+
+
 // TIP: to display both variables at the same time,
 //      you can join them with the '+' sign.
+
+
 
 
 
@@ -157,7 +169,11 @@
 
 
 
+
+
 // TODO: Try to assign a new value to your constant to see what happens.
+
+
 
 
 
@@ -194,7 +210,11 @@
 
 
 
+
+
 // TODO: And in the end display the value of multipleOfNumbers.
+
+
 
 
 
@@ -251,10 +271,14 @@
 
 
 
+
+
 // TODO: Great, you made it! Now let's create another function named 'subtract',
 //       Tell it to accept 2 arguments, number1 and number2, and subtract
 //       number2 from number1 then return that value.
 // Call it with the numbers 5 and 1 and console.log the result.
+
+
 
 
 
@@ -342,8 +366,12 @@
 
 
 
+
+
 // TODO: Change your operator to '-', and check that it calls the
 //       subtract function instead.
+
+
 
 
 
@@ -375,12 +403,16 @@
 
 
 
+
+
 // TODO: Then let's extend our 'if else' check that we already created by adding
 //       'else if' operator is equal to '+' - call 'add' function,
 //       'else if' operator is equal to '/' - call 'divide' function,
 //       'else if' operator is equal to '*' - call 'multiply' function
 //       else console.log - "Sorry, we don't know this operator".
 //       (Copy it to here and comment out the first version)
+
+
 
 
 
@@ -413,8 +445,10 @@
 
 
 
+
+
 ////////////////////////////////////////////////////////////////////////////
-// Congratulations! You have finished Part 1 of JavaScript Basics!        //
+// Congratulations! You have finished Level 1 of JavaScript Basics!       //
 // Stand up, stretch your legs, and celebrate your achievement.           //
 // The next step will be following the instructions in the file level2.js //
 ////////////////////////////////////////////////////////////////////////////
