@@ -174,7 +174,7 @@
     Example:
 
     ourTwitter.textContent;
-    // We will get the text 'Twitter: @NodeGirlsSydney @NodeGirlsMelb'
+    // We will get the text 'Twitter: @MusesCodeJSSyd @MusesCodeJSMelb @MCJSHobart @MCJSPerth @BrisMuses'
 */
 
 // TODO: Get the content of our 'h1' element and console.log it.
