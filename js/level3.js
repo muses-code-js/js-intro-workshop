@@ -24,14 +24,15 @@
 
     <header></header>
     <p></p>
-    etc
+    <img />
 
     We call these "tags". Each element on the page has an opening and closing
-    tag. (NOTE: Some tags are self-closing like <img>.)
+    tag. (NOTE: Some tags are self-closing like <img />, this means we don'
+    need a matching end tag.)
 
     The outermost tag in every HTML file is <html>.
 
-    Inside the <html> tag you will find a <head> and <body> tag.
+    Inside the <html> tag you will find a <head> and a <body> tag.
 
     In <head> we keep meta information, the page title and links to css files.
     <body> contains our actual content.
@@ -87,8 +88,9 @@
     Don't worry, you don't need to remember all of this immediately!
 */
 
+
 /*
-    Phew, lots of new things. Let's come back to javaScript and see how we can
+    Phew, lots of new things. Let's come back to JavaScript and see how we can
     interact with HTML.
 */
 
@@ -99,18 +101,19 @@
 
     Document Object Model (DOM)
     ---------------------------
-    The DOM is the javascript representation of the active HTML file. The DOM
+    The DOM is the JavaScript representation of the active HTML file. The DOM
     is available under a special global variable called 'document'. We can get
-    specific nodes (page elements) with the DOM method: 'querySelector'.
+    specific nodes (page elements) with the DOM method: '.querySelector'.
 
     Let's get our twitter link from the page.
 
     Example:
 
     const ourTwitter = document.querySelector('.twitter');
+
     // We can store page elements in variables, just like any other value!
     // However, note that a page element is an object, which is a "reference
-    // type" just like arrays (see level 2).  That means you can change
+    // type" just like arrays (see level 2). That means you can change
     // attributes and properties of the element, but not the variable itself.
     // You will see this in action in this section.
 */
@@ -124,17 +127,14 @@
 
 
 
-
-
-
-
 /*
     Getting Similar Elements
     ========================
 
     We also can get all elements with the same tag. In our footer, we have an
     unordered list (<ul>), with three list items (<li>) inside. Let's get all
-    of them as an array of page elements.
+    of them as an array of page elements. When we want to get multiple elements
+    we use the method '.querySelectorAll', which gives us a list of matches.
 
     Example:
 
@@ -142,8 +142,9 @@
     const mediaLinks = document.querySelectorAll('li');
 */
 
-
 // TODO: Get all <li> elements from the page in a variable named mediaLinks.
+
+
 
 
 
@@ -153,11 +154,10 @@
 
 
 
+
+
 // TODO: Do you remember loops from level 2? Using this knowledge, iterate
-// through each mediaLinks item and console.log it.
-
-
-
+//       through each mediaLinks item and console.log it.
 
 
 
@@ -165,21 +165,19 @@
 
 
 /*
+    Element Properties
+    ==================
+
     Ok, so far so good. But what if we want only the text from our 'h1' tag?
     Page elements have another property for this: '.textContent'
 
     Example:
 
     ourTwitter.textContent;
-    // We will get text 'Twitter: @NodeGirlsSydney @NodeGirlsMelb'
+    // We will get the text 'Twitter: @NodeGirlsSydney @NodeGirlsMelb'
 */
 
-
-// TODO: Get the content of 'h1' element and console.log it.
-
-
-
-
+// TODO: Get the content of our 'h1' element and console.log it.
 
 
 
@@ -190,18 +188,18 @@
     Editing Page Content
     ====================
 
-    We can change the content of the tags using the same .textContent property.
+    We can change the content of the tags using the same '.textContent' property.
 
     Example:
 
     ourTwitter.textContent = '@ButenkoMe';
     console.log(ourTwitter.textContent);
-    // guess what we will see on the page and in the console?
+    // Guess what we will see on the page and in the console?
 */
 
-
 // TODO: Make up a new title! Change the content of our 'h1' to anything you
-// like.
+//       want.
+
 
 
 
@@ -219,9 +217,9 @@
     ourTwitter.id = "surprise";
 */
 
+// TODO: Update the value of the 'src' attribute of our 'img' tag to
+//       "img/kittens.jpeg"
 
-// TODO: Update the value of the 'src' attribute of our img tag to
-// "img/kittens.jpeg"
 
 
 
@@ -244,9 +242,7 @@
     ourTwitter.style.backgroundColor = 'white';
 */
 
-
 // TODO: Get any element on the page and change some styles for it.
-
 
 
 
@@ -259,9 +255,9 @@
 
     The document object also provides ways to create nodes from scratch:
 
-    document.createElement(tagName); --> create the element
-    document.createTextNode(text); --> what text it should contain
-    document.appendChild(node); --> append it to the document
+    document.createElement('div'); // create a new element called 'div'
+    document.createTextNode('foobar'); // create a new text containing 'foobar'
+    existingNode.appendChild(newNode); // add newNode to the end of existingNode
 
     Example:
 
@@ -272,32 +268,19 @@
     pageNode.appendChild(newParagraph);
 */
 
-
-// TODO: Well, do you still have kittens on your screen? I like both logo and
-// kittens. Let's create a new image that sources our original logo file, and
-// put it into a header.
+// TODO: Do you still have kittens on your screen? I like both logo and kittens.
+//       Let's create a new image with our original logo file as the source, and
+//       put it into our header.
 //
-// P.S. You also can give styles to the new node that you create.
+// P.S. You can also give styles to the new node that you create.
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////
-// Congratulations! You have finished Part 3 of JavaScript Basics!    //
-// Stand up, stretch your legs, and celebrate your achievement.       //
-// I believe you deserve some sweets today!                           //
-////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+// Congratulations! You have finished Level 3 of JavaScript Basics!       //
+// Stand up, stretch your legs, and celebrate your achievement.           //
+// I believe you deserve some sweets today!                               //
+////////////////////////////////////////////////////////////////////////////

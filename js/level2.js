@@ -1,4 +1,4 @@
-// Level2
+// Level 2
 
 /*
     Introduction
@@ -30,7 +30,8 @@
     ======
 
     An array is an ordered list of values. It can keep any number of values
-    inside. And also any type of values — numbers, strings, objects.
+    inside. And also any type of values — Numbers, Strings, Objects, even
+    other Arrays.
 
     Example:
 
@@ -46,6 +47,7 @@
 
 
 
+
 /*
     Array Length
     ============
@@ -54,12 +56,13 @@
     '.length'
 
     Example:
+
     let randomThings = [2, 'book', 'today is Saturday', 10];
     console.log(randomThings.length); // We will get 4.
 */
 
 // TODO: Check how many values you have in your array favouriteFood.
-// console.log the result.
+//       console.log the result.
 
 
 
@@ -85,8 +88,7 @@
     * https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html
 */
 
-// TODO: Get third element from your array favouriteFood and console.log it.
-
+// TODO: Get the third element from your array favouriteFood and console.log it.
 
 
 
@@ -110,16 +112,22 @@
     // now our animals array will be ['cat', 'fish', 'horse']
 */
 
-// TODO: Take your array favouriteFood and replace the first value with anything
-// else.
-// console.log the whole array to check.
-// Don't forget, index positions start from 0!
+// TODO: Take your array favouriteFood and replace the first value
+//       with anything else.
 
 
 
 
 
 
+// TODO: console.log the whole array to check.
+
+
+
+
+
+
+// TIP: Don't forget, index positions start from 0!
 
 /*
     Array.push()
@@ -137,7 +145,15 @@
 */
 
 // TODO: Let's extend your list of favouriteFood and add one more value to it.
-// console.log list your favouriteFood and check it.
+
+
+
+
+
+
+// TODO: console.log the whole array to check.
+
+
 
 
 
@@ -162,8 +178,17 @@
     animals = [ 'mouse', 'elephant' ];
  */
 
-// TODO: Repeat the previous exercises with your arrays defined as constants,
-// to see what happens.
+// TODO: Try creating an array as a constant and modifying the values in it.
+
+
+
+
+
+
+// TODO: See what happens if you add something with .push(), change something
+//       with bracket notation (array[1]) and
+//       assigning a new whole new array to the constant
+
 
 
 
@@ -194,7 +219,6 @@
     Let's look into different looping structures.
 */
 
-
 /*
     While Loops
     ===========
@@ -207,7 +231,7 @@
     let number = 0;
 
     while (number < 10) {
-      // 'less than 10'' is a condition (finishing point)
+      // 'less than 10' is a condition (finishing point)
 
       console.log('JavaScript is awesome!');
 
@@ -217,9 +241,7 @@
 */
 
 // TODO: Using a 'while loop', tell your computer to log the numbers from
-// ten to one.
-
-
+//       ten to one.
 
 
 
@@ -230,7 +252,7 @@
     For Loops
     =========
 
-    'For loops are very similar to the 'while loop'. In a for loop, you
+    For loops are very similar to the 'while loop'. In a for loop, you
     declare a counter in the statement.
 
     Example:
@@ -248,7 +270,6 @@
 
 
 
-
 /*
     Iterating Through Arrays
     ========================
@@ -259,7 +280,7 @@
     We can use a 'for loop' to iterate through our array and get each value
     from it.
 
-    Note: i++ is another way of writing i = i+1.
+    Note: i++ is another way of writing i = i + 1.
 
     Example:
 
@@ -270,11 +291,6 @@
 */
 
 // TODO: Try it out with your favouriteFood array.
-
-
-
-
-
 
 
 
@@ -323,17 +339,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////
-// Congratulations! You have finished Part 2 of JavaScript Basics!        //
+// Congratulations! You have finished Level 2 of JavaScript Basics!       //
 // Stand up, stretch your legs, and celebrate your achievement.           //
 // The next step will be following up the instructions in level3.js file. //
 ////////////////////////////////////////////////////////////////////////////

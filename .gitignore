@@ -1,2 +1,4 @@
 .idea/
 .vscode/launch.json
+# Mac related system files
+.DS_Store

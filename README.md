@@ -6,48 +6,60 @@ An introductory JavaScript workshop for beginners.
 
 Check on slides, click [here](https://goo.gl/5HNvxD)
 
-
 ## Feedback
 
 To leave feedback click [here](https://docs.google.com/forms/d/e/1FAIpQLSdoOaviRIqsDPi1ZPTvTDVEzeQrSiEoDhsS0tmAIQZmkLkvxw/viewform?c=0&w=1)
 
-
 ## How to use
 
-If you are familiar with git, you can clone this repository to your machine and simply start working
-through files starting from README.md file, after that jump to js/level1.js file.
+If you are familiar with git, you can clone this repository to your machine.
 
+If you don't know what git is, relax. You can easily download the folder on your machine - go to
+the 'releases' tab over the yellow line on the page and click the link 'Source code (zip)'.
+Unzip it (Extract) and open the folder, don't open files inside the .zip.
 
-If you don't know what git is, relax. You can download the folder on your machine - go to
-'releases' tab over the yellow line on the page and download folder 'Source code (zip)'.
-Unzip it and start from README.md file, after jumping to js/level1.js file.
+Start from the `README.md` file, then open `js/level1.js`.
 
+To see the web-page in your browser, open `index.html` by double clicking on it, if you see
+an option 'open in browser' then choose that. Preferably use Chrome, but Firefox and Safari will work as well.
 
-To open the web-page in your browser go to _index.html_ file and double click on it, you will see
-an option 'open in browser'. Preferably use Chrome, but Firefox and Safari will work as well.
+Follow the instructions in `js/level1.js` and type code in your Text Editor (this is where your code lives and you can write, edit and delete code).
 
-Follow the instructions in _level1.js_ file and type code in your Text Editor (it is where your code lives and you can write, edit and delete code). In order to see anything that you console.log(), you need refresh the web page and the result will be in web console on the page (you can directly write javaScript code here as well and see the result straight away, but as soon as you refresh the page all the code will be gone, that is why we use Text Editor).
+In order to see anything that you edit, you need to save the file and refresh the web page. The result of any console.log() statement will be in the _browser console_.
 
+### How to open the `Browser Console`
+| Browser     | Platform | Instruction                                         |
+| ----------- | -------- | --------------------------------------------------- |
+| **Chrome**  | Any      | right-click the page and select `Inspect`, switch to `Console` tab in the developer tools |
+| **Chrome**  | Mac      | press `COMMAND + OPTION + J`                        |
+| **Chrome**  | Windows  | press `CONTROL + SHIFT + J`                         |
+| **Firefox** | Any      | right-click the page and select `Inspect Element`, switch to `Console` tab |
+| **Firefox** | Mac      | press `COMMAND + OPTION + K`                        |
+| **Firefox** | Windows  | press `CONTROL + SHIFT + K`                         |
+| **Safari**  | Mac      | go to the menu bar and open `Safari > Preferences > Advanced >` and tick the box `Show Develop Menu` at the bottom, restart Safari, now you can right-click on the page and select `Inspect Element` to see the console. |
+| **Safari**  | Mac      | press `COMMAND + OPTION + C`                        |
 
+The console/developer tools will appear at the bottom or on the right side of the screen.
+
+You can write JavaScript code directly here and see the result straight away, but as soon as you refresh the page all the code will be gone, this is why we use a Text Editor in order to save our code.
 
 ## Structure
 
-- CSS folder - contains css files that are responsible for styles and how our project looks on the web.
+- `css` folder - contains css files that are responsible for styles and how our project looks on the web.
 
-- img folder - a place where we can store images that we will use on our web-page.
+- `img` folder - a place where we can store images that we will use on our web-page.
 
-- Js folder contains javaScript files that makes our project work, it defines content and makes a static page functional.
+- `js` folder contains JavaScript files that makes our project work, it defines content and makes a static page functional.
     It contains 3 files:
-    - _level1.js_ - basics with explanations(comments, variables, functions, if/else statements)
-    - _level2.js_ - more complex javaScript with explanations(arrays, loops)
-    - _level3.js_ - html, css and how manipulate them with javaScript (selectors)
+    - `level1.js` - basics with explanations (comments, variables, functions, if/else statements)
+    - `level2.js` - more complex JavaScript with explanations (arrays, loops)
+    - `level3.js` - html, css and how manipulate them with JavaScript (selectors)
 
-- _index.html_ - a file responsible for the structure of our project
+- `index.html` - a file responsible for the structure of our project
 
-- _Readme.md_ - a file with explanations and any information about the project, how to run it, what it is for etc
+- `Readme.md` - a file with explanations and any information about the project, how to run it, what it is for etc
 
-- _cheat-sheet.md_ - a file with a quick overlook for key namings and their explanations
-
+- `cheat-sheet.md` - a file with a quick overlook for key namings and their explanations
 
 ## Author
 Tanya Butenko
