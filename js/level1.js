@@ -43,7 +43,7 @@
         This line of code will print 'Hello World!' to the browser's console.
 
     P.S.: To see the browser's console you can right click on the window of your
-    browser (Chrome, Firefox etc) and select 'Inspect' or 'Inspect element'.
+    browser (Chrome, Firefox, Opera etc) and select 'Inspect' or 'Inspect element'.
     After that a console will appear on the bottom or right side of the page.
     More info in the file `Readme.md`
 */
@@ -65,6 +65,13 @@
 
 
 
+
+// TIP: Shortcut to refresh a browser is 'CMD + R' on Mac and 'CTRL + R' on
+//      Windows.
+
+
+// TIP: Shortcut to save changes to file is 'CMD + S' on Mac and 'CTRL + S' on
+//      Windows.
 
 
 /*
@@ -151,7 +158,7 @@
     declared (created), and that value can never change. In other words, a
     constant always contains the same information.
 
-    To declare a constant, we use the keyword 'const'.
+    To declare (create) a constant, we use the keyword 'const'.
 
     Example:
 
@@ -286,7 +293,7 @@
 // P.S.: Do you know that instead of numbers you can create variables that store
 // those numbers and pass them as an arguments to your function? Try it out!
 
-// P.P.S: Leave the functions as they are, don't comment them out,
+// P.P.S.: Leave the functions as they are, don't comment them out,
 //        we will use them again.
 
 /*
