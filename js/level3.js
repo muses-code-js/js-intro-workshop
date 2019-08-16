@@ -9,7 +9,7 @@
     But we still have more things for you. First of all, open index.html, and
     replace our script from level2.js to our current file — level3.js.
 
-    P.S. If you want to use multiple js files simultaneously, simply add more
+    TIP: If you want to use multiple js files simultaneously, simply add more
     script tags.
 */
 
@@ -27,7 +27,7 @@
     <img />
 
     We call these "tags". Each element on the page has an opening and closing
-    tag. (NOTE: Some tags are self-closing like <img />, this means we don'
+    tag. (NOTE: Some tags are self-closing like <img />, this means we don't
     need a matching end tag.)
 
     The outermost tag in every HTML file is <html>.
@@ -43,14 +43,14 @@
     HTML tags may contain attributes:
     <div class="settings"></div>
 
-    This div has an attribute named class that has a value: 'settings'.
+    This div has an attribute named 'class' that has a value: 'settings'.
 
 
     Cascading Style Sheets (CSS)
     ----------------------------
     CSS describes how HTML elements look.
 
-    CSS files are comprised of 'declaration blocks'. Each declaration block is
+    CSS files consist of 'declaration blocks'. Each declaration block is
     composed of a selector and a set of visual style rules. A declaration looks
     like this:
 
@@ -119,8 +119,8 @@
 */
 
 // TODO: Now it's your turn — get the h1 tag from the page and store it into a
-// variable named ourTitle.
-// console.log it and see what you get!
+//       variable named ourTitle.
+//       console.log it and see what you get!
 
 
 

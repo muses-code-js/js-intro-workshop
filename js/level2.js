@@ -19,8 +19,8 @@
 
     <script src="js/level1.js"></script>
 
-    That is how you have been running the level1.js file. Now change level1.js
-    to this file — level2.js.
+    That is how you have been running the level1.js file in a browser. Now change
+    level1.js to point to this file — level2.js.
 
     Now you are ready to start!
 */
@@ -41,7 +41,7 @@
 */
 
 // TODO: Create your own array, named favouriteFood, and write in a couple of
-// things you like.
+//       things you like.
 
 
 
@@ -163,8 +163,8 @@
     ==========================
 
     An array is what is known as a "reference type".  What this means is that
-    even if an array is declared using 'const', the values *inside* that array
-    can still be changed; only the array itself cannot be overwritten.
+    even if an array is declared (created) using 'const', the values *inside* that
+    array can still be changed; only the array itself cannot be overwritten.
 
     Example:
 
