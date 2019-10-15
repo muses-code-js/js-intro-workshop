@@ -27,11 +27,12 @@ Follow the instructions in `js/level1.js` and type code in your Text Editor (thi
 
 In order to see anything that you edit, you need to save the file and refresh the web page. The result of any console.log() statement will be in the _browser console_.
 
-### How to open the `Browser Console`
-| Browser     | Platform | Instruction                                         |
-| ----------- | -------- | --------------------------------------------------- |
+### How to open the `Browser Console`  
+
+| Browser     | Platform | Instruction |
+| ----------- | -------- | ----------- |
 | **Chrome**  | Any      | right-click the page and select `Inspect`, switch to `Console` tab in the developer tools |
-| **Chrome**  | Mac      | press `COMMAND + OPTION + J`                        |
+| **Chrome**  | Mac      | press `COMMAND + OPTION + J` |
 | **Chrome**  | Windows  | press `CONTROL + SHIFT + J`                         |
 | **Firefox** | Any      | right-click the page and select `Inspect Element`, switch to `Console` tab |
 | **Firefox** | Mac      | press `COMMAND + OPTION + K`                        |
