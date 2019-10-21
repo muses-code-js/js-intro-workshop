@@ -29,7 +29,7 @@ In order to see anything that you edit, you need to save the file and refresh th
 
 ### How to open the `Browser Console`
 | Browser     | Platform | Instruction                                         |
-| ----------- | -------- | --------------------------------------------------- |
+| ---         |    ---   |                                                 --- |
 | **Chrome**  | Any      | right-click the page and select `Inspect`, switch to `Console` tab in the developer tools |
 | **Chrome**  | Mac      | press `COMMAND + OPTION + J`                        |
 | **Chrome**  | Windows  | press `CONTROL + SHIFT + J`                         |
