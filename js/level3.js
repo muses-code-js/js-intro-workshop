@@ -1,126 +1,43 @@
-// Level 3
-
 /*
     Introduction
     ============
 
     WooHoo, you got so far on your first day! Great!
+    Welcome to level 3!
 
     But we still have more things for you. First of all, open index.html, and
     replace our script from level2.js to our current file — level3.js.
 
     TIP: If you want to use multiple js files simultaneously, simply add more
     script tags.
+
+    In this level you will learn about
+
+    * Arrays,
+    * Array Length,
+    * Changing Values in Arrays,
+    * Note about constant Arrays
+
+    Let's get started with arrays!
 */
 
 /*
-    Lets talk a little more about HTML, CSS, and how we can interact with them
-    in JavaScript.
+    Arrays
+    ======
 
-
-    Hypertext Markup Language (HTML)
-    --------------------------------
-    As you noticed, HTML is divided into elements that look like this:
-
-    <header></header>
-    <p></p>
-    <img />
-
-    We call these "tags". Each element on the page has an opening and closing
-    tag. (NOTE: Some tags are self-closing like <img />, this means we don't
-    need a matching end tag.)
-
-    The outermost tag in every HTML file is <html>.
-
-    Inside the <html> tag you will find a <head> and a <body> tag.
-
-    In <head> we keep meta information, the page title and links to css files.
-    <body> contains our actual content.
-
-    For a full list of HTML tags, you can refer to this listing:
-    http://htmldog.com/references/html/tags/
-
-    HTML tags may contain attributes:
-    <div class="settings"></div>
-
-    This div has an attribute named 'class' that has a value: 'settings'.
-
-
-    Cascading Style Sheets (CSS)
-    ----------------------------
-    CSS describes how HTML elements look.
-
-    CSS files consist of 'declaration blocks'. Each declaration block is
-    composed of a selector and a set of visual style rules. A declaration looks
-    like this:
-
-    [selector] {
-      style-name: value;
-      style-name: value;
-      style-name: value;
-    }
-
-    Selectors specify which elements the visual styles are applied to.
-
-    The most basic selectors refer to elements by their tag-name. They look
-    like this:
-
-    body {
-      background-color: white;
-    }
-
-    Selectors can also refer to elements by their class attribute like this:
-
-    .settings {
-      margin: 0;
-    }
-
-    or IDs, like this:
-
-    #logo {
-      text-align: center;
-    }
-
-    The list of css properties is huge, you can read more here, if you're
-    interested:
-    https://www.w3.org/TR/CSS21/propidx.html
-
-    Don't worry, you don't need to remember all of this immediately!
-*/
-
-
-/*
-    Phew, lots of new things. Let's come back to JavaScript and see how we can
-    interact with HTML.
-*/
-
-
-/*
-    Accessing Elements
-    ==================
-
-    Document Object Model (DOM)
-    ---------------------------
-    The DOM is the JavaScript representation of the active HTML file. The DOM
-    is available under a special global variable called 'document'. We can get
-    specific nodes (page elements) with the DOM method: '.querySelector'.
-
-    Let's get our twitter link from the page.
+    An array is an ordered list of values. It can keep any number of values
+    inside. And also any type of values — Numbers, Strings, Objects, even
+    other Arrays.
 
     Example:
 
-    const ourTwitter = document.querySelector('.twitter');
-
-    // We can store page elements in variables, just like any other value!
-    // However, note that a page element is an object, which is a "reference
-    // type" just like arrays (see level 2). That means you can change
-    // attributes and properties of the element, but not the variable itself.
-    // You will see this in action in this section.
+    let animals = ['cat', 'dog', 'horse'];
+    let randomThings = [2, 'book', 'today is Saturday', 10];
+    let numbers = [1, 2, 8, 19];
 */
 
-// TODO: Now it's your turn — get the h1 tag from the page and store it into a
-//       variable named ourTitle.
-//       console.log it and see what you get!
+// TODO: Create your own array, named favouriteFood, and write in a couple of
+//       things you like.
 
 
 
@@ -128,36 +45,20 @@
 
 
 /*
-    Getting Similar Elements
-    ========================
+    Array Length
+    ============
 
-    We also can get all elements with the same tag. In our footer, we have an
-    unordered list (<ul>), with three list items (<li>) inside. Let's get all
-    of them as an array of page elements. When we want to get multiple elements
-    we use the method '.querySelectorAll', which gives us a list of matches.
+    We can easily check how many items we have in our array with a property:
+    '.length'
 
     Example:
 
-    // Will get all <li> from the page
-    const mediaLinks = document.querySelectorAll('li');
+    let randomThings = [2, 'book', 'today is Saturday', 10];
+    console.log(randomThings.length); // We will get 4.
 */
 
-// TODO: Get all <li> elements from the page in a variable named mediaLinks.
-
-
-
-
-
-
-// TODO: Now console.log mediaLinks.length
-
-
-
-
-
-
-// TODO: Do you remember loops from level 2? Using this knowledge, iterate
-//       through each mediaLinks item and console.log it.
+// TODO: Check how many values you have in your array favouriteFood.
+//       console.log the result.
 
 
 
@@ -165,19 +66,25 @@
 
 
 /*
-    Element Properties
-    ==================
+    Array Usage
+    ===========
 
-    Ok, so far so good. But what if we want only the text from our 'h1' tag?
-    Page elements have another property for this: '.textContent'
+    It's useful to keep all of these values in one place. But what if we want
+    to use only 1 item from the array?
+
+    We can get them out using 'bracket notation'. Thanks to a guy named Edsger
+    Dijkstra*, array indices start counting from 0. The usage looks like this.
 
     Example:
 
-    ourTwitter.textContent;
-    // We will get the text 'Twitter: @MusesCodeJSSyd @MusesCodeJSMelb @MCJSHobart @MCJSPerth @BrisMuses'
+    let randomThings = [2, 'book', 'today is Saturday', 10];
+    let firstItem = randomThings[0];
+    let secondItem = randomThings[1]; and so on
+
+    * https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html
 */
 
-// TODO: Get the content of our 'h1' element and console.log it.
+// TODO: Get the third element from your array favouriteFood and console.log it.
 
 
 
@@ -185,20 +92,62 @@
 
 
 /*
-    Editing Page Content
-    ====================
+    Changing Values in Arrays
+    =========================
 
-    We can change the content of the tags using the same '.textContent' property.
+    We also can replace values inside of the arrays by assigning a new value to
+    a specific index.
 
     Example:
 
-    ourTwitter.textContent = '@ButenkoMe';
-    console.log(ourTwitter.textContent);
-    // Guess what we will see on the page and in the console?
+    let animals = ['cat', 'dog', 'horse'];
+
+    // let's replace 'dog' with 'fish'
+    animals[1] = 'fish';
+
+    // now our animals array will be ['cat', 'fish', 'horse']
 */
 
-// TODO: Make up a new title! Change the content of our 'h1' to anything you
-//       want.
+// TODO: Take your array favouriteFood and replace the first value
+//       with anything else.
+
+
+
+
+
+
+// TODO: console.log the whole array to check.
+
+
+
+
+
+
+// TIP: Don't forget, index positions start from 0!
+
+/*
+    Array.push()
+    ============
+
+    If you want to add new values to an existing array you can use the method
+    '.push()'. Push will add a new value to the end of the array.
+
+    Example:
+
+    let animals = ['cat', 'dog', 'horse'];
+    animals.push('rabbit');
+
+    // animals will be ['cat', 'dog', 'horse','rabbit']
+*/
+
+// TODO: Let's extend your list of favouriteFood and add one more value to it.
+
+
+
+
+
+
+// TODO: console.log the whole array to check.
 
 
 
@@ -206,74 +155,35 @@
 
 
 /*
-    Editing Attributes
-    ==================
+    Note about constant Arrays
+    ==========================
 
-    We can also change and set attributes on our elements.
-
-    Example:
-
-    const ourTwitter = document.querySelector('.twitter');
-    ourTwitter.id = "surprise";
-*/
-
-// TODO: Update the value of the 'src' attribute of our 'img' tag to
-//       "img/kittens.jpeg"
-
-
-
-
-
-
-/*
-    Editing Styles
-    ==============
-
-    Let's change some styles. Page elements have a '.style' property. We can
-    assign styles to the style property using the same names as in CSS files.
-
-    (If a CSS property name has '-' in the name — like font-size — then the
-    hyphen will be deleted and the next word starts with a capital instead —
-    fontSize.  This pattern of naming is called CamelCase.)
+    An array is what is known as a "reference type".  What this means is that
+    even if an array is declared (created) using 'const', the values *inside* that
+    array can still be changed; only the array itself cannot be overwritten.
 
     Example:
 
-    const ourTwitter = document.querySelector('.twitter');
-    ourTwitter.style.backgroundColor = 'white';
-*/
+    const animals = ['cat', 'dog', 'horse'];
 
-// TODO: Get any element on the page and change some styles for it.
+    // These are both legal, and works the same way as when animals is a variable:
+    animals[1] = 'fish';
+    animals.push('rabbit');
+
+    // This is illegal, and will return an error the same as changing any constant:
+    animals = [ 'mouse', 'elephant' ];
+ */
+
+// TODO: Try creating an array as a constant and modifying the values in it.
 
 
 
 
 
 
-/*
-    Creating New Nodes (Elements)
-    =============================
-
-    The document object also provides ways to create nodes from scratch:
-
-    document.createElement('div'); // create a new element called 'div'
-    document.createTextNode('foobar'); // create a new text containing 'foobar'
-    existingNode.appendChild(newNode); // add newNode to the end of existingNode
-
-    Example:
-
-    const pageNode = document.querySelector('body');
-    const newParagraph = document.createElement('p');
-    const paragraphText = document.createTextNode('Squee!');
-    newParagraph.appendChild(paragraphText);
-    pageNode.appendChild(newParagraph);
-*/
-
-// TODO: Do you still have kittens on your screen? I like both logo and kittens.
-//       Let's create a new image with our original logo file as the source, and
-//       put it into our header.
-//
-// P.S. You can also give styles to the new node that you create.
-
+// TODO: See what happens if you add something with .push(), change something
+//       with bracket notation (array[1]) and
+//       assigning a new whole new array to the constant
 
 
 
@@ -282,5 +192,5 @@
 ////////////////////////////////////////////////////////////////////////////
 // Congratulations! You have finished Level 3 of JavaScript Basics!       //
 // Stand up, stretch your legs, and celebrate your achievement.           //
-// I believe you deserve some sweets today!                               //
+// The next step will be following up the instructions in level4.js.      //
 ////////////////////////////////////////////////////////////////////////////

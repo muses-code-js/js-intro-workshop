@@ -15,7 +15,7 @@ To leave feedback click [here](https://docs.google.com/forms/d/e/1FAIpQLSdoOaviR
 If you are familiar with git, you can clone this repository to your machine.
 
 If you don't know what git is, relax. You can easily download the folder on your machine - go to
-the 'releases' tab over the yellow line on the page and click the link 'Source code (zip)'.
+https://github.com/muses-code-js/js-intro-workshop (probably where you are now!) and click the Green button close to the top that says `Clone or download`, then `Download ZIP` in the popover.
 Unzip it (Extract) and open the folder, don't open files inside the .zip.
 
 Start from the `README.md` file, then open `js/level1.js`.
