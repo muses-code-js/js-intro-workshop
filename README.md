@@ -1,5 +1,3 @@
-# js-intro-workshop
-
 An introductory JavaScript workshop for beginners.
 
 ## Slides
@@ -62,7 +60,8 @@ You can write JavaScript code directly here and see the result straight away, bu
 
 - `cheat-sheet.md` - a file with a quick overlook for key namings and their explanations
 
-## Author
-Tanya Butenko
-github: [https://github.com/ButenkoT](https://github.com/ButenkoT)
-twitter: [@ButenkoMe](https://twitter.com/ButenkoMe)
+1. Install ruby (v2) if you don’t already have it
+2. Install bundler: `gem install bundler`
+3. make sure you are in the `gh-pages` branch
+4. Install dependencies: `bundle install` 
+5. Run Jekyll: `jekyll serve -L`
