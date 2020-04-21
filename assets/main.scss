@@ -2,7 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$nodegreen: #4CAF50;
+$musespurple: #7985F0;
+$musesred: #DA3296;
 
 @import "minima";
 @import "step-nav";
@@ -34,14 +35,14 @@ div.page-nav {
 }
 
 a.go-link {
-  background: $nodegreen;
+  background: $musespurple;
   padding: 9px 14px 8px 14px;
   border-radius: 6px;
-  border: 2px solid $nodegreen;
+  border: 2px solid $musespurple;
   color: white !important;
   text-decoration: none;
   &:hover {
-    border: 2px solid darken($nodegreen, 10%) !important;
+    border: 2px solid darken($musespurple, 10%) !important;
   }
 }
 

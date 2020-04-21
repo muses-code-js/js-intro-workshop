@@ -1,7 +1,7 @@
 div.step-nav {
   // border: 1px solid #e7e7e7;
   // background-color: #efefef;
-  border-right: 3px solid $nodegreen;
+  border-right: 3px solid $musespurple;
   // float: right;
   max-width: 250px;
   font-size: 16px;
@@ -36,7 +36,7 @@ ul.main {
       }
     }
     li.active {
-      background-color: $nodegreen;
+      background-color: $musespurple;
       a {
         color: white;
       }
@@ -61,9 +61,9 @@ ul.main {
   div.step-nav {
     position: absolute;
     left: -230px;
-    border-right: 3px solid $nodegreen; //#e7e7e7;
-    border-top: 3px solid $nodegreen;
-    border-bottom: 3px solid $nodegreen;
+    border-right: 3px solid $musespurple; //#e7e7e7;
+    border-top: 3px solid $musespurple;
+    border-bottom: 3px solid $musespurple;
     background-color: #efefef;
     border-radius: 0px 5px 5px 0px;
     box-shadow: 2px 2px 2px 1px grey;
@@ -109,7 +109,7 @@ ul.main {
       }
       li.active {
         display: block;
-        background-color: $nodegreen;
+        background-color: $musespurple;
         a {
           color: white;
         }

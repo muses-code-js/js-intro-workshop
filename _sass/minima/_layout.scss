@@ -106,7 +106,7 @@
  * Site footer
  */
  footer {
- 	background: #333;
+ 	background: $musesred;
  	position: absolute;
   left: 0;
   bottom: 0;
@@ -119,13 +119,13 @@
  	  margin-bottom: 10px;
 
     a {
-     	color: #a7a7a7;
+     	color: #ffffff;
      	font-size: 16px;
      	font-weight: bold;
      	text-decoration: none;
       &:hover {
      	  text-decoration: underline;
-        color: $nodegreen;
+        color: $musespurple;
       }
     }
     
@@ -221,7 +221,7 @@
 
   h2 {
     @include relative-font-size(2);
-    border-bottom: 3px solid $nodegreen;
+    border-bottom: 3px solid $musespurple;
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
