@@ -1,3 +1,6 @@
 .idea/
+.vscode/launch.json
+# Mac related system files
+.DS_Store
 _site
 Gemfile.lock
