@@ -47,7 +47,7 @@ Dev Tools provide you a way to see what is going on behind the scenes in whateve
 Browser Dev Tools are useful for:
 
 1. Trying to figure out why your page isn't doing the thing you expect it to do (AKA debugging)
-2. Checking out the code that makes up other people's web pages to learn how they did a levelicular thing.
+2. Checking out the code that makes up other people's web pages to learn how they did a particular thing.
 
 Different browsers generally cover the same basic functionality with their Dev Tools, but they each do it in their own way with slightly different interfaces and with some features unique to themselves.  
 

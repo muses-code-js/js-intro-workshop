@@ -16,12 +16,12 @@ If you don't know what git is, relax. You can easily download the folder on your
 the 'releases' tab over the yellow line on the page and click the link 'Source code (zip)'.
 Unzip it (Extract) and open the folder, don't open files inside the .zip.
 
-Start from the `README.md` file, then open `js/level1.js`.
+Start from the `README.md` file, then read the `Getting Started` section to begin.
 
-To see the web-page in your browser, open `index.html` by double clicking on it, if you see
+To see the web-page in your browser, open `muses-code-website/index.html` by double clicking on it, if you see
 an option 'open in browser' then choose that. Preferably use Chrome, but Firefox and Safari will work as well.
 
-Follow the instructions in `js/level1.js` and type code in your Text Editor (this is where your code lives and you can write, edit and delete code).
+Follow the instructions given in each step and type code in your Text Editor (this is where your code lives and you can write, edit and delete code).
 
 In order to see anything that you edit, you need to save the file and refresh the web page. The result of any console.log() statement will be in the _browser console_.
 
@@ -40,24 +40,20 @@ In order to see anything that you edit, you need to save the file and refresh th
 
 The console/developer tools will appear at the bottom or on the right side of the screen.
 
-You can write JavaScript code directly here and see the result straight away, but as soon as you refresh the page all the code will be gone, this is why we use a Text Editor in order to save our code.
+You can write JavaScript code directly into the browser console and see the result straight away, but as soon as you refresh the page all the code will be gone, this is why we use a Text Editor in order to save our code.
 
 ## Structure
 
-- `css` folder - contains css files that are responsible for styles and how our project looks on the web.
+Inside this project you will find the `muses-code-website` folder. We will be editing the contents of this folder during the workshop. In the folder you will see three files:
+- `index.html` - a file that is responsible for the structure of our project
+- `style.css` - a file that is responsible for styles and how our project looks on the web
+- `script.js` - a file that makes our project work, it defines content and makes a static page functional
 
-- `img` folder - a place where we can store images that we will use on our web-page.
+We will be making changes to the `script.js` file.
 
-- `js` folder contains JavaScript files that makes our project work, it defines content and makes a static page functional.
-    It contains 3 files:
-    - `level1.js` - basics with explanations (comments, variables, functions, if/else statements)
-    - `level2.js` - more complex JavaScript with explanations (arrays, loops)
-    - `level3.js` - html, css and how manipulate them with JavaScript (selectors)
 
-- `index.html` - a file responsible for the structure of our project
-
-- `Readme.md` - a file with explanations and any information about the project, how to run it, what it is for etc
-
+Our project also contains:
+- `README.md` - a file with explanations and any information about the project, how to run it, what it is for etc
 - `cheat-sheet.md` - a file with a quick overlook for key namings and their explanations
 
 1. Install ruby (v2) if you don’t already have it
