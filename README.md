@@ -39,6 +39,7 @@ In order to see anything that you edit, you need to save the file and refresh th
 | **Firefox** | Windows | press `CONTROL + SHIFT + K` |
 | **Safari** | Mac | go to the menu bar and open `Safari > Preferences > Advanced >` and tick the box `Show Develop Menu` at the bottom, restart Safari, now you can right-click on the page and select `Inspect Element` to see the console. |
 | **Safari** | Mac | press `COMMAND + OPTION + C` |
+| **Edge** | Windows | press `CONTROL + SHIFT + I` |
 
 The console/developer tools will appear at the bottom or on the right side of the screen.
 
